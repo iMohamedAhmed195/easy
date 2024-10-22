@@ -35,7 +35,9 @@ class _CompleteProfileDataScreenState extends State<CompleteProfileDataScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 15.h,),
+                  SizedBox(
+                    height: 15.h,
+                  ),
                   const LogoAppBarWidget(
                     isPop: true,
                   ),
@@ -68,7 +70,7 @@ class _CompleteProfileDataScreenState extends State<CompleteProfileDataScreen> {
                             "subHeader": AppStrings().accountCreated,
                             "buttonText": AppStrings().proceed,
                             "onPressed": () {
-                               Routes.bottomNavigationRoute.moveTo();
+                              Routes.bottomNavigationRoute.moveTo();
                             }
                           });
                         } else if (context.read<UiAuthCubit>().nextPage == 2 &&

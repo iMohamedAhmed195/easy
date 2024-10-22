@@ -55,3 +55,28 @@ extension ScreenUtilExtension on num {
       );
   // Example: Container(padding: 10.symmetricEdgeInsets(vertical: 20))
 }
+
+extension BuildContextExtension on BuildContext {
+  //! Access MediaQuery easily
+  MediaQueryData get mediaQuery => MediaQuery.of(this);
+
+  //! Get screen width
+  double get screenWidth => mediaQuery.size.width;
+  // Example:
+  // double width = context.screenWidth;
+
+  //! Get screen height
+  double get screenHeight => mediaQuery.size.height;
+  // Example:
+  // double height = context.screenHeight;
+
+  //! Check orientation
+  bool get isPortrait =>
+      MediaQuery.of(this).orientation == Orientation.portrait;
+  // Example:
+  // if (context.isPortrait) {
+  // Perform action for portrait mode
+  // } else {
+  // Perform action for landscape mode
+  // }
+}
