@@ -75,7 +75,7 @@ class UiAuthCubit extends Cubit<UiAuthState> {
     emit(ChangeAccountTypeState());
   }
 
-  // todo : select more than provider service oil + moe
+  //! TODO: select more than provider service oil + moe
   bool isMoneyProvider = true;
   changeServiceType() {
     isMoneyProvider = !isMoneyProvider;

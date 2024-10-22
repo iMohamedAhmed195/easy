@@ -2,6 +2,8 @@ mixin class SvgImages {
   static String svgPath = "assets/svg";
 ///////////////////////////////  svg  ////////////////////////////////////
   String success = "$svgPath/success.svg";
+    String baeCode = "$svgPath/success.svg";
+
   String failure = "$svgPath/failure.svg";
   String empty = "$svgPath/empty.svg";
   String notificationDialog = "$svgPath/notification_permission.svg";

@@ -1,5 +1,4 @@
 class AppStrings {
-
   AppStrings._internal();
   static final AppStrings _instance = AppStrings._internal();
   factory AppStrings() => _instance;
@@ -36,20 +35,26 @@ class AppStrings {
   final String chooseService = 'Which service are you providing?';
   final String onBoarding1Title = 'Get Instant Loans up to \n5000 SAR';
   final String onBoarding2Title = 'Fuel Up Today, Pay When It’s \nConvenient';
-  final String onBoarding3Title = 'Control Your Transactions with \nthe E-Wallet';
-  final String onBoarding1SubTitle = 'Whether you\'re borrowing or lending, Easy makes the process simple, transparent and Connects you with trusted partners.';
-  final String onBoarding2SubTitle = 'Running low on oil? No problem. With Easy, you can fill up at any partner station and pay later at your convenience.';
-  final String onBoarding3SubTitle = 'With the E-wallet feature, you can easily add money to your account and stay in control of your transactions.';
+  final String onBoarding3Title =
+      'Control Your Transactions with \nthe E-Wallet';
+  final String onBoarding1SubTitle =
+      'Whether you\'re borrowing or lending, Easy makes the process simple, transparent and Connects you with trusted partners.';
+  final String onBoarding2SubTitle =
+      'Running low on oil? No problem. With Easy, you can fill up at any partner station and pay later at your convenience.';
+  final String onBoarding3SubTitle =
+      'With the E-wallet feature, you can easily add money to your account and stay in control of your transactions.';
   final String welcomeBack = 'Welcome Back!';
   final String currentBalance = 'Current Balance';
   final String welcomeOnBoard = 'Welcome Onboard!';
   final String logInToYourAccount = 'Log in to your account';
-  final String enterThePhoneNumber = 'Enter the phone number associated with your account.';
+  final String enterThePhoneNumber =
+      'Enter the phone number associated with your account.';
   final String letsCreateAccount = 'Let’s create your account';
   final String firstName = 'First Name';
   final String lastName = 'Last Name';
   final String confirmPassword = 'Confirm Password';
-  final String useRegex = 'Use 8+ characters with letters, numbers, and symbols.';
+  final String useRegex =
+      'Use 8+ characters with letters, numbers, and symbols.';
   final String bothPasswordMustMatch = 'Both Password must match';
   final String phoneNumber = 'Phone Number';
   final String password = 'Password';
@@ -62,7 +67,8 @@ class AppStrings {
   final String orLoginWith = 'or Log in with';
   final String doNotHaveAnAccount = 'Don’t have an account?';
   final String alreadyHaveAnAccount = 'Already have an account?';
-  final String bySigningUpIConfirm = 'By Signing in, you confirm you’ve agreed to our';
+  final String bySigningUpIConfirm =
+      'By Signing in, you confirm you’ve agreed to our';
   final String didNotGetACode = 'Didn’t get a code?';
   final String sendAgain = 'send again';
   final String termsOfService = 'terms of service';
@@ -74,13 +80,17 @@ class AppStrings {
   final String continueText = 'Continue';
   final String submit = 'Submit';
   final String resetPassword = 'Reset Password';
-  final String passwordMustBeDifferent = 'Your new password must be different from previous used passwords.';
+  final String passwordMustBeDifferent =
+      'Your new password must be different from previous used passwords.';
   final String awesome = 'Awesome!';
   final String congratulations = 'Congratulations!';
-  final String accountCreated = 'Your account has been successfully created,Click proceed to go to your homepage.!';
-  final String passwordResetSuccess = 'Your password has been reset successfully! Please login with your new password.';
+  final String accountCreated =
+      'Your account has been successfully created,Click proceed to go to your homepage.!';
+  final String passwordResetSuccess =
+      'Your password has been reset successfully! Please login with your new password.';
   final String completeYourProfile = 'Complete your profile';
-  final String thisFormInclude = 'This form include data that has been autofilled using Nafez.';
+  final String thisFormInclude =
+      'This form include data that has been autofilled using Nafez.';
   final String personalInfo = 'Personal Info';
   final String addressInfo = 'Address Info';
   final String accountType = 'Account Type';
@@ -88,9 +98,6 @@ class AppStrings {
   final String money = 'Money';
   final String provider = 'Provider';
   final String oil = 'Oil';
-
-
-
 
   final String createAccount = 'createAccount';
   final String nameError = 'nameError';
@@ -110,7 +117,6 @@ class AppStrings {
   /// ********************** verification screen ************
   final String removeImage = 'Remove Image';
   String chooseAction = "Choose Action";
-
 
   /// ***************** validators ***********************
 
@@ -147,8 +153,4 @@ class AppStrings {
   final String gallery = "Gallery";
   final String camera = "camera";
   final String location = "location";
-
-
-
-
 }

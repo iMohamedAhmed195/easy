@@ -48,8 +48,10 @@ class CustomBackground extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
         statusBarColor: statusBarColor,
-        statusBarBrightness: statusBarColor.isEqualTo(AppColors.white) ? Brightness.dark : null,
-        statusBarIconBrightness: statusBarColor.isEqualTo(AppColors.white) || statusBarColor.isEqualTo(AppColors.transparent)
+        statusBarBrightness:
+            statusBarColor.isEqualTo(AppColors.white) ? Brightness.dark : null,
+        statusBarIconBrightness: statusBarColor.isEqualTo(AppColors.white) ||
+                statusBarColor.isEqualTo(AppColors.transparent)
             ? Brightness.dark
             : Brightness.light,
       ),
@@ -59,7 +61,7 @@ class CustomBackground extends StatelessWidget {
         bottomNavigationBar: bottomNavigationBar,
         backgroundColor: backgroundColor,
         floatingActionButton: floatingActionButton ?? const SizedBox(),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         resizeToAvoidBottomInset: true,
         appBar: appBar,
         extendBody: extendBody,
@@ -68,5 +70,6 @@ class CustomBackground extends StatelessWidget {
     );
   }
 
-  Widget? get buildChild => showSafeArea.isTrueGetWidgetOrAnotherWidget(SafeArea(child: child), child);
+  Widget? get buildChild => showSafeArea.isTrueGetWidgetOrAnotherWidget(
+      SafeArea(child: child), child);
 }
