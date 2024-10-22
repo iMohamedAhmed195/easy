@@ -9,7 +9,8 @@ export 'package:easy/core/list_states.dart';
 export 'package:dartz/dartz.dart' hide State;
 export 'package:dio/dio.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
-export 'package:easy_localization/easy_localization.dart' hide TextDirection, MapExtension;
+export 'package:easy_localization/easy_localization.dart'
+    hide TextDirection, MapExtension;
 export 'package:flutter/material.dart';
 export 'package:flutter/services.dart';
 export 'package:flutter_bloc/flutter_bloc.dart';
@@ -50,4 +51,4 @@ export 'core/widgets/custom_divider.dart';
 export 'core/widgets/custom_list_view.dart';
 export 'core/widgets/custome_png_image.dart';
 export 'core/widgets/image_picker_dialog.dart';
-
+export 'package:easy/core/helpers/sizes_utils_extensions.dart';
