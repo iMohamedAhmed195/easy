@@ -1,9 +1,7 @@
 import 'package:easy/core/widgets/custom_background.dart';
-import 'package:easy/features/bottom_navigation/presentation/widget/money_provider_bottom_navigation_widget.dart';
 import 'package:easy/features/bottom_navigation/presentation/widget/oil_provider_bottom_navigation_widget.dart';
 import 'package:easy/features/home/presentation/customer_home_page_screen.dart';
 import '../../../exports.dart';
-import '../../bottom_navigation/presentation/widget/customer_bottom_navigation_widget.dart';
 import 'managers/bottom_nav_operation_cubit.dart';
 
 class BottomNavigationScreens extends StatelessWidget {

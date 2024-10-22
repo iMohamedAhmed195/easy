@@ -1,10 +1,7 @@
-import 'package:dotted_line/dotted_line.dart';
-import 'package:easy/core/widgets/custom_button.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'package:easy/features/auth/presentation/widgt/account_type_section.dart';
 import 'package:easy/features/auth/presentation/widgt/address_info_section.dart';
 import 'package:easy/features/auth/presentation/widgt/personal_info_section.dart';
-import 'package:easy/features/auth/presentation/widgt/stepper_complete_info_section.dart';
 import '../../../../exports.dart';
 
 class CompleteInfoPageViewSection extends StatelessWidget {

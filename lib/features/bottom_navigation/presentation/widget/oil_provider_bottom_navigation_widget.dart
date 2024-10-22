@@ -4,6 +4,7 @@ import 'package:easy/core/widgets/custome_svg_image.dart';
 import '../../../../exports.dart';
 import '../managers/bottom_nav_operation_cubit.dart';
 
+// todo :  add qr code fab and text under it
 class OilProviderBottomNavigationWidget extends StatelessWidget {
   OilProviderBottomNavigationWidget({super.key});
 

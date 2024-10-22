@@ -1,10 +1,4 @@
-
-
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
-import 'package:easy/features/auth/presentation/widgt/account_type_section.dart';
-import 'package:easy/features/auth/presentation/widgt/address_info_section.dart';
-import 'package:easy/features/auth/presentation/widgt/personal_info_section.dart';
-
 import '../../../../exports.dart';
 
 class UiAuthCubit extends Cubit<UiAuthState> {
@@ -80,6 +74,8 @@ class UiAuthCubit extends Cubit<UiAuthState> {
     isCustomer = !isCustomer;
     emit(ChangeAccountTypeState());
   }
+
+  // todo : select more than provider service oil + moe
   bool isMoneyProvider = true;
   changeServiceType() {
     isMoneyProvider = !isMoneyProvider;
