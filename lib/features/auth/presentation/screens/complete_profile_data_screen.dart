@@ -3,10 +3,10 @@ import 'package:easy/core/widgets/custom_button.dart';
 import 'package:easy/core/widgets/logo_app_bar_widget.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
-import 'package:easy/features/auth/presentation/widgt/choose_service_bottom_sheet.dart';
-import 'package:easy/features/auth/presentation/widgt/complete_info_page_view_section.dart';
-import 'package:easy/features/auth/presentation/widgt/stepper_complete_info_section.dart';
-import 'package:easy/features/auth/presentation/widgt/welcome_section.dart';
+import 'package:easy/features/auth/presentation/widget/choose_service_bottom_sheet.dart';
+import 'package:easy/features/auth/presentation/widget/complete_info_page_view_section.dart';
+import 'package:easy/features/auth/presentation/widget/stepper_complete_info_section.dart';
+import 'package:easy/features/auth/presentation/widget/welcome_section.dart';
 import '../../../../exports.dart';
 
 class CompleteProfileDataScreen extends StatefulWidget {

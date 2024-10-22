@@ -2,9 +2,9 @@ import 'package:easy/core/widgets/custom_background.dart';
 import 'package:easy/core/widgets/logo_app_bar_widget.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
-import 'package:easy/features/auth/presentation/widgt/button_and_send_code_again_section.dart';
-import 'package:easy/features/auth/presentation/widgt/otp_header_change_number_section.dart';
-import 'package:easy/features/auth/presentation/widgt/write_otp_timer_section.dart';
+import 'package:easy/features/auth/presentation/widget/button_and_send_code_again_section.dart';
+import 'package:easy/features/auth/presentation/widget/otp_header_change_number_section.dart';
+import 'package:easy/features/auth/presentation/widget/write_otp_timer_section.dart';
 import '../../../../exports.dart';
 
 class EnterOtpScreen extends StatelessWidget {

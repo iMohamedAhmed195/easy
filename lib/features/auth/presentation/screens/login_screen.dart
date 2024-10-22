@@ -2,11 +2,11 @@ import 'package:easy/core/widgets/custom_background.dart';
 import 'package:easy/core/widgets/logo_app_bar_widget.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
-import 'package:easy/features/auth/presentation/widgt/footer_login_screen_section.dart';
-import 'package:easy/features/auth/presentation/widgt/login_and_social_login_section.dart';
-import 'package:easy/features/auth/presentation/widgt/login_field_section.dart';
-import 'package:easy/features/auth/presentation/widgt/remember_and_forget_section.dart';
-import 'package:easy/features/auth/presentation/widgt/welcome_section.dart';
+import 'package:easy/features/auth/presentation/widget/footer_login_screen_section.dart';
+import 'package:easy/features/auth/presentation/widget/login_and_social_login_section.dart';
+import 'package:easy/features/auth/presentation/widget/login_field_section.dart';
+import 'package:easy/features/auth/presentation/widget/remember_and_forget_section.dart';
+import 'package:easy/features/auth/presentation/widget/welcome_section.dart';
 import '../../../../exports.dart';
 
 class LoginScreen extends StatelessWidget {

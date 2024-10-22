@@ -2,9 +2,9 @@ import 'package:easy/core/widgets/custom_background.dart';
 import 'package:easy/core/widgets/logo_app_bar_widget.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
-import 'package:easy/features/auth/presentation/widgt/footer_register_screen_section.dart';
-import 'package:easy/features/auth/presentation/widgt/register_field_section.dart';
-import 'package:easy/features/auth/presentation/widgt/welcome_section.dart';
+import 'package:easy/features/auth/presentation/widget/footer_register_screen_section.dart';
+import 'package:easy/features/auth/presentation/widget/register_field_section.dart';
+import 'package:easy/features/auth/presentation/widget/welcome_section.dart';
 import '../../../../exports.dart';
 
 class RegisterScreen extends StatelessWidget {

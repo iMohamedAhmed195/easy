@@ -1,7 +1,7 @@
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
-import 'package:easy/features/auth/presentation/widgt/account_type_section.dart';
-import 'package:easy/features/auth/presentation/widgt/address_info_section.dart';
-import 'package:easy/features/auth/presentation/widgt/personal_info_section.dart';
+import 'package:easy/features/auth/presentation/widget/account_type_section.dart';
+import 'package:easy/features/auth/presentation/widget/address_info_section.dart';
+import 'package:easy/features/auth/presentation/widget/personal_info_section.dart';
 import '../../../../exports.dart';
 
 class CompleteInfoPageViewSection extends StatelessWidget {
