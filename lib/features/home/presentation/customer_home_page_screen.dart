@@ -31,7 +31,7 @@ class CustomerHomePageScreen extends StatelessWidget {
           SizedBox(
             height: 16.h,
           ),
-          TopLoanersListViewSection(),
+          const TopLoanersListViewSection(),
         ],
       ),
     );

@@ -54,7 +54,7 @@ class CustomElevatedButton extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           if (leftIcon.isNotNull) leftIcon!,
-          if (leftIcon.isNotNull) SizedBox(width: 10,),
+          if (leftIcon.isNotNull) const SizedBox(width: 10,),
           Text(
             text,
             textScaler:const TextScaler.linear(1),

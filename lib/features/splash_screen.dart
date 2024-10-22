@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
       //bool isNotificationInit = (await NotificationsService().initialize()).orFalse;
       //   print("is notification granted$isNotificationInit");
 
-      print("new install ${isNew}");
+      print("new install $isNew");
       // print("token is $token");
       // print("device token is $deviceToken");
       // print("token from prefs is ${AppPrefs.token}");
