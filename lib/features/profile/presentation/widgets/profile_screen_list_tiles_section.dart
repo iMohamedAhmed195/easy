@@ -38,6 +38,9 @@ class ProfileScreenListTiles extends StatelessWidget {
                   ),
                   onTap: () {
                     //! TODO: Handle tap here
+                    if (index == 0) {
+                      Routes.accountInformationScreenRoute.moveTo();
+                    }
                     if (index == 5) {
                       logoutBottomSheet(context);
                     }

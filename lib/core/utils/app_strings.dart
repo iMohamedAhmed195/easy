@@ -13,6 +13,8 @@ class AppStrings {
   final String signIn = 'Sign in';
   final String proceed = 'Proceed';
   final String applyNow = 'Apply Now';
+    static const String accountInformation ='Account Information';
+
   final String email = 'Email';
   final String addressLine1 = 'Address Line 1';
   final String addressLine2 = 'Address Line 2 (Optional)';
@@ -91,9 +93,9 @@ class AppStrings {
   final String completeYourProfile = 'Complete your profile';
   final String thisFormInclude =
       'This form include data that has been autofilled using Nafez.';
-  final String personalInfo = 'Personal Info';
-  final String addressInfo = 'Address Info';
-  final String accountType = 'Account Type';
+  static const String personalInfo = 'Personal Info';
+  static const String addressInfo = 'Address Info';
+  static const String accountType = 'Account Type';
   final String customer = 'Customer';
   final String money = 'Money';
   final String provider = 'Provider';
@@ -154,17 +156,13 @@ class AppStrings {
   final String camera = "camera";
   final String location = "location";
 
-    static String accountInformation = "Account Information";
   static String settingAndPrivacy = "Setting And Privacy";
   static String chatSupport = "Chat Support";
   static String loansPolicy = "Loans Policy";
   static String faqs = "FAQS";
   static String logout = "Log Out";
-    static String logoutFromEasy = "Log out from Easy";
-        static String logoutFromEasyWarning = "Are you sure you would like to log out from your account?";
-
-    static String cancel = "Cancel";
-
-
-  
+  static String logoutFromEasy = "Log out from Easy";
+  static String logoutFromEasyWarning =
+      "Are you sure you would like to log out from your account?";
+  static String cancel = "Cancel";
 }

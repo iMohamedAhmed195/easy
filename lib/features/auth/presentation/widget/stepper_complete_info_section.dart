@@ -87,7 +87,7 @@ class StepperCompleteInfoSection extends StatelessWidget {
         Row(
           children: [
             Text(
-              AppStrings().personalInfo,
+              AppStrings.personalInfo,
               style: getSemiboldTextStyle(
                   fontSize: 10,
                   color: AppColors.green
@@ -95,7 +95,7 @@ class StepperCompleteInfoSection extends StatelessWidget {
             ),
             const Spacer(),
             Text(
-              AppStrings().addressInfo,
+              AppStrings.addressInfo,
               style:  getSemiboldTextStyle(
                   fontSize: 10,
                   color: uiAuthCubit.savedPage.contains(2) ? AppColors.green : AppColors.gray
@@ -103,7 +103,7 @@ class StepperCompleteInfoSection extends StatelessWidget {
             ),
             const Spacer(),
             Text(
-              AppStrings().accountType,
+              AppStrings.accountType,
               style:  getSemiboldTextStyle(
                   fontSize: 10,
                   color: uiAuthCubit.savedPage.contains(2)? AppColors.green : AppColors.gray

@@ -10,6 +10,7 @@ import 'package:easy/features/on_boarding/presentation/onboarding_screen.dart';
 import 'package:easy/features/select_language/presentation/select_language_screen.dart';
 import 'package:easy/features/splash_screen.dart';
 import '../../exports.dart';
+import '../../features/account_information/presentation/screen/account_information_screen.dart';
 
 class Routes {
   Routes._internal();
@@ -25,6 +26,9 @@ class Routes {
   static const String awesomeSuccessRoute = "/awesomeSuccessRoute";
   static const String completeProfileDataRoute = "/completeProfileDataRoute";
   static const String bottomNavigationRoute = "/bottomNavigationRoute";
+  static const String accountInformationScreenRoute =
+      "/accountInformationScreenRoute";
+
   // static const String profileScreen = "/profileScreenRoute";
 }
 
@@ -83,6 +87,10 @@ class RouteGenerator {
       case Routes.bottomNavigationRoute:
         return buildPageRoute<T>(
             child: BottomNavigationScreens(), routeSettings: routeSettings);
+      case Routes.accountInformationScreenRoute:
+        return buildPageRoute<T>(
+            child: const AccountInformationScreen(),
+            routeSettings: routeSettings);
       // case Routes.subServiceDetailsRoute:
       //   return buildPageRoute<T>(
       //       child: MultiBlocProvider(
