@@ -28,7 +28,7 @@ class OilProviderBottomNavigationWidget extends StatelessWidget {
       iconActive: AppAssets().loansActive,
     ),
     TitleIconModel(
-      title: AppStrings().profile,
+      title: AppStrings.profile,
       iconDisabled: AppAssets().profile,
       iconActive: AppAssets().profileActive,
     ),

@@ -21,7 +21,7 @@ class MoneyAndOilProviderBottomNavigationWidget extends StatelessWidget {
         iconDisabled: AppAssets().loans,
         iconActive: AppAssets().loansActive),
     TitleIconModel(
-        title: AppStrings().profile,
+        title: AppStrings.profile,
         iconDisabled: AppAssets().profile,
         iconActive: AppAssets().profileActive),
     TitleIconModel(

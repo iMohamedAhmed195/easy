@@ -4,7 +4,7 @@ class CustomBottomSheet {
   static showCustomBottomSheet(
       {context,
       required Widget content,
-       EdgeInsetsDirectional? padding,
+      EdgeInsetsDirectional? padding,
       bool isBackground = false,
       BoxConstraints? constraint}) {
     showModalBottomSheet(

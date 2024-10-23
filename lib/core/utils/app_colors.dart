@@ -13,18 +13,17 @@ class AppColors {
   static const errorColor = Color(0xFFED2241);
   static const descriptionColor = Color(0xFF606268);
   static const Color hintColor = Color(0xFF38393C);
-  static const Color borderColor =  Color(0xFFE2E8F0);
+  static const Color borderColor = Color(0xFFE2E8F0);
   static const Color black = Color(0xFF1A1A1A);
   static Color deepGray = const Color(0xFF263238);
   static const Color darkBlue = Color(0xff151528);
-  static const Color white =  Color(0xffFFFFFF);
+  static const Color white = Color(0xffFFFFFF);
   static const Color transparent = Colors.transparent;
   static const Color primaryIconColor = Color(0xFF091945);
   static const Color titleGray = Color(0xFF333333);
   static Color grayColor2 = const Color(0xFFEDEDED);
   static Color borderColor2 = const Color(0xFFC7CAD8);
   static Color darkGray = const Color(0xFF6B6B6B);
-
-
+    static Color lightSilver  = const Color(0xFFD6D6D6);
 
 }

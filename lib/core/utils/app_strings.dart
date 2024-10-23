@@ -25,7 +25,7 @@ class AppStrings {
   final String home = 'Home';
   final String wallet = 'Wallet';
   final String loans = 'Loans';
-  final String profile = 'Profile';
+  static const String profile = 'Profile';
   final String explore = 'Explore';
   final String qrCode = 'QR Code';
   final String workPlace = 'Workplace';
@@ -153,4 +153,18 @@ class AppStrings {
   final String gallery = "Gallery";
   final String camera = "camera";
   final String location = "location";
+
+    static String accountInformation = "Account Information";
+  static String settingAndPrivacy = "Setting And Privacy";
+  static String chatSupport = "Chat Support";
+  static String loansPolicy = "Loans Policy";
+  static String faqs = "FAQS";
+  static String logout = "Log Out";
+    static String logoutFromEasy = "Log out from Easy";
+        static String logoutFromEasyWarning = "Are you sure you would like to log out from your account?";
+
+    static String cancel = "Cancel";
+
+
+  
 }

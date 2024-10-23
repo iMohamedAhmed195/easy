@@ -25,7 +25,7 @@ class Routes {
   static const String awesomeSuccessRoute = "/awesomeSuccessRoute";
   static const String completeProfileDataRoute = "/completeProfileDataRoute";
   static const String bottomNavigationRoute = "/bottomNavigationRoute";
-
+  // static const String profileScreen = "/profileScreenRoute";
 }
 
 class RouteGenerator {
@@ -38,40 +38,51 @@ class RouteGenerator {
       case Routes.splashScreen:
         return buildPageRoute<T>(
             child: const SplashScreen(), routeSettings: routeSettings);
-        case Routes.selectLanguageRoute:
+      case Routes.selectLanguageRoute:
         return buildPageRoute<T>(
             child: const SelectLanguageScreen(), routeSettings: routeSettings);
-        case Routes.onBoardingRoute:
+      case Routes.onBoardingRoute:
         return buildPageRoute<T>(
             child: const OnboardingScreen(), routeSettings: routeSettings);
-        case Routes.loginRoute:
+      case Routes.loginRoute:
         return buildPageRoute<T>(
             child: const LoginScreen(), routeSettings: routeSettings);
-        case Routes.registerRoute:
+      case Routes.registerRoute:
         return buildPageRoute<T>(
             child: const RegisterScreen(), routeSettings: routeSettings);
-        case Routes.enterOtpRoute:
+      case Routes.enterOtpRoute:
         return buildPageRoute<T>(
-            child: EnterOtpScreen(isForgetPassword: (routeSettings.arguments as Map<String, dynamic>)['isForgetPassword'],), routeSettings: routeSettings);
-        case Routes.enterPhoneNumberRoute:
+            child: EnterOtpScreen(
+              isForgetPassword: (routeSettings.arguments
+                  as Map<String, dynamic>)['isForgetPassword'],
+            ),
+            routeSettings: routeSettings);
+      case Routes.enterPhoneNumberRoute:
         return buildPageRoute<T>(
             child: const EnterPhoneScreen(), routeSettings: routeSettings);
-        case Routes.resetPasswordRoute:
+      case Routes.resetPasswordRoute:
         return buildPageRoute<T>(
             child: const ResetPasswordScreen(), routeSettings: routeSettings);
-        case Routes.awesomeSuccessRoute:
+      case Routes.awesomeSuccessRoute:
         return buildPageRoute<T>(
-            child:  AwesomeSuccessScreen(
-              header: (routeSettings.arguments as Map<String, dynamic>)['header'],
-              subHeader: (routeSettings.arguments as Map<String, dynamic>)['subHeader'],
-              buttonText: (routeSettings.arguments as Map<String, dynamic>)['buttonText'],
-              onPressed: (routeSettings.arguments as Map<String, dynamic>)['onPressed'],), routeSettings: routeSettings);
-        case Routes.completeProfileDataRoute:
+            child: AwesomeSuccessScreen(
+              header:
+                  (routeSettings.arguments as Map<String, dynamic>)['header'],
+              subHeader: (routeSettings.arguments
+                  as Map<String, dynamic>)['subHeader'],
+              buttonText: (routeSettings.arguments
+                  as Map<String, dynamic>)['buttonText'],
+              onPressed: (routeSettings.arguments
+                  as Map<String, dynamic>)['onPressed'],
+            ),
+            routeSettings: routeSettings);
+      case Routes.completeProfileDataRoute:
         return buildPageRoute<T>(
-            child: const CompleteProfileDataScreen(), routeSettings: routeSettings);
-        case Routes.bottomNavigationRoute:
+            child: const CompleteProfileDataScreen(),
+            routeSettings: routeSettings);
+      case Routes.bottomNavigationRoute:
         return buildPageRoute<T>(
-            child:  BottomNavigationScreens(), routeSettings: routeSettings);
+            child: BottomNavigationScreens(), routeSettings: routeSettings);
       // case Routes.subServiceDetailsRoute:
       //   return buildPageRoute<T>(
       //       child: MultiBlocProvider(
@@ -91,7 +102,6 @@ class RouteGenerator {
       //         child: const SubServiceDetailsScreen(),
       //       ),
       //       routeSettings: routeSettings);
-
     }
     return buildPageRoute<T>(
         child: const Center(
@@ -105,16 +115,14 @@ class RouteGenerator {
     AnimationType? pageRouteAnimation = AnimationType.fade,
     Duration? duration,
     RouteSettings? routeSettings,
-  })
-  {
+  }) {
     if (pageRouteAnimation == AnimationType.rotate) {
       return PageRouteBuilder<T>(
         settings: routeSettings,
         pageBuilder: (context, a1, a2) => child,
         transitionsBuilder: (c, anim, a2, child) {
           return RotationTransition(
-              turns: ReverseAnimation(anim),
-              child: child);
+              turns: ReverseAnimation(anim), child: child);
         },
         transitionDuration: duration ?? pageRouteTransitionDurationGlobal,
       );

@@ -3,6 +3,7 @@ import 'package:easy/features/bottom_navigation/presentation/widget/oil_provider
 import 'package:easy/features/home/presentation/customer_home_page_screen.dart';
 import '../../../core/widgets/svg_displayer.dart';
 import '../../../exports.dart';
+import '../../profile/presentation/screens/profile_screen.dart';
 import 'managers/bottom_nav_operation_cubit.dart';
 
 class BottomNavigationScreens extends StatelessWidget {
@@ -13,7 +14,7 @@ class BottomNavigationScreens extends StatelessWidget {
     const CustomerHomePageScreen(),
     const CustomerHomePageScreen(),
     const CustomerHomePageScreen(),
-    const CustomerHomePageScreen(),
+    const ProfileScreen(),
   ];
 
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();

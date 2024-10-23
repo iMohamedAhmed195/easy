@@ -2,7 +2,7 @@ mixin class SvgImages {
   static String svgPath = "assets/svg";
 ///////////////////////////////  svg  ////////////////////////////////////
   String success = "$svgPath/success.svg";
-    String baeCode = "$svgPath/success.svg";
+  String baeCode = "$svgPath/success.svg";
 
   String failure = "$svgPath/failure.svg";
   String empty = "$svgPath/empty.svg";
@@ -16,6 +16,8 @@ mixin class SvgImages {
   String onBoarding2 = "$svgPath/car_oil.svg";
   String onBoarding3 = "$svgPath/e_wallet.svg";
   String arrowLeft = "$svgPath/arrow_left.svg";
+  static String arrowRight = "$svgPath/arrow_right.svg";
+
   String facebook = "$svgPath/facebook.svg";
   String google = "$svgPath/google.svg";
   String apple = "$svgPath/apple.svg";
@@ -48,6 +50,13 @@ mixin class SvgImages {
   String manageCard = "$svgPath/manage_cards.svg";
   String money2 = "$svgPath/money_2.svg";
   String taj = "$svgPath/taj.svg";
+  static String documentText = "$svgPath/document_text.svg";
+  static String messageQuestion = "$svgPath/message_question.svg";
+  static String messageText = "$svgPath/message_text.svg";
+  static String profileCircle = "$svgPath/profile_circle.svg";
+  static String settings = "$svgPath/setting.svg";
+  static String logout = "$svgPath/logout.svg";
+    static String redExclamationMark = "$svgPath/red_exclamation_mark.svg";
 
 }
 
@@ -59,12 +68,9 @@ mixin PngImages {
   String logo = "$imagesPath/logo.png";
   String customer = "$imagesPath/customer.png";
   String provider = "$imagesPath/provider.png";
-
-
 }
 mixin JsonFiles {
   static String lottiePath = 'assets/json';
-
 }
 
 class AppAssets with SvgImages, PngImages, JsonFiles {

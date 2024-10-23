@@ -41,20 +41,25 @@ class CustomButton extends StatelessWidget {
                     svgIconPath!,
                     width: 20.w,
                     height: 20.w,
-              color: AppColors.white,
+                    color: AppColors.white,
                   )
-                : const SizedBox(width: 0,),
-            svgIconPath != null ?  SizedBox(width: 14.w,) : const SizedBox(width: 0,),
+                : const SizedBox(
+                    width: 0,
+                  ),
+            svgIconPath != null
+                ? SizedBox(
+                    width: 14.w,
+                  )
+                : const SizedBox(
+                    width: 0,
+                  ),
             Text(
               text,
               style: style ??
-                 getSemiboldTextStyle(
-                   fontSize: 16,
-                    color: textColor ?? AppColors.white
-                  ),
+                  getSemiboldTextStyle(
+                      fontSize: 16, color: textColor ?? AppColors.white),
             ),
           ],
         ));
   }
 }
-

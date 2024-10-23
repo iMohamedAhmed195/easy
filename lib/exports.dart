@@ -52,3 +52,6 @@ export 'core/widgets/custom_list_view.dart';
 export 'core/widgets/custome_png_image.dart';
 export 'core/widgets/image_picker_dialog.dart';
 export 'package:easy/core/helpers/sizes_utils_extensions.dart';
+export 'package:easy/core/widgets/svg_displayer.dart';
+export 'package:easy/core/widgets/app_text_button.dart';
+
