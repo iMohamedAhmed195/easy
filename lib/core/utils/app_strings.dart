@@ -2,6 +2,8 @@ class AppStrings {
   AppStrings._internal();
   static final AppStrings _instance = AppStrings._internal();
   factory AppStrings() => _instance;
+  //! Using a factory constructor (AppStrings._internal()) is a way to create a
+  //! singleton, ensuring that there is only one instance of AppStrings.
   final String selectPreferredLanguage = 'Select Preferred Language';
   final String arabic = 'العربية';
   final String english = 'English (US)';

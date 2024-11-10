@@ -1,14 +1,14 @@
 import 'dart:ui';
 
 class FontFamilies {
-  FontFamilies._();
+  FontFamilies._(); //! Private constructor to prevent instantiation
 
   static const String openSans = "OpenSans";
   static const String notoSansArabic = "NotoSansArabic";
 }
 
 class FontWeights {
-  FontWeights._internal();
+  FontWeights._(); //! Private constructor to prevent instantiation
   static const FontWeight black = FontWeight.w900;
   static const FontWeight extraBold = FontWeight.w800;
   static const FontWeight bold = FontWeight.w700;

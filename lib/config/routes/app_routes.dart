@@ -13,7 +13,7 @@ import '../../exports.dart';
 import '../../features/account_information/presentation/screen/account_information_screen.dart';
 
 class Routes {
-  Routes._internal();
+  Routes._(); //! Private constructor to prevent instantiation
   static const String chatRoute = "Chat route";
   static const String splashScreen = "/";
   static const String selectLanguageRoute = "/selectLanguageRoute";
@@ -33,7 +33,7 @@ class Routes {
 }
 
 class RouteGenerator {
-  RouteGenerator._internal();
+  RouteGenerator._(); //! Private constructor to prevent instantiation
   AnimationType? pageRouteAnimationGlobal;
   static Duration pageRouteTransitionDurationGlobal = 400.milliseconds;
   static Route<T>? getRoute<T>(RouteSettings routeSettings) {

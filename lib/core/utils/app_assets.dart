@@ -56,8 +56,7 @@ mixin class SvgImages {
   static String profileCircle = "$svgPath/profile_circle.svg";
   static String settings = "$svgPath/setting.svg";
   static String logout = "$svgPath/logout.svg";
-    static String redExclamationMark = "$svgPath/red_exclamation_mark.svg";
-
+  static String redExclamationMark = "$svgPath/red_exclamation_mark.svg";
 }
 
 mixin PngImages {
@@ -74,8 +73,9 @@ mixin JsonFiles {
 }
 
 class AppAssets with SvgImages, PngImages, JsonFiles {
-  AppAssets.__internal();
-  factory AppAssets() => AppAssets.__internal();
+  //! Removed To Prevent Runtime overhead
+  // AppAssets.__internal();
+  // factory AppAssets() => AppAssets.__internal();
   static String gifPath = "assets/gif";
   ///////////////////////////////////////////////////
 
