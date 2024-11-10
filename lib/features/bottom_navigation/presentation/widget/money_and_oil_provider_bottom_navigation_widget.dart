@@ -10,28 +10,28 @@ class MoneyAndOilProviderBottomNavigationWidget extends StatelessWidget {
   final List<TitleIconModel> moneyProviderAndOilNavBar = [
     TitleIconModel(
         title: AppStrings().home,
-        iconDisabled: AppAssets().home,
-        iconActive: AppAssets().homeActive,),
+        iconDisabled: AppAssets.home,
+        iconActive: AppAssets.homeActive,),
     TitleIconModel(
         title: AppStrings().wallet,
-        iconDisabled: AppAssets().wallet,
-        iconActive: AppAssets().walletActive),
+        iconDisabled: AppAssets.wallet,
+        iconActive: AppAssets.walletActive),
     TitleIconModel(
         title: AppStrings().loans,
-        iconDisabled: AppAssets().loans,
-        iconActive: AppAssets().loansActive),
+        iconDisabled: AppAssets.loans,
+        iconActive: AppAssets.loansActive),
     TitleIconModel(
         title: AppStrings.profile,
-        iconDisabled: AppAssets().profile,
-        iconActive: AppAssets().profileActive),
+        iconDisabled: AppAssets.profile,
+        iconActive: AppAssets.profileActive),
     TitleIconModel(
         title: AppStrings().explore,
-        iconDisabled: AppAssets().explore,
-        iconActive: AppAssets().exploreActive),
+        iconDisabled: AppAssets.explore,
+        iconActive: AppAssets.exploreActive),
     TitleIconModel(
         title: AppStrings().qrCode,
-        iconDisabled: AppAssets().qrCode,
-        iconActive: AppAssets().qrCodeActive),
+        iconDisabled: AppAssets.qrCode,
+        iconActive: AppAssets.qrCodeActive),
   ];
 
   @override

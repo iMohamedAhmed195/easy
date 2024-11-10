@@ -4,28 +4,28 @@ import '../../data/models/profile_tile_model.dart';
 List<ProfileTileModel> profileTileData = [
   ProfileTileModel(
       title: AppStrings.accountInformation,
-      trailingIconData: SvgImages.arrowRight,
-      leadingIconData: SvgImages.profileCircle),
+      trailingIconData: AppAssets.arrowRight,
+      leadingIconData: AppAssets.profileCircle),
   ProfileTileModel(
       title: AppStrings.settingAndPrivacy,
-      trailingIconData: SvgImages.arrowRight,
-      leadingIconData: SvgImages.settings),
+      trailingIconData: AppAssets.arrowRight,
+      leadingIconData: AppAssets.settings),
   ProfileTileModel(
       title: AppStrings.chatSupport,
-      trailingIconData: SvgImages.arrowRight,
-      leadingIconData: SvgImages.messageText),
+      trailingIconData: AppAssets.arrowRight,
+      leadingIconData: AppAssets.messageText),
   ProfileTileModel(
     title: AppStrings.loansPolicy,
-    trailingIconData: SvgImages.arrowRight,
-    leadingIconData: SvgImages.documentText,
+    trailingIconData: AppAssets.arrowRight,
+    leadingIconData: AppAssets.documentText,
   ),
   ProfileTileModel(
     title: AppStrings.faqs,
-    trailingIconData: SvgImages.arrowRight,
-    leadingIconData: SvgImages.messageQuestion,
+    trailingIconData: AppAssets.arrowRight,
+    leadingIconData: AppAssets.messageQuestion,
   ),
   ProfileTileModel(
     title: AppStrings.logout,
-    leadingIconData: SvgImages.logout,
+    leadingIconData: AppAssets.logout,
   ),
 ];

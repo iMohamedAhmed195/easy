@@ -40,11 +40,11 @@ class LoginAndSocialLoginSection extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets().google,)),
+            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets.google,)),
             SizedBox(width: 32.w,),
-            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets().facebook,)),
+            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets.facebook,)),
             SizedBox(width: 32.w,),
-            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets().apple,)),
+            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets.apple,)),
           ],
         )
       ],

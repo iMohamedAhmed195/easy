@@ -1,4 +1,3 @@
-
 import 'package:easy/features/select_language/presentation/manager/select_language_cubit.dart';
 
 import '../../../../exports.dart';
@@ -12,7 +11,7 @@ class ChooseLanguageSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GestureDetector(
-            onTap: (){
+            onTap: () {
               context.read<SelectLanguageCubit>().changeLanguage();
             },
             child: Container(
@@ -21,34 +20,42 @@ class ChooseLanguageSection extends StatelessWidget {
               decoration: BoxDecoration(
                 color: AppColors.backGroundGray,
                 border: Border.all(
-                    color:!context.read<SelectLanguageCubit>().isEnglish ? AppColors.primaryColor : AppColors.backGroundGray,
-                    width: 1.w
-                ),
+                    color: !context.read<SelectLanguageCubit>().isEnglish
+                        ? AppColors.primaryColor
+                        : AppColors.backGroundGray,
+                    width: 1.w),
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 16.h,),
+                  SizedBox(
+                    height: 16.h,
+                  ),
                   Container(
                     width: 70.w,
                     height: 70.h,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
-                    child: SvgPicture.asset(AppAssets().saudi ,),
+                    child: SvgPicture.asset(
+                      AppAssets.saudi,
+                    ),
                   ),
-                  SizedBox(height: 24.h,),
+                  SizedBox(
+                    height: 24.h,
+                  ),
                   Text(
                     AppStrings().arabic,
                     style: getSemiboldTextStyle(),
                   ),
                 ],
               ),
-            )
+            )),
+        SizedBox(
+          width: 8.w,
         ),
-        SizedBox(width: 8.w,),
         GestureDetector(
-            onTap: (){
+            onTap: () {
               context.read<SelectLanguageCubit>().changeLanguage();
             },
             child: Container(
@@ -57,31 +64,37 @@ class ChooseLanguageSection extends StatelessWidget {
               decoration: BoxDecoration(
                 color: AppColors.backGroundGray,
                 border: Border.all(
-                    color:context.read<SelectLanguageCubit>().isEnglish ? AppColors.primaryColor : AppColors.backGroundGray,
-                    width: 1.w
-                ),
+                    color: context.read<SelectLanguageCubit>().isEnglish
+                        ? AppColors.primaryColor
+                        : AppColors.backGroundGray,
+                    width: 1.w),
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 16.h,),
+                  SizedBox(
+                    height: 16.h,
+                  ),
                   Container(
                     width: 70.w,
                     height: 70.h,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
-                    child: SvgPicture.asset(AppAssets().america ,),
+                    child: SvgPicture.asset(
+                      AppAssets.america,
+                    ),
                   ),
-                  SizedBox(height: 24.h,),
+                  SizedBox(
+                    height: 24.h,
+                  ),
                   Text(
                     AppStrings().english,
                     style: getSemiboldTextStyle(),
                   ),
                 ],
               ),
-            )
-        ),
+            )),
       ],
     );
   }

@@ -1,5 +1,10 @@
 /// This abstracts class defines various HTTP status codes used for handling network responses.
 /// By using this class, you can maintain consistency and avoid hardcoding status codes throughout your codebase.
+// ignore_for_file: non_constant_identifier_names
+
+library;
+// ignore_for_file: constant_identifier_names
+
 abstract class ResponseCode {
   /// Success code indicating a successful response with data.
   static const int SUCCESS = 200;

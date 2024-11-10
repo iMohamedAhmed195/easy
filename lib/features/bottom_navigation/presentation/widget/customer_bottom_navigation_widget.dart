@@ -8,10 +8,10 @@ class CustomerBottomNavigationWidget extends StatelessWidget {
   CustomerBottomNavigationWidget({super.key});
 
   final List<TitleIconModel> customerNavBar = [
-    TitleIconModel(title: AppStrings().home, iconDisabled: AppAssets().home, iconActive: AppAssets().homeActive),
-    TitleIconModel(title: AppStrings().wallet, iconDisabled: AppAssets().wallet, iconActive: AppAssets().walletActive),
-    TitleIconModel(title: AppStrings().loans, iconDisabled: AppAssets().loans, iconActive: AppAssets().loansActive),
-    TitleIconModel(title: AppStrings.profile, iconDisabled: AppAssets().profile, iconActive: AppAssets().profileActive),
+    TitleIconModel(title: AppStrings().home, iconDisabled: AppAssets.home, iconActive: AppAssets.homeActive),
+    TitleIconModel(title: AppStrings().wallet, iconDisabled: AppAssets.wallet, iconActive: AppAssets.walletActive),
+    TitleIconModel(title: AppStrings().loans, iconDisabled: AppAssets.loans, iconActive: AppAssets.loansActive),
+    TitleIconModel(title: AppStrings.profile, iconDisabled: AppAssets.profile, iconActive:AppAssets.profileActive),
   ];
 
   @override

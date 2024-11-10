@@ -36,7 +36,7 @@ class AwesomeSuccessScreen extends StatelessWidget {
     return Column(
       children: [
         SizedBox(height: 185.h,),
-        SvgPicture.asset(AppAssets().checkMark),
+        SvgPicture.asset(AppAssets.checkMark),
         SizedBox(height: 12.h,),
         Text(
           header,

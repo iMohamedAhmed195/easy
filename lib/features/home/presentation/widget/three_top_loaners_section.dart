@@ -51,7 +51,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
                             ),
                             child: Image(
                               image: AssetImage(
-                                AppAssets().customer,
+                                AppAssets.customer,
                               ),
                               fit: BoxFit.fill,
                             ),
@@ -70,7 +70,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              CustomSVGImage(asset: AppAssets().money2),
+                              CustomSVGImage(asset: AppAssets.money2),
                               SizedBox(
                                 width: 2.h,
                               ),
@@ -126,7 +126,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            CustomSVGImage(asset: AppAssets().money2),
+                            CustomSVGImage(asset: AppAssets.money2),
                             SizedBox(
                               width: 2.h,
                             ),
@@ -153,8 +153,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
-                    top: 1, child: CustomSVGImage(asset: AppAssets().taj)),
+                Positioned(top: 1, child: CustomSVGImage(asset: AppAssets.taj)),
               ],
             ),
             Column(
@@ -184,7 +183,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
                             ),
                             child: Image(
                               image: AssetImage(
-                                AppAssets().customer,
+                                AppAssets.customer,
                               ),
                               fit: BoxFit.fill,
                             ),
@@ -203,7 +202,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              CustomSVGImage(asset: AppAssets().money2),
+                              CustomSVGImage(asset: AppAssets.money2),
                               SizedBox(
                                 width: 2.h,
                               ),

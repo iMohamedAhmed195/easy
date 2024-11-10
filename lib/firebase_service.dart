@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:easy/core/extensions.dart';
 import 'package:easy/local_notification.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'service_locator.dart';
@@ -40,14 +41,26 @@ class FirebaseService {
 }
 
 Future<void> handleFirebaseForeground(RemoteMessage message) async {
-  print('Got a message whilst in the foreground!');
-  print('Message data: ${message.data}');
+  if (kDebugMode) {
+    log('Got a message whilst in the foreground!');
+  }
+  if (kDebugMode) {
+    log('Message data: ${message.data}');
+  }
 
   if (message.notification != null) {
-    print("title = ${message.notification?.title}");
-    print("notification = ${message.notification}");
-    print("body = ${message.notification?.body}");
-    print("data = ${message.data}");
+    if (kDebugMode) {
+      log("title = ${message.notification?.title}");
+    }
+    if (kDebugMode) {
+      log("notification = ${message.notification}");
+    }
+    if (kDebugMode) {
+      log("body = ${message.notification?.body}");
+    }
+    if (kDebugMode) {
+      log("data = ${message.data}");
+    }
     NotificationsService().showSimpleNotification(
         title: message.notification!.title.validate,
         description: message.notification!.body.validate,

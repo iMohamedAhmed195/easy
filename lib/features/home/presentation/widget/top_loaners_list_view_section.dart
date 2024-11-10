@@ -1,4 +1,3 @@
-
 import 'package:easy/core/widgets/custome_svg_image.dart';
 
 import '../../../../exports.dart';
@@ -9,16 +8,17 @@ class TopLoanersListViewSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 300.h,
+        height: 300.h,
         child: ListView.separated(
-          padding: EdgeInsets.zero,
+            padding: EdgeInsets.zero,
             physics: const NeverScrollableScrollPhysics(),
-            itemBuilder:(context, index) => buildTopLoanersListView(),
-            separatorBuilder: (context, index)=>SizedBox(height: 12.h,),
-            itemCount: 5
-        )
-    );
+            itemBuilder: (context, index) => buildTopLoanersListView(),
+            separatorBuilder: (context, index) => SizedBox(
+                  height: 12.h,
+                ),
+            itemCount: 5));
   }
+
   Widget buildTopLoanersListView() {
     return Container(
       width: 328.w,
@@ -34,13 +34,20 @@ class TopLoanersListViewSection extends StatelessWidget {
             '4',
             style: getSemiboldTextStyle(fontSize: 14, color: AppColors.black),
           ),
-          SizedBox(width: 12.w,),
+          SizedBox(
+            width: 12.w,
+          ),
           CircleAvatar(
             radius: 16.r,
             backgroundColor: AppColors.white,
-            child: CustomPngImage(image: AppAssets().provider,isAsset: true,),
+            child: CustomPngImage(
+              image: AppAssets.provider,
+              isAsset: true,
+            ),
           ),
-          SizedBox(width: 12.w,),
+          SizedBox(
+            width: 12.w,
+          ),
           Text(
             'Ahmed Adel',
             style: getSemiboldTextStyle(fontSize: 14, color: AppColors.black),
@@ -49,11 +56,14 @@ class TopLoanersListViewSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomSVGImage(asset: AppAssets().money2),
-              SizedBox(width: 2.h,),
+              CustomSVGImage(asset: AppAssets.money2),
+              SizedBox(
+                width: 2.h,
+              ),
               Text(
                 'SAR 6500',
-                style: getRegularTextStyle(fontSize: 12, color: AppColors.black),
+                style:
+                    getRegularTextStyle(fontSize: 12, color: AppColors.black),
               ),
             ],
           ),

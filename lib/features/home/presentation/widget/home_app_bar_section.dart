@@ -13,7 +13,7 @@ class HomeAppBarSection extends StatelessWidget {
             width: 82.w,
             height: 26.h,
             child: CustomPngImage(
-              image: AppAssets().logo,
+              image: AppAssets.logo,
               isAsset: true,
             )),
         const Spacer(),
@@ -26,7 +26,7 @@ class HomeAppBarSection extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomSVGImage(asset: AppAssets().liveChat),
+              CustomSVGImage(asset: AppAssets.liveChat),
               SizedBox(
                 width: 6.w,
               ),
@@ -38,7 +38,7 @@ class HomeAppBarSection extends StatelessWidget {
             ],
           ),
         ),
-        CustomSVGImage(asset: AppAssets().notification1),
+        CustomSVGImage(asset: AppAssets.notification1),
       ],
     );
   }

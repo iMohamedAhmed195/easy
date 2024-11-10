@@ -57,7 +57,7 @@ class ChooseServiceBottomSheet extends StatelessWidget {
                           SizedBox(
                             width: 123.w,
                             height: 123.h,
-                            child: SvgPicture.asset(AppAssets().money),
+                            child: SvgPicture.asset(AppAssets.money),
                           ),
                           SizedBox(height: 14.h),
                           Text(
@@ -99,7 +99,7 @@ class ChooseServiceBottomSheet extends StatelessWidget {
                           SizedBox(
                             width: 123.w,
                             height: 123.h,
-                            child: SvgPicture.asset(AppAssets().oil),
+                            child: SvgPicture.asset(AppAssets.oil),
                           ),
                           SizedBox(height: 14.h),
                           Text(

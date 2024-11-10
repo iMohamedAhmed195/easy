@@ -1,9 +1,12 @@
+import 'dart:developer';
+
 import 'package:easy/core/widgets/custom_background.dart';
 import 'package:easy/core/widgets/custom_button.dart';
 import 'package:easy/core/widgets/logo_app_bar_widget.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
 import 'package:easy/features/auth/presentation/widget/welcome_section.dart';
+import 'package:flutter/foundation.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 import '../../../../exports.dart';
@@ -58,12 +61,16 @@ class EnterPhoneScreen extends StatelessWidget {
                         borderSide:  BorderSide(color: AppColors.borderColor2,width: 1.4),
                       ),
                       onInputChanged: (PhoneNumber number) {
-                        print(number.phoneNumber);
+                        if (kDebugMode) {
+                          log(number.phoneNumber.toString());
+                        }
                         context.read<UiAuthCubit>().forgetCountryCode = number.dialCode!;
                         context.read<UiAuthCubit>().forgetCountryId = number.isoCode!;
                       },
                       onInputValidated: (bool value) {
-                        print(value);
+                        if (kDebugMode) {
+                          log(value.toString());
+                        }
                       },
                       selectorConfig: const SelectorConfig(
                         selectorType: PhoneInputSelectorType.DIALOG,
@@ -82,7 +89,9 @@ class EnterPhoneScreen extends StatelessWidget {
                       keyboardType:
                       const TextInputType.numberWithOptions(signed: true, decimal: true),
                       onSaved: (PhoneNumber number) {
-                        print('On Saved: $number');
+                        if (kDebugMode) {
+                          log('On Saved: $number');
+                        }
                       },
                     ),
                     SizedBox(height: 24.h,),

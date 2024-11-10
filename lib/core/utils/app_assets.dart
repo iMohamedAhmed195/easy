@@ -1,85 +1,84 @@
-mixin class SvgImages {
-  static String svgPath = "assets/svg";
-///////////////////////////////  svg  ////////////////////////////////////
-  String success = "$svgPath/success.svg";
-  String baeCode = "$svgPath/success.svg";
-
-  String failure = "$svgPath/failure.svg";
-  String empty = "$svgPath/empty.svg";
-  String notificationDialog = "$svgPath/notification_permission.svg";
-  String cameraDialog = "$svgPath/camera_permission.svg";
-  String saudi = "$svgPath/saudi_arabia.svg";
-  String america = "$svgPath/america.svg";
-  String eyeIcon = "$svgPath/eye.svg";
-  String eyeOffIcon = "$svgPath/eye.svg";
-  String onBoarding1 = "$svgPath/manage_money_ill.svg";
-  String onBoarding2 = "$svgPath/car_oil.svg";
-  String onBoarding3 = "$svgPath/e_wallet.svg";
-  String arrowLeft = "$svgPath/arrow_left.svg";
-  static String arrowRight = "$svgPath/arrow_right.svg";
-
-  String facebook = "$svgPath/facebook.svg";
-  String google = "$svgPath/google.svg";
-  String apple = "$svgPath/apple.svg";
-  String checkMark = "$svgPath/checkmark_ill.svg";
-  String personalInfo = "$svgPath/personal_info.svg";
-  String addressInfo = "$svgPath/address_info.svg";
-  String accountType = "$svgPath/account_type.svg";
-
-  String money = "$svgPath/money_ill.svg";
-  String oil = "$svgPath/oill.svg";
-  String home = "$svgPath/home_disabled.svg";
-  String wallet = "$svgPath/wallet_disabled.svg";
-  String loans = "$svgPath/loans_disabled.svg";
-  String profile = "$svgPath/profile_disabled.svg";
-  String homeActive = "$svgPath/home_active.svg";
-  String walletActive = "$svgPath/wallet_active.svg";
-  String loansActive = "$svgPath/loans_active.svg";
-  String profileActive = "$svgPath/profile_active.svg";
-  String explore = "$svgPath/explore_disabled.svg";
-  String exploreActive = "$svgPath/explore_active.svg";
-  String qrCode = "$svgPath/qr_code_scan_grey.svg";
-  String qrCodeActive = "$svgPath/qr_code_active.svg";
-  String liveChat = "$svgPath/live_chat.svg";
-  String notification1 = "$svgPath/notification_1.svg";
-  String arrowGreenUp = "$svgPath/arrow_up.svg";
-  String coins = "$svgPath/money.svg";
-  String applyLoan = "$svgPath/apply_for_a_loan.svg";
-  String replacementLoan = "$svgPath/loan_repayment.svg";
-  String easyFuel = "$svgPath/easy_fuel.svg";
-  String manageCard = "$svgPath/manage_cards.svg";
-  String money2 = "$svgPath/money_2.svg";
-  String taj = "$svgPath/taj.svg";
-  static String documentText = "$svgPath/document_text.svg";
-  static String messageQuestion = "$svgPath/message_question.svg";
-  static String messageText = "$svgPath/message_text.svg";
-  static String profileCircle = "$svgPath/profile_circle.svg";
-  static String settings = "$svgPath/setting.svg";
-  static String logout = "$svgPath/logout.svg";
-  static String redExclamationMark = "$svgPath/red_exclamation_mark.svg";
+abstract class SvgImages {
+  static const String svgPath = "assets/svg";
 }
 
-mixin PngImages {
-  static String imagesPath = "assets/image";
-  String onboarding = "$imagesPath/onBording.png";
-  String logoWhite = "$imagesPath/logo_white.png";
-  String backgroundScreen = "$imagesPath/splash_background.png";
-  String logo = "$imagesPath/logo.png";
-  String customer = "$imagesPath/customer.png";
-  String provider = "$imagesPath/provider.png";
-}
-mixin JsonFiles {
-  static String lottiePath = 'assets/json';
+abstract class PngImages {
+  static const String imagesPath = "assets/image";
 }
 
-class AppAssets with SvgImages, PngImages, JsonFiles {
-  //! Removed To Prevent Runtime overhead
-  // AppAssets.__internal();
-  // factory AppAssets() => AppAssets.__internal();
-  static String gifPath = "assets/gif";
-  ///////////////////////////////////////////////////
+abstract class JsonFiles {
+  static const String lottiePath = 'assets/json';
+}
 
-  /////////////////////////////////////////////////////////////////
-  String locationGif = "$gifPath/location.gif";
-  ///////////////////////////// png ////////////////////////////////////
+abstract class GifFiles {
+  static const String gifPath = "assets/gif";
+}
+
+class AppAssets {
+  //! SVGs
+  static String baeCode = "${SvgImages.svgPath}/success.svg";
+  static String success = "${SvgImages.svgPath}/success.svg";
+  static String failure = "${SvgImages.svgPath}/failure.svg";
+  static String empty = "${SvgImages.svgPath}/empty.svg";
+  static String notificationDialog =
+      "${SvgImages.svgPath}/notification_permission.svg";
+  static String cameraDialog = "${SvgImages.svgPath}/camera_permission.svg";
+  static String saudi = "${SvgImages.svgPath}/saudi_arabia.svg";
+  static String america = "${SvgImages.svgPath}/america.svg";
+  static String eyeIcon = "${SvgImages.svgPath}/eye.svg";
+  static String eyeOffIcon = "${SvgImages.svgPath}/eye.svg";
+  static String onBoarding1 = "${SvgImages.svgPath}/manage_money_ill.svg";
+  static String onBoarding2 = "${SvgImages.svgPath}/car_oil.svg";
+  static String onBoarding3 = "${SvgImages.svgPath}/e_wallet.svg";
+  static String arrowLeft = "${SvgImages.svgPath}/arrow_left.svg";
+  static String arrowRight = "${SvgImages.svgPath}/arrow_right.svg";
+  static String facebook = "${SvgImages.svgPath}/facebook.svg";
+  static String google = "${SvgImages.svgPath}/google.svg";
+  static String apple = "${SvgImages.svgPath}/apple.svg";
+  static String checkMark = "${SvgImages.svgPath}/checkmark_ill.svg";
+  static String personalInfo = "${SvgImages.svgPath}/personal_info.svg";
+  static String addressInfo = "${SvgImages.svgPath}/address_info.svg";
+  static String accountType = "${SvgImages.svgPath}/account_type.svg";
+  static String money = "${SvgImages.svgPath}/money_ill.svg";
+  static String oil = "${SvgImages.svgPath}/oill.svg";
+  static String home = "${SvgImages.svgPath}/home_disabled.svg";
+  static String wallet = "${SvgImages.svgPath}/wallet_disabled.svg";
+  static String loans = "${SvgImages.svgPath}/loans_disabled.svg";
+  static String profile = "${SvgImages.svgPath}/profile_disabled.svg";
+  static String homeActive = "${SvgImages.svgPath}/home_active.svg";
+  static String walletActive = "${SvgImages.svgPath}/wallet_active.svg";
+  static String loansActive = "${SvgImages.svgPath}/loans_active.svg";
+  static String profileActive = "${SvgImages.svgPath}/profile_active.svg";
+  static String explore = "${SvgImages.svgPath}/explore_disabled.svg";
+  static String exploreActive = "${SvgImages.svgPath}/explore_active.svg";
+  static String qrCode = "${SvgImages.svgPath}/qr_code_scan_grey.svg";
+  static String qrCodeActive = "${SvgImages.svgPath}/qr_code_active.svg";
+  static String liveChat = "${SvgImages.svgPath}/live_chat.svg";
+  static String notification1 = "${SvgImages.svgPath}/notification_1.svg";
+  static String arrowGreenUp = "${SvgImages.svgPath}/arrow_up.svg";
+  static String coins = "${SvgImages.svgPath}/money.svg";
+  static String applyLoan = "${SvgImages.svgPath}/apply_for_a_loan.svg";
+  static String replacementLoan = "${SvgImages.svgPath}/loan_repayment.svg";
+  static String easyFuel = "${SvgImages.svgPath}/easy_fuel.svg";
+  static String manageCard = "${SvgImages.svgPath}/manage_cards.svg";
+  static String money2 = "${SvgImages.svgPath}/money_2.svg";
+  static String taj = "${SvgImages.svgPath}/taj.svg";
+  static String documentText = "${SvgImages.svgPath}/document_text.svg";
+  static String messageQuestion = "${SvgImages.svgPath}/message_question.svg";
+  static String messageText = "${SvgImages.svgPath}/message_text.svg";
+  static String profileCircle = "${SvgImages.svgPath}/profile_circle.svg";
+  static String settings = "${SvgImages.svgPath}/setting.svg";
+  static String logout = "${SvgImages.svgPath}/logout.svg";
+  static String redExclamationMark =
+      "${SvgImages.svgPath}/red_exclamation_mark.svg";
+  //! PNGs
+  static String onboarding = "${PngImages.imagesPath}/onBording.png";
+  static String logoWhite = "${PngImages.imagesPath}/logo_white.png";
+  static String backgroundScreen =
+      "${PngImages.imagesPath}/splash_background.png";
+  static String logo = "${PngImages.imagesPath}/logo.png";
+  static String customer = "${PngImages.imagesPath}/customer.png";
+  static String provider = "${PngImages.imagesPath}/provider.png";
+  //! GIFs
+  static String locationGif = "${GifFiles.gifPath}/location.gif";
 }

@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:easy/core/extensions.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -46,7 +49,9 @@ class PermissionManager {
     bool isGranted = await permissionRequest.isPermissionGranted(status);
     if (isGranted.isFalse) {
       bool? isAllowed = await permissionContext.getDialogPermission();
-      print("permission status is $status");
+      if (kDebugMode) {
+        log("permission status is $status");
+      }
       if (isAllowed.isNotNullAndIsTrue) {
         if (status == PermissionStatus.permanentlyDenied) {
           isGranted = await permissionRequest.permanentDeniedHandle();
@@ -87,7 +92,9 @@ class PermissionRequest extends WidgetsBindingObserver {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    print("state ${state.name}");
+    if (kDebugMode) {
+      log("state ${state.name}");
+    }
     if (state == AppLifecycleState.resumed) {
       isClosed = true;
     }

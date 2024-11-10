@@ -1,6 +1,8 @@
+import 'dart:developer';
 
 import 'package:easy/core/widgets/custom_text_form_field.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
+import 'package:flutter/foundation.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 import '../../../../exports.dart';
@@ -19,73 +21,90 @@ class LoginFieldSection extends StatelessWidget {
             AppStrings().phoneNumber,
             style: getRegularTextStyle(fontSize: 12),
           ),
-          SizedBox(height: 4.h,),
+          SizedBox(
+            height: 4.h,
+          ),
           InternationalPhoneNumberInput(
             hintText: '',
-            inputDecoration:InputDecoration(
-                enabledBorder:OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(4.r),
-                  borderSide:  BorderSide(color: AppColors.borderColor2,width: 1.4),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(4.r),
-                  borderSide:  BorderSide(color: AppColors.borderColor2,width: 1.4),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(4.r),
-                  borderSide: const BorderSide(color: AppColors.primaryColor,width: 1.4),
-                ),
-                errorBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(4.r),
-                  borderSide: const BorderSide(color: AppColors.red,width: 1.4),
-                ),
+            inputDecoration: InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(4.r),
+                borderSide:
+                    BorderSide(color: AppColors.borderColor2, width: 1.4),
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(4.r),
+                borderSide:
+                    BorderSide(color: AppColors.borderColor2, width: 1.4),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(4.r),
+                borderSide:
+                    const BorderSide(color: AppColors.primaryColor, width: 1.4),
+              ),
+              errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(4.r),
+                borderSide: const BorderSide(color: AppColors.red, width: 1.4),
+              ),
             ),
-            inputBorder:OutlineInputBorder(
+            inputBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(4.r),
-              borderSide:  BorderSide(color: AppColors.borderColor2,width: 1.4),
+              borderSide: BorderSide(color: AppColors.borderColor2, width: 1.4),
             ),
             onInputChanged: (PhoneNumber number) {
-              print(number.phoneNumber);
+              if (kDebugMode) {
+                log(number.phoneNumber.toString());
+              }
               context.read<UiAuthCubit>().loginCountryCode = number.dialCode!;
               context.read<UiAuthCubit>().loginCountryId = number.isoCode!;
             },
             onInputValidated: (bool value) {
-              print(value);
+              if (kDebugMode) {
+                log(value.toString());
+              }
             },
             selectorConfig: const SelectorConfig(
               selectorType: PhoneInputSelectorType.DIALOG,
               useBottomSheetSafeArea: true,
-              leadingPadding:10,
-              trailingSpace:false,
+              leadingPadding: 10,
+              trailingSpace: false,
               setSelectorButtonAsPrefixIcon: true,
-
             ),
             ignoreBlank: false,
             autoValidateMode: AutovalidateMode.onUserInteraction,
-            selectorTextStyle: getRegularTextStyle(fontSize: 16,),
+            selectorTextStyle: getRegularTextStyle(
+              fontSize: 16,
+            ),
             initialValue: PhoneNumber(),
-            textFieldController: context.read<UiAuthCubit>().loginPhoneNumberController,
+            textFieldController:
+                context.read<UiAuthCubit>().loginPhoneNumberController,
             formatInput: true,
-            keyboardType:
-            const TextInputType.numberWithOptions(signed: true, decimal: true),
+            keyboardType: const TextInputType.numberWithOptions(
+                signed: true, decimal: true),
             onSaved: (PhoneNumber number) {
-              print('On Saved: $number');
+              if (kDebugMode) {
+                
+              log('On Saved: $number');
+              }
             },
           ),
-          SizedBox(height: 16.h,),
+          SizedBox(
+            height: 16.h,
+          ),
           Text(
             AppStrings().password,
-            style: getRegularTextStyle(fontSize: 12,color: AppColors.black),
+            style: getRegularTextStyle(fontSize: 12, color: AppColors.black),
           ),
-          SizedBox(height: 4.h,),
+          SizedBox(
+            height: 4.h,
+          ),
           CustomTextFormField(
             hintText: '*********',
             keyboardType: TextInputType.visiblePassword,
             obscureText: true,
             padding: EdgeInsets.symmetric(horizontal: 16.w),
-            controller:context.read<UiAuthCubit>().loginPasswordController ,
+            controller: context.read<UiAuthCubit>().loginPasswordController,
             isPassword: true,
-
           )
         ],
       ),

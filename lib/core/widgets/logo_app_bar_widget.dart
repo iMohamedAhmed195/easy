@@ -17,14 +17,14 @@ class LogoAppBarWidget extends StatelessWidget {
                 onTap: (){
                   canPop(context);
                 },
-                  child: SvgPicture.asset(AppAssets().arrowLeft)
+                  child: SvgPicture.asset(AppAssets.arrowLeft)
               ),
             ),
           ) : const SizedBox.shrink(),
           SizedBox(
             width: 82.w,
             height: 26.h,
-            child: Image.asset(AppAssets().logo, fit: BoxFit.fill),
+            child: Image.asset(AppAssets.logo, fit: BoxFit.fill),
           ),
           isPop ?  const Spacer(): const SizedBox.shrink(),
         ],

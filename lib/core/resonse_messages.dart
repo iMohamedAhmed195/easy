@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:easy/core/utils/app_strings.dart';
 
 class ResponseMessage {

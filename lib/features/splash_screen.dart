@@ -1,9 +1,9 @@
+import 'dart:developer';
 
 import 'package:easy/features/on_boarding/presentation/managers/onboarding_cubit.dart';
-import 'package:easy/features/select_language/presentation/manager/select_language_cubit.dart';
+import 'package:flutter/foundation.dart';
 
 import '../exports.dart';
-
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -31,8 +31,10 @@ class _SplashScreenState extends State<SplashScreen> {
     });
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       route = Routes.selectLanguageRoute;
-      bool isEnglish =  AppService().getBlocData<SelectLanguageCubit>().isEnglish;
-      bool isNew = await AppService().getBlocData<OnboardingCubit>().isNewInstalled();
+      // bool isEnglish =
+      //     AppService().getBlocData<SelectLanguageCubit>().isEnglish;
+      bool isNew =
+          await AppService().getBlocData<OnboardingCubit>().isNewInstalled();
       // UserModel? user = await AppService().getBlocData<UserCubit>().getUser();
       // String token = await AppService().getBlocData<UserCubit>().getToken();
       // String deviceToken =
@@ -40,7 +42,9 @@ class _SplashScreenState extends State<SplashScreen> {
       //bool isNotificationInit = (await NotificationsService().initialize()).orFalse;
       //   print("is notification granted$isNotificationInit");
 
-      print("new install $isNew");
+      if (kDebugMode) {
+        log("new install $isNew");
+      }
       // print("token is $token");
       // print("device token is $deviceToken");
       // print("token from prefs is ${AppPrefs.token}");
@@ -80,14 +84,12 @@ class _SplashScreenState extends State<SplashScreen> {
         alignment: Alignment.center,
         children: [
           SizedBox(
-            width: double.infinity,
-              child: Image.asset(AppAssets().backgroundScreen, fit: BoxFit.fill)
-          ),
+              width: double.infinity,
+              child: Image.asset(AppAssets.backgroundScreen, fit: BoxFit.fill)),
           SizedBox(
-            width: 99.w,
+              width: 99.w,
               height: 31.h,
-              child: Image.asset(AppAssets().logoWhite, fit: BoxFit.fill)
-          ),
+              child: Image.asset(AppAssets.logoWhite, fit: BoxFit.fill)),
         ],
       ),
     );

@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_state.dart';
+import 'package:flutter/foundation.dart';
 import '../../../../exports.dart';
 
 class UiAuthCubit extends Cubit<UiAuthState> {
@@ -62,7 +63,9 @@ class UiAuthCubit extends Cubit<UiAuthState> {
       pageController.jumpToPage(index);
       nextPage = index;
       savedPage.add(nextPage);
-      print(savedPage);
+      if (kDebugMode) {
+        print(savedPage);
+      }
     }
     emit(ChangePageIndexState());
   }
@@ -72,7 +75,9 @@ class UiAuthCubit extends Cubit<UiAuthState> {
       pageController.jumpToPage(index);
       savedPage.remove(nextPage);
       nextPage = index;
-      print(savedPage);
+      if (kDebugMode) {
+        print(savedPage);
+      }
     }
 
     emit(ChangePageIndexState());

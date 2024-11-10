@@ -71,6 +71,7 @@ dependencies:
   intl_phone_number_input:
   dotted_line:
   url_launcher: ^6.3.0
+  rxdart: ^0.28.0
 
 
 

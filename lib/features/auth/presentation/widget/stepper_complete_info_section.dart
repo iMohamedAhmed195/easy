@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:dotted_line/dotted_line.dart';
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
 
@@ -26,7 +28,7 @@ class StepperCompleteInfoSection extends StatelessWidget {
 
               ),
               child: Center(
-                child: SvgPicture.asset(AppAssets().personalInfo),
+                child: SvgPicture.asset(AppAssets.personalInfo),
               ),
             ),
             DottedLine(
@@ -52,7 +54,7 @@ class StepperCompleteInfoSection extends StatelessWidget {
 
               ),
               child: Center(
-                child: SvgPicture.asset(AppAssets().addressInfo,color: uiAuthCubit.savedPage.contains(1) ? AppColors.green : AppColors.gray,),
+                child: SvgPicture.asset(AppAssets.addressInfo,color: uiAuthCubit.savedPage.contains(1) ? AppColors.green : AppColors.gray,),
               ),
             ),
             DottedLine(
@@ -78,7 +80,7 @@ class StepperCompleteInfoSection extends StatelessWidget {
 
               ),
               child: Center(
-                child: SvgPicture.asset(AppAssets().accountType,color: uiAuthCubit.savedPage.contains(2) ? AppColors.green : AppColors.gray,),
+                child: SvgPicture.asset(AppAssets.accountType,color: uiAuthCubit.savedPage.contains(2) ? AppColors.green : AppColors.gray,),
               ),
             ),
           ],

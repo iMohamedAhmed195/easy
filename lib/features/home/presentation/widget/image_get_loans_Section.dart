@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:easy/core/widgets/custom_button.dart';
 import 'package:easy/core/widgets/custome_svg_image.dart';
 
@@ -59,7 +61,7 @@ class ImageGetLoansSection extends StatelessWidget {
                   ]),
               SizedBox(
                 width: 8.w,),
-              CustomSVGImage(asset: AppAssets().coins,)
+              CustomSVGImage(asset: AppAssets.coins,)
             ],
           ),
         ),

@@ -8,7 +8,7 @@ class CustomEmptyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SvgPicture.asset(AppAssets().empty),
+        SvgPicture.asset(AppAssets.empty),
         SizedBox(height: 21.h),
         Text(
           message,

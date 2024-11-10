@@ -5,6 +5,7 @@ import 'package:easy/core/permission_handler.dart';
 import 'package:easy/core/resonse_messages.dart';
 import 'package:easy/core/response_code.dart';
 import 'package:easy/core/widgets/permission_dialog.dart';
+import 'package:flutter/foundation.dart';
 import '../exports.dart';
 import 'network/constants/constants.dart';
 import 'network/error_handler/error_handler.dart';
@@ -534,11 +535,17 @@ Future<T?> managerExecute<T>(Future<Either<Failure, ResponseModel>> either,
   T? data;
   onStart?.call();
   (await either).fold((Failure failure) {
-    print(failure.message);
+    if (kDebugMode) {
+      print(failure.message);
+    }
     onFail?.call(failure.message);
   }, (ResponseModel value) {
-    print(value.message);
-    print(value.data);
+    if (kDebugMode) {
+      print(value.message);
+    }
+    if (kDebugMode) {
+      print(value.data);
+    }
 
     data = value.data;
     onSuccess?.call(data);
@@ -593,7 +600,7 @@ Future<bool> checkNotificationPermission(
     type: Permission.notification.value,
     dialog: PermissionDialog(
       title: AppStrings().notifications.trans,
-      asset: AppAssets().notificationDialog,
+      asset: AppAssets.notificationDialog,
       description: AppStrings().notificationPermission.trans,
     ),
   );
@@ -608,7 +615,7 @@ Future<bool> checkCameraPermission(
     type: Permission.camera.value,
     dialog: PermissionDialog(
       title: AppStrings().camera.trans,
-      asset: AppAssets().cameraDialog,
+      asset: AppAssets.cameraDialog,
       description: AppStrings().cameraPermission.trans,
     ),
   );
@@ -623,7 +630,7 @@ Future<bool> checkLocationPermission(
     type: Permission.location.value,
     dialog: PermissionDialog(
       title: AppStrings().location.trans,
-      asset: AppAssets().cameraDialog,
+      asset: AppAssets.cameraDialog,
       description: AppStrings().locationPermission.trans,
     ),
   );
@@ -636,7 +643,7 @@ Future<bool> checkLocationPermission(
     type: Permission.location.value,
     dialog: PermissionDialog(
       title: AppStrings().location.trans,
-      asset: AppAssets().notificationDialog,
+      asset: AppAssets.notificationDialog,
       description: AppStrings().notificationPermission.trans,
     ),
   );

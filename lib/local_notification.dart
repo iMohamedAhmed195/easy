@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:rxdart/subjects.dart';
 
@@ -58,7 +61,9 @@ class NotificationsService {
       );
       isInitialized = (await _flutterLocalNotificationsPlugin.initialize(initSettings)).orFalse;
     } else {
-      print("permission is not granted for notification");
+      if (kDebugMode) {
+        log("permission is not granted for notification");
+      }
     }
     return isInitialized;
   }

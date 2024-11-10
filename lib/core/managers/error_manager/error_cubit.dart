@@ -1,3 +1,9 @@
+// ignore_for_file: constant_identifier_names
+
+import 'dart:developer';
+
+import 'package:flutter/foundation.dart';
+
 import '../../../exports.dart';
 
 part 'error_state.dart';
@@ -26,7 +32,9 @@ class ErrorCubit extends Cubit<ErrorState> {
   List<Errors> errors = [];
   addValidatorError(Errors error) {
     if (errors.contains(error).isFalse) {
-      print("added error $error");
+      if (kDebugMode) {
+        log("added error $error");
+      }
       errors.add(error);
       emit(AddErrorState());
     }
@@ -34,7 +42,9 @@ class ErrorCubit extends Cubit<ErrorState> {
 
   removeError(Errors error) {
     if (errors.contains(error).isTrue) {
-      print("error removed");
+      if (kDebugMode) {
+        log("error removed");
+      }
       errors.remove(error);
 
       emit(RemoveErrorState());

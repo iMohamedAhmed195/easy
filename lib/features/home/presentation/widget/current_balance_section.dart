@@ -23,13 +23,13 @@ class CurrentBalanceSection extends StatelessWidget {
               style: getBoldTextStyle(fontSize: 32, color: AppColors.black),
             ),
             SizedBox(width: 8.w,),
-            CustomSVGImage(asset: AppAssets().eyeIcon,color: AppColors.black,),
+            CustomSVGImage(asset: AppAssets.eyeIcon,color: AppColors.black,),
           ],
         ),
         SizedBox(height: 4.h,),
         Row(
           children: [
-            CustomSVGImage(asset: AppAssets().arrowGreenUp,),
+            CustomSVGImage(asset: AppAssets.arrowGreenUp,),
             SizedBox(width: 4.w,),
             Text(
               '+2.35% from last week ',

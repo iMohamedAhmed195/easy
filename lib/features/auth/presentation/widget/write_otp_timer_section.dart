@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:flutter/foundation.dart';
 import 'package:pinput/pinput.dart';
 
 import '../../../../exports.dart';
@@ -49,7 +52,9 @@ class WriteOtpTimerSection extends StatelessWidget {
                   )),
               onCompleted: (value) {
 
-                print(value);
+                if (kDebugMode) {
+                  log(value);
+                }
               },
             ),
           ),

@@ -17,7 +17,7 @@ class ProfileLogoutBottomSheetDialogAndTextsSection extends StatelessWidget {
         ),
         12.vs,
         SvgDisplayer(
-          assetName: SvgImages.redExclamationMark,
+          assetName: AppAssets.redExclamationMark,
           height: 63.h,
           width: 63.w,
         ),

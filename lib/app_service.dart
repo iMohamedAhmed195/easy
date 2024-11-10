@@ -1,3 +1,5 @@
+// ignore_for_file: no_wildcard_variable_uses
+
 import 'core/widgets/custom_dialog.dart';
 import 'exports.dart';
 
@@ -41,11 +43,16 @@ class AppService {
     if (_isThereCurrentDialogShowing(getContext).isTrue) {
       pop();
     }
-    showCustomDialog(isAlert: false, message: message, dialogType: dialogType, dismissible: dismissible);
+    showCustomDialog(
+        isAlert: false,
+        message: message,
+        dialogType: dialogType,
+        dismissible: dismissible);
     Timer(
       Duration(
-        milliseconds:
-            dialogTimingType == DialogTimingTypes.long ? AppConstants.dialogLongDuration : AppConstants.dialogShortDuration,
+        milliseconds: dialogTimingType == DialogTimingTypes.long
+            ? AppConstants.dialogLongDuration
+            : AppConstants.dialogShortDuration,
       ),
       () {
         pop();
@@ -57,11 +64,16 @@ class AppService {
   }
 
   /* check whether Alert Dialog is open */
-  bool _isThereCurrentDialogShowing(BuildContext context) => ModalRoute.of(context)?.isCurrent != true;
+  bool _isThereCurrentDialogShowing(BuildContext context) =>
+      ModalRoute.of(context)?.isCurrent != true;
   /*hide keypad if it is shown*/
-  requestFocus(FocusNode focusNode) => FocusScope.of(getContext).requestFocus(focusNode);
-  T getBlocData<T extends StateStreamableSource<Object?>>() => BlocProvider.of<T>(getContext);
-  showDateTimeDialog({DateTime? initialDate, DateTime? firstDate, DateTime? lastDate}) => showDatePicker(
+  requestFocus(FocusNode focusNode) =>
+      FocusScope.of(getContext).requestFocus(focusNode);
+  T getBlocData<T extends StateStreamableSource<Object?>>() =>
+      BlocProvider.of<T>(getContext);
+  showDateTimeDialog(
+          {DateTime? initialDate, DateTime? firstDate, DateTime? lastDate}) =>
+      showDatePicker(
         context: getContext,
         builder: (context, child) => Theme(
           data: ThemeData.light().copyWith(
@@ -80,7 +92,9 @@ class AppService {
             AppLocalizationsConstants().arLocale,
         initialDate: initialDate.isNotNull ? initialDate! : DateTime.now(),
         firstDate: firstDate.isNotNull ? firstDate! : DateTime.now(),
-        lastDate: lastDate.isNotNull ? lastDate! : DateTime(DateTime.now().year + AppConstants.maxYears),
+        lastDate: lastDate.isNotNull
+            ? lastDate!
+            : DateTime(DateTime.now().year + AppConstants.maxYears),
       );
 
   /// show child widget in dialog
@@ -121,12 +135,14 @@ class AppService {
           dialogAnimation: dialogAnimation,
           curve: curve,
           child: AlertDialog(
-            insetPadding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 15.h),
+            insetPadding:
+                EdgeInsets.symmetric(horizontal: 15.w, vertical: 15.h),
             content: builder != null ? builder.call(_) : child,
             shape: shape, titlePadding: titlePadding,
             title: Text(title!),
             titleTextStyle: titleTextStyle,
-            contentPadding: contentPadding ?? const EdgeInsets.fromLTRB(24.0, 20.0, 24.0, 24.0),
+            contentPadding: contentPadding ??
+                const EdgeInsets.fromLTRB(24.0, 20.0, 24.0, 24.0),
             //scrollable: scrollable,
             backgroundColor: backgroundColor,
             elevation: elevation ?? AppConstants.defaultElevation,
@@ -134,7 +150,9 @@ class AppService {
             actions: actions,
             icon: GestureDetector(
               onTap: pop,
-              child: const Align(alignment: AlignmentDirectional.centerStart, child: Icon(Icons.close)),
+              child: const Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  child: Icon(Icons.close)),
             ),
           ),
         );
@@ -151,7 +169,7 @@ class AppService {
         child: Row(
           children: [
             Image.asset(
-              AppAssets().tripiaAppIcon,
+              AppAssets.tripiaAppIcon,
               height: 20.h,
               width: 20.w,
             ),

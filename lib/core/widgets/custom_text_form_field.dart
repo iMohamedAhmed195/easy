@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import '../../exports.dart';
 
 class CustomTextFormField extends StatefulWidget {
@@ -85,7 +87,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 },
                 child: Padding(
                     padding: EdgeInsets.all(16.r),
-                    child: widget.obscureText ? SvgPicture.asset(AppAssets().eyeIcon) : SvgPicture.asset(AppAssets().eyeOffIcon)),
+                    child: widget.obscureText ? SvgPicture.asset(AppAssets.eyeIcon) : SvgPicture.asset(AppAssets.eyeOffIcon)),
               )
             : null,
       ),

@@ -28,7 +28,7 @@ class ProfileAndRelatedScreensCustomAppBarSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgDisplayer(
-                assetName: AppAssets().arrowLeft,
+                assetName: AppAssets.arrowLeft,
                 height: profileCustomAppBarArrowHeight?.h ?? 24.h,
                 width: profileCustomAppBarArrowWidth?.w ?? 24.w,
               ),

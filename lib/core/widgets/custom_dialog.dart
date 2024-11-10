@@ -7,13 +7,18 @@ class CustomDialog extends StatelessWidget {
   final bool? showCircularLoading;
   final AlertTypes dialogType;
   final String? asset;
-  const CustomDialog({this.message, this.asset, this.showCircularLoading = true, super.key, required this.dialogType});
+  const CustomDialog(
+      {this.message,
+      this.asset,
+      this.showCircularLoading = true,
+      super.key,
+      required this.dialogType});
 
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      clipBehavior:
-          Clip.antiAliasWithSaveLayer, // is used to clip the internal child widget of container when u define border radius,
+      clipBehavior: Clip
+          .antiAliasWithSaveLayer, // is used to clip the internal child widget of container when u define border radius,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
       child: Container(
         width: 343.w,
@@ -26,7 +31,7 @@ class CustomDialog extends StatelessWidget {
             children: [
               // CustomSVGImage(
               //   asset: asset!,
-              //    // AppAssets().tripiaLogo,
+              //    // AppAssets.tripiaLogo,
               //    // height: 38.h,
               //    // width: 85.w,
               //  ),
@@ -37,7 +42,9 @@ class CustomDialog extends StatelessWidget {
                     ? Column(
                         //set widgets vertically
                         children: [
-                          SizedBox(height: 30.h,),
+                          SizedBox(
+                            height: 30.h,
+                          ),
                           if (dialogType == AlertTypes.loading)
                             SizedBox(
                                 height: 60.h,
@@ -50,7 +57,7 @@ class CustomDialog extends StatelessWidget {
                               height: 80.h,
                               width: 80.w,
                               child: CustomSVGImage(
-                                asset: AppAssets().success,
+                                asset: AppAssets.success,
                                 color: AppColors.primaryColor,
                                 matchTextDirection: false,
                               ),
@@ -60,12 +67,14 @@ class CustomDialog extends StatelessWidget {
                               height: 80.h,
                               width: 80.w,
                               child: CustomSVGImage(
-                                asset: AppAssets().failure,
+                                asset: AppAssets.failure,
                                 matchTextDirection: false,
                                 color: AppColors.primaryColor,
                               ),
                             ),
-                          SizedBox(height: 20.h,),
+                          SizedBox(
+                            height: 20.h,
+                          ),
                         ],
                       )
                     : null,
@@ -83,8 +92,13 @@ class CustomDialog extends StatelessWidget {
                     ),
                   ),
                 ),
-              SizedBox(height: 10.h,),
-              if (message != null) SizedBox(height: 10.h,),
+              SizedBox(
+                height: 10.h,
+              ),
+              if (message != null)
+                SizedBox(
+                  height: 10.h,
+                ),
             ],
           ),
         ),

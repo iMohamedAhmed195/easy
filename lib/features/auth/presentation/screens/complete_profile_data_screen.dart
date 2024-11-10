@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:easy/core/widgets/custom_background.dart';
 import 'package:easy/core/widgets/custom_button.dart';
 import 'package:easy/core/widgets/logo_app_bar_widget.dart';

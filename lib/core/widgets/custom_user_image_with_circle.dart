@@ -19,7 +19,7 @@ class CustomUserImageWithCircle extends StatelessWidget {
       ),
       child: Image(
         image: AssetImage(
-          AppAssets().provider,
+          AppAssets.provider,
         ),
         fit: BoxFit.fill,
       ),

@@ -1,5 +1,8 @@
 
+import 'dart:developer';
+
 import 'package:easy/features/auth/presentation/ui_manager/ui_auth_cubit.dart';
+import 'package:flutter/foundation.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 import '../../../../core/widgets/custom_text_form_field.dart';
@@ -99,7 +102,9 @@ class RegisterFieldSection extends StatelessWidget {
               context.read<UiAuthCubit>().registerCountryId = number.isoCode!;
             },
             onInputValidated: (bool value) {
-              print(value);
+              if (kDebugMode) {
+                log(value.toString());
+              }
             },
             selectorConfig: const SelectorConfig(
               selectorType: PhoneInputSelectorType.DIALOG,

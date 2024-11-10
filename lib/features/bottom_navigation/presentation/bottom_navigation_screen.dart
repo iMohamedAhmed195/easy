@@ -38,7 +38,7 @@ class BottomNavigationScreens extends StatelessWidget {
               backgroundColor: AppColors.primaryColor,
               shape: const CircleBorder(),
               child: SvgDisplayer(
-                assetName: AppAssets().qrCode,
+                assetName: AppAssets.qrCode,
                 svgIconColor: AppColors.white,
               ),
               onPressed: () {},

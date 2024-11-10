@@ -25,7 +25,7 @@ class AccountTypeSection extends StatelessWidget {
                 SizedBox(
                   width: 123.w,
                     height: 123.h,
-                    child: Image.asset(AppAssets().customer)),
+                    child: Image.asset(AppAssets.customer)),
                 SizedBox(height: 14.h),
                 Text(
                   AppStrings().customer,
@@ -55,7 +55,7 @@ class AccountTypeSection extends StatelessWidget {
                 SizedBox(
                     width: 123.w,
                     height: 123.h,
-                    child:Image.asset(AppAssets().provider) ),
+                    child:Image.asset(AppAssets.provider) ),
                 SizedBox(height: 14.h),
                 Text(
                   AppStrings().provider,
