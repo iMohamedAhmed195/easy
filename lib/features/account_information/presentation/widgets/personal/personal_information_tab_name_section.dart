@@ -1,4 +1,4 @@
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 
 class PersonalInformationTabNameSection extends StatelessWidget {
   const PersonalInformationTabNameSection({super.key});

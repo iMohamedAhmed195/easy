@@ -1,4 +1,4 @@
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 
 class PersonalInformationTabEmailSection extends StatelessWidget {
   const PersonalInformationTabEmailSection({super.key});

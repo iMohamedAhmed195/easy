@@ -1,5 +1,5 @@
 import '../../../../exports.dart';
-import '../widgets/personal_information_tab_body_section.dart';
+import '../widgets/personal/personal_information_tab_body_section.dart';
 
 class PersonalInformationTabSection extends StatelessWidget {
 

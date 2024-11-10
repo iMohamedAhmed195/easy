@@ -1,5 +1,5 @@
-import '../../../../exports.dart';
-import 'account_information_tabs_common_form.dart';
+import '../../../../../exports.dart';
+import '../account_information_tabs_common_form.dart';
 
 class PersonalInformationTabWorkplaceSection extends StatelessWidget {
   const PersonalInformationTabWorkplaceSection({super.key});
