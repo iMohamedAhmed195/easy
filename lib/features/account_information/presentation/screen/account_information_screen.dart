@@ -1,5 +1,5 @@
 import '../../../../exports.dart';
-import '../widgets/personal_information_tab_body.dart';
+import '../widgets/personal_information_tab_section.dart';
 
 class AccountInformationScreen extends StatelessWidget {
   //! "I didn’t complete the screen or refactor because I'll be working on another app."
@@ -42,9 +42,9 @@ class AccountInformationScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
-            PersonalInformationTabBody(),
-            PersonalInformationTabBody(),
-            PersonalInformationTabBody(),
+            PersonalInformationTabSection(),
+            PersonalInformationTabSection(),
+            PersonalInformationTabSection(),
           ],
         ),
       ),
