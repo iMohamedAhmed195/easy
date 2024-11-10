@@ -1,5 +1,5 @@
 import '../../../../../exports.dart';
-import '../account_information_tabs_common_form.dart';
+import '../account_information_tabs_common_form_section.dart';
 
 class AddressInformationTabAddressSection extends StatelessWidget {
   const AddressInformationTabAddressSection({super.key});
@@ -8,12 +8,12 @@ class AddressInformationTabAddressSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const AccountInformationTabsFormSection(
+        const AccountInformationTabsCommonFormSection(
           hintText: "Address Line 1",
           title: "Address line 1",
         ),
         16.vs,
-        const AccountInformationTabsFormSection(
+        const AccountInformationTabsCommonFormSection(
           hintText: "Address Line 2 (Optional)",
           title: "Address line 2",
         ),

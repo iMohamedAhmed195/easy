@@ -1,6 +1,6 @@
 import '../../../../exports.dart';
 
-class AccountInformationTabsFormSection extends StatelessWidget {
+class AccountInformationTabsCommonFormSection extends StatelessWidget {
   final String title;
   final String hintText;
   final double? height;
@@ -10,7 +10,7 @@ class AccountInformationTabsFormSection extends StatelessWidget {
   final Color? focusedBorderColor;
   final TextStyle? titleTextStyle;
 
-  const AccountInformationTabsFormSection({
+  const AccountInformationTabsCommonFormSection({
     super.key,
     required this.title,
     required this.hintText,
