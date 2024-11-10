@@ -2,7 +2,6 @@ import 'dart:ui';
 
 class FontFamilies {
   FontFamilies._(); //! Private constructor to prevent instantiation
-
   static const String openSans = "OpenSans";
   static const String notoSansArabic = "NotoSansArabic";
 }

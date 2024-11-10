@@ -1,4 +1,5 @@
 import '../../../../exports.dart';
+import 'account_information_common_button_section.dart';
 import 'perosnal_information_tab_email_section.dart';
 import 'personal_information_tab_birth_section.dart';
 import 'personal_information_tab_employment_type_section.dart';
@@ -25,6 +26,9 @@ class PersonalInformationTabBodySection extends StatelessWidget {
         const PersonalInformationTabBirthSection(),
         16.vs,
         const PersonalInformationTabEmploymentTypeSection(),
+        68.vs,
+        const AccountInformationCommonButtonSection(),
+        32.vs,
       ],
     );
   }

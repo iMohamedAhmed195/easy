@@ -23,14 +23,13 @@ class AppTextFormField extends StatelessWidget {
   final Function(String?)? validator;
   final Color? enabledBorderSideColor;
   final Color? focusdBorderColor;
-  final int? radius;
+  final num? radius;
   final String? labelText;
   final TextStyle? labelStyle;
   final Color? cursorColor;
   final double? height;
   final double? width;
-    final double? enabledBorderSideWidth;
-
+  final double? enabledBorderSideWidth;
 
   const AppTextFormField({
     super.key,
@@ -52,7 +51,8 @@ class AppTextFormField extends StatelessWidget {
     this.cursorColor,
     this.validator,
     this.height,
-    this.width, this.enabledBorderSideWidth,
+    this.width,
+    this.enabledBorderSideWidth,
   });
 
   @override
@@ -103,7 +103,7 @@ class AppTextFormField extends StatelessWidget {
             ),
             borderSide: BorderSide(
               color: enabledBorderSideColor ?? AppColors.white,
-              width:enabledBorderSideWidth?.w ?? 1.w,
+              width: enabledBorderSideWidth?.w ?? 1.w,
             ),
           ),
           hintStyle: hintStyle ?? getMediumTextStyle(),

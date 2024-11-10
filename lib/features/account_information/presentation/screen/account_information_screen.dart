@@ -1,8 +1,8 @@
 import '../../../../exports.dart';
-import '../widgets/personal_information_tab_section.dart';
+import 'address_information_tab_section.dart';
+import 'personal_information_tab_section.dart';
 
 class AccountInformationScreen extends StatelessWidget {
-  //! "I didn’t complete the screen or refactor because I'll be working on another app."
   const AccountInformationScreen({super.key});
 
   @override
@@ -43,8 +43,8 @@ class AccountInformationScreen extends StatelessWidget {
         body: const TabBarView(
           children: [
             PersonalInformationTabSection(),
-            PersonalInformationTabSection(),
-            PersonalInformationTabSection(),
+            AddressInformationTabSection(),
+            AddressInformationTabSection(),
           ],
         ),
       ),
