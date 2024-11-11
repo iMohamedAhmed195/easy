@@ -30,6 +30,7 @@ class AppStrings {
   final String wallet = 'Wallet';
   final String loans = 'Loans';
   static const String profile = 'Profile';
+  static const String faq = 'FAQs';
   final String explore = 'Explore';
   final String qrCode = 'QR Code';
   final String workPlace = 'Workplace';

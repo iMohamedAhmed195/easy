@@ -8,14 +8,17 @@ class ProfileScreenBodySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const ProfileScreenAppBarSection(),
-        33.vs,
-        const ProfileScreenUserImageNameTitleSection(),
-        18.vs,
-        const ProfileScreenListTiles(),
-      ],
+    return Padding(
+      padding: AppConstants.kSTEPDirectionalPadding,
+      child: Column(
+        children: [
+          const ProfileScreenAppBarSection(),
+          33.vs,
+          const ProfileScreenUserImageNameTitleSection(),
+          18.vs,
+          const ProfileScreenListTiles(),
+        ],
+      ),
     );
   }
 }

@@ -70,6 +70,8 @@ class AppAssets {
   static String settings = "${SvgImages.svgPath}/setting.svg";
   static String logout = "${SvgImages.svgPath}/logout.svg";
   static String arrowDown = "${SvgImages.svgPath}/arrow-down.svg";
+    static String arrowUp = "${SvgImages.svgPath}/arrow-up.svg";
+
 
   static String redExclamationMark =
       "${SvgImages.svgPath}/red_exclamation_mark.svg";

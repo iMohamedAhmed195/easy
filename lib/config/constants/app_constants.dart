@@ -1,3 +1,5 @@
+import '../../exports.dart';
+
 class AppConstants {
   static const String egyptDialCode = "+20";
   static int maxYears = 20;
@@ -18,4 +20,6 @@ class AppConstants {
   static int splashScreenDuration = 5;
 
   static var logoAnimationDuration = 3;
+  static EdgeInsetsGeometry kSTEPDirectionalPadding =
+      EdgeInsetsDirectional.fromSTEB(16.w, 25.h, 16.w, 0.h);
 }

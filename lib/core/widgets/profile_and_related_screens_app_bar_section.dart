@@ -17,36 +17,30 @@ class ProfileAndRelatedScreensCustomAppBarSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: profileCustomAppBarHorizontalPadding?.w ?? 16.w,
-      ),
-      child: Column(
-        children: [
-          19.vs,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SvgDisplayer(
-                assetName: AppAssets.arrowLeft,
-                height: profileCustomAppBarArrowHeight?.h ?? 24.h,
-                width: profileCustomAppBarArrowWidth?.w ?? 24.w,
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgDisplayer(
+              assetName: AppAssets.arrowLeft,
+              height: profileCustomAppBarArrowHeight?.h ?? 24.h,
+              width: profileCustomAppBarArrowWidth?.w ?? 24.w,
+            ),
+            115.hs,
+            Expanded(
+              child: Text(
+                profileCustomAppBarTextData,
+                style: profileCustomAppBarTextDataStyle ??
+                    getSemiboldTextStyle(
+                      fontSize: 16,
+                      color: AppColors.black,
+                    ),
               ),
-              115.hs,
-              Expanded(
-                child: Text(
-                  profileCustomAppBarTextData,
-                  style: profileCustomAppBarTextDataStyle ??
-                      getSemiboldTextStyle(
-                        fontSize: 16,
-                        color: AppColors.black,
-                      ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }

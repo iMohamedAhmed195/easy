@@ -1,16 +1,5 @@
-import 'package:easy/core/widgets/screens/awesome_success_screen.dart';
-import 'package:easy/features/auth/presentation/screens/complete_profile_data_screen.dart';
-import 'package:easy/features/auth/presentation/screens/enter_otp_screen.dart';
-import 'package:easy/features/auth/presentation/screens/enter_phone_screen.dart';
-import 'package:easy/features/auth/presentation/screens/login_screen.dart';
-import 'package:easy/features/auth/presentation/screens/register_screen.dart';
-import 'package:easy/features/auth/presentation/screens/reset_password_screen.dart';
-import 'package:easy/features/bottom_navigation/presentation/bottom_navigation_screen.dart';
-import 'package:easy/features/on_boarding/presentation/onboarding_screen.dart';
-import 'package:easy/features/select_language/presentation/select_language_screen.dart';
-import 'package:easy/features/splash_screen.dart';
 import '../../exports.dart';
-import '../../features/account_information/presentation/screen/account_information_screen.dart';
+import 'routes_exports.dart';
 
 class Routes {
   Routes._(); //! Private constructor to prevent instantiation
@@ -28,6 +17,7 @@ class Routes {
   static const String bottomNavigationRoute = "/bottomNavigationRoute";
   static const String accountInformationScreenRoute =
       "/accountInformationScreenRoute";
+  static const String faqsRoute = "/faqsRoute";
 
   // static const String profileScreen = "/profileScreenRoute";
 }
@@ -91,25 +81,10 @@ class RouteGenerator {
         return buildPageRoute<T>(
             child: const AccountInformationScreen(),
             routeSettings: routeSettings);
-      // case Routes.subServiceDetailsRoute:
-      //   return buildPageRoute<T>(
-      //       child: MultiBlocProvider(
-      //         providers: [
-      //           BlocProvider(
-      //             create: (context) => SubServicesDetailsCubit(
-      //                 subServicesDetailsUseCase:
-      //                     ServiceLocator().getIt<SubServicesDetailsUseCase>())
-      //               ..getSubServiceDetails((routeSettings.arguments
-      //                   as Map<String, dynamic>)['id']),
-      //           ),
-      //           BlocProvider(
-      //               create: (context) => BookingServiceCubit(
-      //                   bookingServiceUseCase:
-      //                       ServiceLocator().getIt<BookingServiceUseCase>())),
-      //         ],
-      //         child: const SubServiceDetailsScreen(),
-      //       ),
-      //       routeSettings: routeSettings);
+
+      case Routes.faqsRoute:
+        return buildPageRoute<T>(
+            child: FAQScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Center(
