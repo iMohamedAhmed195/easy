@@ -210,7 +210,6 @@ class AppStrings {
 
   /// **************************** Chat Screen ********************************************
   static const String sendMessage = "Send Message...";
-  static const String chatSupportTitle = "Chat Support";
   static const String messageText1 = "Hello, how are you?";
   static const String messageText2 = "I'm good, thanks! How about you?";
   static const String messageText3 =

@@ -12,8 +12,8 @@ class ChatBodySection extends StatelessWidget {
       children: [
         Column(
           children: [
-            const ChatScreenAppBarSection(
-              appBarTitle: "Chat Support",
+             ChatScreenAppBarSection(
+              appBarTitle: AppStrings.chatSupport,
             ),
             25.vs,
             const ChatScreenChatListSection(),
