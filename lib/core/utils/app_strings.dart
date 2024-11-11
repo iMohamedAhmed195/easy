@@ -16,6 +16,19 @@ class AppStrings {
   final String proceed = 'Proceed';
   final String applyNow = 'Apply Now';
   static const String accountInformation = 'Account Information';
+  static const String faqQuesstion1 = "How do I apply for a loan?";
+  static const String faqAnswer =
+      "We offer a variety of loans including personal loans, business loans, education loans, and more. You can select the type of loan during the application process.";
+
+  static const String faqQuesstion2 = "What types of loans can I apply for?";
+
+  static const String faqQuesstion3 = "How long does it take to get approved?";
+
+  static const String faqQuesstion4 = "Can I repay my loan early?";
+
+  static const String faqQuesstion5 = "What happens if I miss a repayment?";
+
+  static const String faqQuesstion6 = "Is my personal information safe?";
 
   final String email = 'Email';
   final String addressLine1 = 'Address Line 1';
