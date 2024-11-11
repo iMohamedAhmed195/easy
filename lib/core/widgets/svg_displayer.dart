@@ -8,7 +8,14 @@ class SvgDisplayer extends StatelessWidget {
   final double? height;
   final double? width;
   final Color? svgIconColor;
-  const SvgDisplayer({super.key, required this.assetName, this.height, this.width, this.svgIconColor});
+  final BoxFit? fit;
+  const SvgDisplayer(
+      {super.key,
+      required this.assetName,
+      this.height,
+      this.width,
+      this.svgIconColor,
+      this.fit});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +24,7 @@ class SvgDisplayer extends StatelessWidget {
       height: height,
       width: width,
       assetName,
+      fit: fit ?? BoxFit.contain,
     );
     // SvgPicture.asset(assetName): This line uses the SvgPicture.asset
     //constructor from the flutter_svg package to create a widget that displays

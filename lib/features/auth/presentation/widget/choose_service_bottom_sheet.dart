@@ -61,7 +61,7 @@ class ChooseServiceBottomSheet extends StatelessWidget {
                           ),
                           SizedBox(height: 14.h),
                           Text(
-                            AppStrings().money,
+                            AppStrings.money,
                             style: getSemiboldTextStyle(
                               fontSize: 10,
                               color: context

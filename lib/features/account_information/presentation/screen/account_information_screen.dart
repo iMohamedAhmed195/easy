@@ -1,4 +1,5 @@
 import '../../../../exports.dart';
+import 'account_type_tab_section.dart';
 import 'address_information_tab_section.dart';
 import 'personal_information_tab_section.dart';
 
@@ -44,7 +45,7 @@ class AccountInformationScreen extends StatelessWidget {
           children: [
             PersonalInformationTabSection(),
             AddressInformationTabSection(),
-            AddressInformationTabSection(),
+            AccountTypeTabSection(),
           ],
         ),
       ),

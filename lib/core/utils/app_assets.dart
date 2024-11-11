@@ -69,6 +69,8 @@ class AppAssets {
   static String profileCircle = "${SvgImages.svgPath}/profile_circle.svg";
   static String settings = "${SvgImages.svgPath}/setting.svg";
   static String logout = "${SvgImages.svgPath}/logout.svg";
+  static String arrowDown = "${SvgImages.svgPath}/arrow-down.svg";
+
   static String redExclamationMark =
       "${SvgImages.svgPath}/red_exclamation_mark.svg";
   //! PNGs

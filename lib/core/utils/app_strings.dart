@@ -99,9 +99,9 @@ class AppStrings {
   static const String addressInfo = 'Address Info';
   static const String accountType = 'Account Type';
   final String customer = 'Customer';
-  final String money = 'Money';
+ static const  String money = 'Money';
   final String provider = 'Provider';
-  final String oil = 'Oil';
+  static const  String oil = 'Oil';
 
   final String createAccount = 'createAccount';
   final String nameError = 'nameError';
