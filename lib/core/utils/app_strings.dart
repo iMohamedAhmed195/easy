@@ -207,4 +207,24 @@ class AppStrings {
   static const String hintAddressLine2 = "Address Line 2 (Optional)";
   static const String titleAddressLine2 = "Address line 2";
   static const String serviceTypeTitle = "Service type";
+
+  /// **************************** Chat Screen ********************************************
+  static const String sendMessage = "Send Message...";
+  static const String chatSupportTitle = "Chat Support";
+  static const String messageText1 = "Hello, how are you?";
+  static const String messageText2 = "I'm good, thanks! How about you?";
+  static const String messageText3 =
+      "I'm doing well, just working on some tasks.";
+  static const String messageText4 = "This Is Ahmed";
+  static const String statusSeen = "Seen";
+  static const String statusDelivered = "Delivered";
+  static const String profileImageMale =
+      "https://randomuser.me/api/portraits/men/1.jpg";
+  static const String profileImageFemale =
+      "https://randomuser.me/api/portraits/women/1.jpg";
+  static const String imageUrl =
+      "https://www.w3schools.com/w3images/avatar6.png";
+  static const String todayText = "Today";
+  static const String specialistJoinedText = "A specialist joined the chat";
+  static const String timeText = "11:07";
 }

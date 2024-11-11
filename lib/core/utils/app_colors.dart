@@ -28,4 +28,5 @@ class AppColors {
   static Color mediumGray = const Color(0xFFC5C5C5);
   static Color veryDarkGray = const Color(0xFF191919);
   static Color richCharcoal = const Color(0xFF252525);
+  static Color grayishBlueColor = const Color(0xFF858692);
 }

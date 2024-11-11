@@ -1,9 +1,10 @@
+import 'package:easy/features/chat_suuport/presentation/screen/chat_screen.dart';
+
 import '../../exports.dart';
 import 'routes_exports.dart';
 
 class Routes {
   Routes._(); //! Private constructor to prevent instantiation
-  static const String chatRoute = "Chat route";
   static const String splashScreen = "/";
   static const String selectLanguageRoute = "/selectLanguageRoute";
   static const String onBoardingRoute = "/onBoarding";
@@ -18,6 +19,7 @@ class Routes {
   static const String accountInformationScreenRoute =
       "/accountInformationScreenRoute";
   static const String faqsRoute = "/faqsRoute";
+  static const String chatSupportRoute = "/chatSupportRoute";
 
   // static const String profileScreen = "/profileScreenRoute";
 }
@@ -81,14 +83,18 @@ class RouteGenerator {
         return buildPageRoute<T>(
             child: const AccountInformationScreen(),
             routeSettings: routeSettings);
-
       case Routes.faqsRoute:
         return buildPageRoute<T>(
-            child: FAQScreen(), routeSettings: routeSettings);
+            child: const FAQScreen(), routeSettings: routeSettings);
+      case Routes.chatSupportRoute:
+        return buildPageRoute<T>(
+            child: const ChatSupportScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
-        child: const Center(
-          child: Text("no route found"),
+        child: const Scaffold(
+          body: Center(
+            child: Text("No Route Found !"),
+          ),
         ),
         routeSettings: routeSettings);
   }

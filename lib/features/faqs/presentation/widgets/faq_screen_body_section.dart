@@ -10,7 +10,8 @@ class FaqScreenBodySection extends StatelessWidget {
     return ListView(
       children: [
         const ProfileAndRelatedScreensCustomAppBarSection(
-          profileCustomAppBarTextData: AppStrings.faq,
+          isPop: true,
+          appBarTitle: AppStrings.faq,
         ),
         25.vs,
         const FaqExpandedListSection(),

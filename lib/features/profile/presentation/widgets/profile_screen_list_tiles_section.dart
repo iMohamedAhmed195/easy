@@ -39,6 +39,9 @@ class ProfileScreenListTiles extends StatelessWidget {
                   if (index == 0) {
                     Routes.accountInformationScreenRoute.moveTo();
                   }
+                  if (index == 2) {
+                    Routes.chatSupportRoute.moveTo();
+                  }
                   if (index == 4) {
                     Routes.faqsRoute.moveTo();
                   }

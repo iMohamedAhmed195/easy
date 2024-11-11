@@ -7,7 +7,8 @@ class ProfileScreenAppBarSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ProfileAndRelatedScreensCustomAppBarSection(
-      profileCustomAppBarTextData: AppStrings.profile,
+      isPop: false,
+      appBarTitle: AppStrings.profile,
     );
   }
 }

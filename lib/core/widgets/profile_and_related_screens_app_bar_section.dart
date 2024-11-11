@@ -1,46 +1,40 @@
+import 'package:easy/core/helpers/align_extension.dart';
+
 import '../../exports.dart';
 
 class ProfileAndRelatedScreensCustomAppBarSection extends StatelessWidget {
-  final double? profileCustomAppBarHorizontalPadding;
-  final double? profileCustomAppBarArrowHeight;
-  final double? profileCustomAppBarArrowWidth;
-  final String profileCustomAppBarTextData;
-  final TextStyle? profileCustomAppBarTextDataStyle;
-  const ProfileAndRelatedScreensCustomAppBarSection({
-    super.key,
-    this.profileCustomAppBarHorizontalPadding,
-    this.profileCustomAppBarArrowHeight,
-    this.profileCustomAppBarArrowWidth,
-    required this.profileCustomAppBarTextData,
-    this.profileCustomAppBarTextDataStyle,
-  });
-
+  const ProfileAndRelatedScreensCustomAppBarSection(
+      {super.key, required this.isPop, required this.appBarTitle});
+  final bool isPop;
+  final String appBarTitle;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgDisplayer(
-              assetName: AppAssets.arrowLeft,
-              height: profileCustomAppBarArrowHeight?.h ?? 24.h,
-              width: profileCustomAppBarArrowWidth?.w ?? 24.w,
+    return SizedBox(
+      width: double.infinity,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          isPop
+              ? Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      canPop(context);
+                    },
+                    child: SvgPicture.asset(AppAssets.arrowLeft),
+                  ).alignCenterStart(),
+                )
+              : const SizedBox.shrink(),
+          Text(
+            appBarTitle,
+            style: getSemiboldTextStyle(
+              color: AppColors.black,
+              fontSize: 16,
+              height: 0,
             ),
-            115.hs,
-            Expanded(
-              child: Text(
-                profileCustomAppBarTextData,
-                style: profileCustomAppBarTextDataStyle ??
-                    getSemiboldTextStyle(
-                      fontSize: 16,
-                      color: AppColors.black,
-                    ),
-              ),
-            ),
-          ],
-        ),
-      ],
+          ),
+          isPop ? const Spacer() : const SizedBox.shrink(),
+        ],
+      ),
     );
   }
 }
