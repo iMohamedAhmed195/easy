@@ -7,8 +7,8 @@ class PersonalInformationTabIdSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AccountInformationTabsCommonFormSection(
-      hintText: "7862 4396 8757 8322",
-      title: "National ID",
+      hintText: AppStrings.hintNationalId,
+      title: AppStrings.titleNationalId,
     );
   }
 }

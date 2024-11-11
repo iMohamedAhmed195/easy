@@ -1,5 +1,3 @@
-
-
 import '../../../../../exports.dart';
 import '../../../../auth/presentation/ui_manager/ui_auth_cubit.dart';
 import '../../../../auth/presentation/ui_manager/ui_auth_state.dart';
@@ -15,20 +13,15 @@ class SetupAccountTypeBlocBuilder extends StatelessWidget {
     return BlocBuilder<UiAuthCubit, UiAuthState>(
       builder: (context, state) {
         final uiAuthCubit = context.read<UiAuthCubit>();
-        return Padding(
-          padding: 16.ph,
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                16.vs,
-                AccountTypeSection(uiAuthCubit: uiAuthCubit),
-                16.vs,
-                AccountTypeTabSelectTypeFormSection(uiAuthCubit: uiAuthCubit),
-                322.vs,
-                const AccountInformationTabsCommonButtonSection(),
-              ],
-            ),
-          ),
+        return Column(
+          children: [
+            16.vs,
+            AccountTypeSection(uiAuthCubit: uiAuthCubit),
+            16.vs,
+            AccountTypeTabSelectTypeFormSection(uiAuthCubit: uiAuthCubit),
+            322.vs,
+            const AccountInformationTabsCommonButtonSection(),
+          ],
         );
       },
     );

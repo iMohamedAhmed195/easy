@@ -9,7 +9,7 @@ class PersonalInformationTabEmailSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Email",
+          AppStrings.emailLabel,
           style: getRegularTextStyle(
             color: AppColors.black,
             fontSize: 12,
@@ -24,7 +24,7 @@ class PersonalInformationTabEmailSection extends StatelessWidget {
           enabledBorderSideColor: AppColors.mediumGray,
           focusdBorderColor: AppColors.mediumGray,
           height: 46,
-          hintText: "AhmedAdel@gmail.com",
+          hintText: AppStrings.hintEmail,
           enabledBorderSideWidth: 1.4.w,
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4.r),

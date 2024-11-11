@@ -7,7 +7,7 @@ class AccountInformationTabsCommonButtonSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonButtonSection(
-      buttonText: "Save",
+      buttonText: AppStrings.saveButtonText,
       onPressed: () {},
     );
   }

@@ -9,7 +9,8 @@ import 'account_types_model_data.dart';
 
 class AccountTypeTabSelectTypeFormSection extends StatelessWidget {
   final UiAuthCubit uiAuthCubit;
-  const AccountTypeTabSelectTypeFormSection({super.key, required this.uiAuthCubit});
+  const AccountTypeTabSelectTypeFormSection(
+      {super.key, required this.uiAuthCubit});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class AccountTypeTabSelectTypeFormSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "Service type",
+            AppStrings.serviceTypeTitle,
             style: getRegularTextStyle(
               color: AppColors.veryDarkGray,
               fontSize: 12,
@@ -39,7 +40,7 @@ class AccountTypeTabSelectTypeFormSection extends StatelessWidget {
             focusdBorderColor: AppColors.borderColor2,
             enabledBorderSideColor: AppColors.borderColor2,
             radius: 4,
-            initialHintText: "Money",
+            initialHintText: AppStrings.money,
             isEnabled: false,
             popupMenuItems: accountTypes,
             onMenuItemSelected: (selectedItem) {

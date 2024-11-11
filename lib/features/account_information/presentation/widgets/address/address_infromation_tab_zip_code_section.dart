@@ -7,8 +7,8 @@ class AddressInfromationTabZipCodeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AccountInformationTabsCommonFormSection(
-      hintText: "ZIP / Postcode",
-      title: "34324235",
+      hintText: AppStrings.hintZipCode,
+      title: AppStrings.titleZipCode,
     );
   }
 }

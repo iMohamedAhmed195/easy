@@ -7,8 +7,8 @@ class PersonalInformationTabEmploymentTypeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AccountInformationTabsCommonFormSection(
-      hintText: "Non-Salaried",
-      title: "Employment Type",
+      hintText: AppStrings.hintEmploymentType,
+      title: AppStrings.titleEmploymentType,
     );
   }
 }

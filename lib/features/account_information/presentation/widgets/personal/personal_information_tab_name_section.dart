@@ -12,7 +12,7 @@ class PersonalInformationTabNameSection extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Full Name",
+              AppStrings.fullNameLabel,
               style: getRegularTextStyle(
                 color: AppColors.black,
                 fontSize: 12,
@@ -28,7 +28,7 @@ class PersonalInformationTabNameSection extends StatelessWidget {
               focusdBorderColor: AppColors.mediumGray,
               height: 46,
               width: 160,
-              hintText: "Ahmed",
+              hintText: AppStrings.hintFirstName,
               enabledBorderSideWidth: 1.4.w,
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(4.r),
@@ -44,7 +44,7 @@ class PersonalInformationTabNameSection extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Last Name",
+              AppStrings.lastNameLabel,
               style: getRegularTextStyle(
                 color: AppColors.black,
                 fontSize: 12,
@@ -61,7 +61,7 @@ class PersonalInformationTabNameSection extends StatelessWidget {
               focusdBorderColor: AppColors.mediumGray,
               height: 46,
               width: 160,
-              hintText: "Adel",
+              hintText: AppStrings.hintLastName,
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(4.r),
                 borderSide: BorderSide(

@@ -9,7 +9,7 @@ class PersonalInformationTabBirthSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Date of Birth",
+          AppStrings.birthDateLabel,
           style: getRegularTextStyle(
             color: AppColors.black,
             fontSize: 12,
@@ -23,7 +23,7 @@ class PersonalInformationTabBirthSection extends StatelessWidget {
           enabledBorderSideColor: AppColors.mediumGray,
           focusdBorderColor: AppColors.mediumGray,
           height: 46,
-          hintText: "7862 4396 8757 8322 ",
+          hintText: "27/10/2001",
           enabledBorderSideWidth: 1.4.w,
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4.r),

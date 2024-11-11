@@ -7,8 +7,8 @@ class PersonalInformationTabWorkplaceSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AccountInformationTabsCommonFormSection(
-      hintText: "Company Name",
-      title: "Workplace",
+      hintText: AppStrings.companyName,
+      title: AppStrings.workplace,
     );
   }
 }

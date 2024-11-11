@@ -9,13 +9,13 @@ class AddressInformationTabAddressSection extends StatelessWidget {
     return Column(
       children: [
         const AccountInformationTabsCommonFormSection(
-          hintText: "Address Line 1",
-          title: "Address line 1",
+          hintText: AppStrings.hintAddressLine1,
+          title: AppStrings.titleAddressLine1,
         ),
         16.vs,
         const AccountInformationTabsCommonFormSection(
-          hintText: "Address Line 2 (Optional)",
-          title: "Address line 2",
+          hintText:  AppStrings.hintAddressLine2,
+          title: AppStrings.titleAddressLine2,
         ),
       ],
     );

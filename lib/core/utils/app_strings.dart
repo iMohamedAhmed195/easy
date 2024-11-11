@@ -15,7 +15,7 @@ class AppStrings {
   final String signIn = 'Sign in';
   final String proceed = 'Proceed';
   final String applyNow = 'Apply Now';
-    static const String accountInformation ='Account Information';
+  static const String accountInformation = 'Account Information';
 
   final String email = 'Email';
   final String addressLine1 = 'Address Line 1';
@@ -99,9 +99,9 @@ class AppStrings {
   static const String addressInfo = 'Address Info';
   static const String accountType = 'Account Type';
   final String customer = 'Customer';
- static const  String money = 'Money';
+  static const String money = 'Money';
   final String provider = 'Provider';
-  static const  String oil = 'Oil';
+  static const String oil = 'Oil';
 
   final String createAccount = 'createAccount';
   final String nameError = 'nameError';
@@ -167,4 +167,30 @@ class AppStrings {
   static String logoutFromEasyWarning =
       "Are you sure you would like to log out from your account?";
   static String cancel = "Cancel";
+
+  /// **************************** Account Info screens ********************************************
+  static const String saveButtonText = "Save";
+  static const String companyName = "Company Name";
+  static const String workplace = "Workplace";
+  static const String fullNameLabel = "Full Name";
+  static const String lastNameLabel = "Last Name";
+  static const String hintFirstName = "Ahmed";
+  static const String hintLastName = "Adel";
+  static const String hintNationalId = "7862 4396 8757 8322";
+  static const String titleNationalId = "National ID";
+  static const String hintEmploymentType = "Non-Salaried";
+  static const String titleEmploymentType = "Employment Type";
+  static const String birthDateLabel = "Date of Birth";
+  static const String hintBirthDate = "27/10/2001";
+  static const String emailLabel = "Email";
+  static const String hintEmail = "AhmedAdel@gmail.com";
+  static const String hintZipCode = "ZIP / Postcode";
+  static const String titleZipCode = "34324235";
+  static const String hintCity = "City";
+  static const String titleCity = "Riyadh";
+  static const String hintAddressLine1 = "Address Line 1";
+  static const String titleAddressLine1 = "Address line 1";
+  static const String hintAddressLine2 = "Address Line 2 (Optional)";
+  static const String titleAddressLine2 = "Address line 2";
+  static const String serviceTypeTitle = "Service type";
 }
