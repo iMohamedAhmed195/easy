@@ -1,3 +1,5 @@
+import 'package:easy/core/widgets/common_button_section.dart';
+
 import '../../../../core/widgets/profile_and_related_screens_app_bar_section.dart';
 import '../../../../exports.dart';
 import 'preferences/preferences_section.dart';
@@ -20,6 +22,12 @@ class SettingsAndPrivacyBodySection extends StatelessWidget {
             const PreferencesSection(),
             8.vs,
             const PrivacySection(),
+            123.vs,
+            CommonButtonSection(
+              buttonText: AppStrings.saveChangesButtonText,
+              onPressed: () {},
+            ),
+            32.vs,
           ],
         ),
       ],

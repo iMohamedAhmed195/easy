@@ -1,20 +1,30 @@
+import '../../../../../core/widgets/animated_toggle_switch_section.dart';
 import '../../../../../exports.dart';
 import '../../../data/privacy_item_model.dart';
 
 List<PrivacyItemModel> privacyItemModelData = [
   PrivacyItemModel(
     title: AppStrings.pushNotifications,
-    trailingIconData: SvgDisplayer(assetName: AppAssets.arrowRight),
+    trailingIconData: AnimatedToggleSwitchSection(
+      isActive: true,
+      onToggle: (p0) => {},
+    ),
     leadingIconData: AppAssets.pushNotification,
   ),
   PrivacyItemModel(
     title: AppStrings.faceId,
-    trailingIconData: SvgDisplayer(assetName: AppAssets.arrowRight),
+    trailingIconData: AnimatedToggleSwitchSection(
+      isActive: true,
+      onToggle: (p0) => {},
+    ),
     leadingIconData: AppAssets.faceId,
   ),
   PrivacyItemModel(
     title: AppStrings.fingerprint,
-    trailingIconData: SvgDisplayer(assetName: AppAssets.arrowRight),
+    trailingIconData: AnimatedToggleSwitchSection(
+      isActive: false,
+      onToggle: (p0) => {},
+    ),
     leadingIconData: AppAssets.fingerprint,
   ),
   PrivacyItemModel(

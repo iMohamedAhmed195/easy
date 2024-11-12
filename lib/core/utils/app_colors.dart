@@ -29,4 +29,7 @@ class AppColors {
   static Color veryDarkGray = const Color(0xFF191919);
   static Color richCharcoal = const Color(0xFF252525);
   static Color grayishBlueColor = const Color(0xFF858692);
+  static const Color strongGreen = Color(0xFF02A332);
+  static Color strongGreenDisabledColor =
+      const Color(0xFF02A332).withOpacity(0.5);
 }

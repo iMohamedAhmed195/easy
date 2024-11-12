@@ -22,4 +22,5 @@ class AppConstants {
   static var logoAnimationDuration = 3;
   static EdgeInsetsGeometry kSTEPDirectionalPadding =
       EdgeInsetsDirectional.fromSTEB(16.w, 25.h, 16.w, 0.h);
+  static const kToggleSwitchAnimationDuration = Duration(milliseconds: 200);
 }

@@ -238,4 +238,5 @@ class AppStrings {
   static const String fingerprint = "Fingerprint";
   static const String faceId = "Face ID";
   static const String privacy = "Privacy";
+  static const String saveChangesButtonText = "Save Changes";
 }

@@ -1,8 +1,7 @@
-import 'package:easy/exports.dart';
 
 class PrivacyItemModel {
   final String title;
-  final Widget? trailingIconData;
+  final dynamic trailingIconData;
   final String leadingIconData;
 
   PrivacyItemModel({

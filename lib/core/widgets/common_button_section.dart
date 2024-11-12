@@ -17,7 +17,6 @@ class CommonButtonSection extends StatelessWidget {
         color: AppColors.white,
         fontSize: 16,
         fontFamily: FontFamilies.openSans,
-        height: 0,
       ),
       onPressed: onPressed,
     );
