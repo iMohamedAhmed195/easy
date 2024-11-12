@@ -3,17 +3,20 @@ import '../../data/models/profile_tile_model.dart';
 
 List<ProfileTileModel> profileTileData = [
   ProfileTileModel(
-      title: AppStrings.accountInformation,
-      trailingIconData: AppAssets.arrowRight,
-      leadingIconData: AppAssets.profileCircle),
+    title: AppStrings.accountInformation,
+    trailingIconData: AppAssets.arrowRight,
+    leadingIconData: AppAssets.profileCircle,
+  ),
   ProfileTileModel(
-      title: AppStrings.settingAndPrivacy,
-      trailingIconData: AppAssets.arrowRight,
-      leadingIconData: AppAssets.settings),
+    title: AppStrings.settingAndPrivacy,
+    trailingIconData: AppAssets.arrowRight,
+    leadingIconData: AppAssets.settings,
+  ),
   ProfileTileModel(
-      title: AppStrings.chatSupport,
-      trailingIconData: AppAssets.arrowRight,
-      leadingIconData: AppAssets.messageText),
+    title: AppStrings.chatSupport,
+    trailingIconData: AppAssets.arrowRight,
+    leadingIconData: AppAssets.messageText,
+  ),
   ProfileTileModel(
     title: AppStrings.loansPolicy,
     trailingIconData: AppAssets.arrowRight,

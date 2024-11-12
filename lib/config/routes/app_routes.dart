@@ -1,6 +1,7 @@
 import 'package:easy/features/chat_suuport/presentation/screen/chat_screen.dart';
 
 import '../../exports.dart';
+import '../../features/settings_and_privacy/presentation/screen/settings_and_privacy_screen.dart';
 import 'routes_exports.dart';
 
 class Routes {
@@ -20,8 +21,8 @@ class Routes {
       "/accountInformationScreenRoute";
   static const String faqsRoute = "/faqsRoute";
   static const String chatSupportRoute = "/chatSupportRoute";
-
-  // static const String profileScreen = "/profileScreenRoute";
+  static const String settingsAndPrivacyScreenRoute =
+      "/settingsAndPrivacyScreenRoute";
 }
 
 class RouteGenerator {
@@ -89,6 +90,10 @@ class RouteGenerator {
       case Routes.chatSupportRoute:
         return buildPageRoute<T>(
             child: const ChatSupportScreen(), routeSettings: routeSettings);
+      case Routes.settingsAndPrivacyScreenRoute:
+        return buildPageRoute<T>(
+            child: const SettingsAndPrivacyScreen(),
+            routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

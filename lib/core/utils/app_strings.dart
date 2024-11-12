@@ -226,4 +226,10 @@ class AppStrings {
   static const String todayText = "Today";
   static const String specialistJoinedText = "A specialist joined the chat";
   static const String timeText = "11:07";
+
+  // **************************** Settings & Privacy Screen ********************************************
+  static const String settingsAndPrivacy = "Settings & Privacy";
+  static const String preferences = "Preferences";
+  static const String pushNotifications = "Push Notifications";
+  static const String language = "Language";
 }

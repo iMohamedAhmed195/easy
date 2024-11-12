@@ -74,6 +74,9 @@ class AppAssets {
   static String chatDocument = "${SvgImages.svgPath}/chat-document.svg";
   static String chatSend = "${SvgImages.svgPath}/chat-send.svg";
   static String dots = "${SvgImages.svgPath}/dots.svg";
+    static String pushNotification = "${SvgImages.svgPath}/push-notification.svg";
+  static String global = "${SvgImages.svgPath}/global.svg";
+
 
   static String redExclamationMark =
       "${SvgImages.svgPath}/red_exclamation_mark.svg";
