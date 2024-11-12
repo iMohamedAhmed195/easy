@@ -239,4 +239,16 @@ class AppStrings {
   static const String faceId = "Face ID";
   static const String privacy = "Privacy";
   static const String saveChangesButtonText = "Save Changes";
+  static const String stayInformedMessage =
+      "Stay informed and in control with personalized notifications. Choose the alerts you want to receive about your loans.";
+
+  static const String manageYourNotifications = "Manage Your Notifications";
+
+  static const String paymentsReceived = "Payments Received";
+
+  static const String paymentConfirmation = "Payment Confirmation";
+
+  static const String loanPaymentReminders = "Loan Payment Reminders";
+
+  static const String accountChanges = "Account Changes";
 }
