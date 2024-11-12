@@ -261,6 +261,8 @@ class AppStrings {
   static const String currentPassword = "Current Password";
   static const String newPassword = "New Password";
   static const String confirmNewPassword = "Confirm New Password";
+  static const String starsHint = "********";
+
 // **************************** Change Pin Screen ********************************************
   static const String currentPin = "Current Pin";
   static const String newPin = "New Pin";

@@ -2,9 +2,10 @@ import '../../exports.dart';
 
 class PasswordAndPinTextAndField extends StatefulWidget {
   final String fieldName;
-    final TextInputType? keyboardType;
+  final TextInputType? keyboardType;
 
-  const PasswordAndPinTextAndField({super.key, required this.fieldName, this.keyboardType});
+  const PasswordAndPinTextAndField(
+      {super.key, required this.fieldName, this.keyboardType});
 
   @override
   State<PasswordAndPinTextAndField> createState() =>
@@ -28,7 +29,7 @@ class _PasswordAndPinTextAndFieldState
         ).alignCenterStart(),
         8.vs,
         AppTextFormField(
-          keyboardType: widget.keyboardType??TextInputType.visiblePassword,
+          keyboardType: widget.keyboardType ?? TextInputType.visiblePassword,
           enabledBorderSideWidth: 1.4,
           isObscureText: isObSecureText,
           suffixIcon: IconButton(
@@ -52,7 +53,7 @@ class _PasswordAndPinTextAndFieldState
           focusdBorderColor: AppColors.borderColor2,
           enabledBorderSideColor: AppColors.borderColor2,
           radius: 4,
-          hintText: "***********",
+          hintText: AppStrings.starsHint,
         ),
       ],
     );
