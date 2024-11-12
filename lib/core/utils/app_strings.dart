@@ -232,4 +232,10 @@ class AppStrings {
   static const String preferences = "Preferences";
   static const String pushNotifications = "Push Notifications";
   static const String language = "Language";
+  static const String closeYourAccount = "Close your account";
+  static const String changePin = "Change PIN";
+  static const String changePassword = "Change Password";
+  static const String fingerprint = "Fingerprint";
+  static const String faceId = "Face ID";
+  static const String privacy = "Privacy";
 }

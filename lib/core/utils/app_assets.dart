@@ -74,9 +74,13 @@ class AppAssets {
   static String chatDocument = "${SvgImages.svgPath}/chat-document.svg";
   static String chatSend = "${SvgImages.svgPath}/chat-send.svg";
   static String dots = "${SvgImages.svgPath}/dots.svg";
-    static String pushNotification = "${SvgImages.svgPath}/push-notification.svg";
+  static String pushNotification = "${SvgImages.svgPath}/push-notification.svg";
   static String global = "${SvgImages.svgPath}/global.svg";
-
+  static String changePasssword = "${SvgImages.svgPath}/change-passsword.svg";
+  static String dialpad = "${SvgImages.svgPath}/dialpad.svg";
+  static String faceId = "${SvgImages.svgPath}/face-id.svg";
+  static String fingerprint = "${SvgImages.svgPath}/fingerprint.svg";
+  static String trash = "${SvgImages.svgPath}/trash.svg";
 
   static String redExclamationMark =
       "${SvgImages.svgPath}/red_exclamation_mark.svg";
