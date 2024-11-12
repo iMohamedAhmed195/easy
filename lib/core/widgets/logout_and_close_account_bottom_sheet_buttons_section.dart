@@ -1,7 +1,9 @@
-import '../../../../exports.dart';
+import '../../exports.dart';
 
-class ProfileLogoutBottomSheetButtons extends StatelessWidget {
-  const ProfileLogoutBottomSheetButtons({super.key});
+class LogoutAndCloseAccountBottomSheetButtons extends StatelessWidget {
+  final String buttonText;
+  const LogoutAndCloseAccountBottomSheetButtons(
+      {super.key, required this.buttonText});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class ProfileLogoutBottomSheetButtons extends StatelessWidget {
             color: AppColors.white,
             fontFamily: FontFamilies.openSans,
           ),
-          buttonText: AppStrings.logout,
+          buttonText: buttonText,
           backgroundColor: AppColors.red,
           buttonHeight: 52,
           borderRadius: 8,

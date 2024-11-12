@@ -1,4 +1,5 @@
 import '../../../../../exports.dart';
+import 'close_account_bottom_sheet_function.dart';
 import 'privacy_item_model_data.dart';
 
 class PrivacyListsSection extends StatelessWidget {
@@ -33,6 +34,7 @@ class PrivacyListsSection extends StatelessWidget {
                   privacyItemModelData[index].title,
                 ),
                 onTap: () {
+                  if (index == 5) closeAccountBottomSheet(context);
                   //! TODO: Handle tap here
                 },
               ),

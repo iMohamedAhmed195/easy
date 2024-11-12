@@ -81,9 +81,10 @@ class AppAssets {
   static String faceId = "${SvgImages.svgPath}/face-id.svg";
   static String fingerprint = "${SvgImages.svgPath}/fingerprint.svg";
   static String trash = "${SvgImages.svgPath}/trash.svg";
-
   static String redExclamationMark =
       "${SvgImages.svgPath}/red_exclamation_mark.svg";
+  static String closeAccount = "${SvgImages.svgPath}/close-account.svg";
+
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
   static String logoWhite = "${PngImages.imagesPath}/logo_white.png";

@@ -49,7 +49,7 @@ class ProfileScreenListTiles extends StatelessWidget {
                     Routes.faqsRoute.moveTo();
                   }
                   if (index == 5) {
-                    logoutBottomSheet(context);
+                    logoutAccountBottomSheet(context);
                   }
                 },
               ),

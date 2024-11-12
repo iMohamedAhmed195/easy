@@ -1,7 +1,13 @@
-import '../../../../exports.dart';
+import '../../exports.dart';
 
-class ProfileLogoutBottomSheetDialogAndTextsSection extends StatelessWidget {
-  const ProfileLogoutBottomSheetDialogAndTextsSection({super.key});
+class LogoutAndCloseAccountBottomSheetDialogAndTextsSection
+    extends StatelessWidget {
+  final String sheetIconPath;
+  final String sheetTitle;
+  final String sheetWarning;
+
+  const LogoutAndCloseAccountBottomSheetDialogAndTextsSection(
+      {super.key, required this.sheetIconPath, required this.sheetTitle, required this.sheetWarning});
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +23,13 @@ class ProfileLogoutBottomSheetDialogAndTextsSection extends StatelessWidget {
         ),
         12.vs,
         SvgDisplayer(
-          assetName: AppAssets.redExclamationMark,
+          assetName: sheetIconPath,
           height: 63.h,
           width: 63.w,
         ),
         16.vs,
         Text(
-          AppStrings.logoutFromEasy,
+          sheetTitle,
           style: getBoldTextStyle(
             fontSize: 16,
             color: AppColors.black,
@@ -34,7 +40,7 @@ class ProfileLogoutBottomSheetDialogAndTextsSection extends StatelessWidget {
         Padding(
           padding: 22.ph,
           child: Text(
-            AppStrings.logoutFromEasyWarning,
+            sheetWarning,
             textAlign: TextAlign.center,
             style: getRegularTextStyle(
               color: AppColors.gray,

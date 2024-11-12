@@ -251,4 +251,9 @@ class AppStrings {
   static const String loanPaymentReminders = "Loan Payment Reminders";
 
   static const String accountChanges = "Account Changes";
+
+  // **************************** Close Account Dialog ********************************************
+  static const String closeAccountMessage =
+      "Closing your account will delete your loan history and personal information. Ensure all loans and payments are settled before proceeding. Once closed, your account cannot be recovered.";
+  static const String closeAccount = "Close Account";
 }
