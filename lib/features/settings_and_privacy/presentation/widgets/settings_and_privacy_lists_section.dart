@@ -1,12 +1,12 @@
 import '../../../../exports.dart';
 
-class ProfileListsSection<T> extends StatelessWidget {
+class SettingsAndPrivacyListsSection<T> extends StatelessWidget {
   final List<T> itemList;
   final String Function(T) getIconPath;
   final String Function(T) getTitle;
   final void Function(T, int) onTap;
 
-  const ProfileListsSection({
+  const SettingsAndPrivacyListsSection({
     super.key,
     required this.itemList,
     required this.getIconPath,

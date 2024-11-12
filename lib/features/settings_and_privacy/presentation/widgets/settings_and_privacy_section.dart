@@ -2,10 +2,10 @@ import 'package:easy/core/helpers/align_extension.dart';
 
 import '../../../../exports.dart';
 import 'settings_and_privacy_item_model_data.dart';
-import 'profile_lists_section.dart';
+import 'settings_and_privacy_lists_section.dart';
 
-class ProfileAccountSection extends StatelessWidget {
-  const ProfileAccountSection({super.key});
+class SettingsAndPrivacySection extends StatelessWidget {
+  const SettingsAndPrivacySection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class ProfileAccountSection extends StatelessWidget {
           ),
         ).alignCenterStart(),
         8.vs,
-        ProfileListsSection(
+        SettingsAndPrivacyListsSection(
           itemList: settingsAndPrivacyItemList,
           getIconPath: (item) => item.iconPath,
           getTitle: (item) => item.data,

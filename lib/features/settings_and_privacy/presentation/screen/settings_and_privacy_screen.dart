@@ -1,7 +1,7 @@
 import 'package:easy/core/widgets/profile_and_related_screens_app_bar_section.dart';
 
 import '../../../../exports.dart';
-import '../widgets/profile_account_section.dart';
+import '../widgets/settings_and_privacy_section.dart';
 
 class SettingsAndPrivacyScreen extends StatelessWidget {
   const SettingsAndPrivacyScreen({super.key});
@@ -21,7 +21,7 @@ class SettingsAndPrivacyScreen extends StatelessWidget {
                   appBarTitle: AppStrings.settingsAndPrivacy,
                 ),
                 27.vs,
-                const ProfileAccountSection(),
+                const SettingsAndPrivacySection(),
               ],
             ),
           ),
