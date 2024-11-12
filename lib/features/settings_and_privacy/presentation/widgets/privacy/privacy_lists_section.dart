@@ -34,6 +34,7 @@ class PrivacyListsSection extends StatelessWidget {
                   privacyItemModelData[index].title,
                 ),
                 onTap: () {
+                  if (index == 3) Routes.changePasswordScreenRoute.moveTo();
                   if (index == 5) closeAccountBottomSheet(context);
                   //! TODO: Handle tap here
                 },

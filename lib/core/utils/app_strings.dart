@@ -256,4 +256,10 @@ class AppStrings {
   static const String closeAccountMessage =
       "Closing your account will delete your loan history and personal information. Ensure all loans and payments are settled before proceeding. Once closed, your account cannot be recovered.";
   static const String closeAccount = "Close Account";
+
+  // **************************** Change Password Screen ********************************************
+  static const String currentPassword = "Current Password";
+  static const String newPassword = "New Password";
+  static const String confirmNewPassword = "Confirm New Password";
+
 }

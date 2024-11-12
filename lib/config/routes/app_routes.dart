@@ -1,8 +1,5 @@
-import 'package:easy/features/chat_suuport/presentation/screen/chat_screen.dart';
 
 import '../../exports.dart';
-import '../../features/notifications_settings/presentation/screen/notifications_settings_screen.dart';
-import '../../features/settings_and_privacy/presentation/screen/settings_and_privacy_screen.dart';
 import 'routes_exports.dart';
 
 class Routes {
@@ -26,6 +23,7 @@ class Routes {
       "/settingsAndPrivacyScreenRoute";
   static const String notificationsSettingsScreenRoute =
       "/notificationsSettingsScreenRoute";
+  static const String changePasswordScreenRoute = "/changePasswordScreenRoute";
 }
 
 class RouteGenerator {
@@ -101,6 +99,9 @@ class RouteGenerator {
         return buildPageRoute<T>(
             child: const NotificationsSettingsScreen(),
             routeSettings: routeSettings);
+      case Routes.changePasswordScreenRoute:
+        return buildPageRoute<T>(
+            child: const ChangePasswordScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

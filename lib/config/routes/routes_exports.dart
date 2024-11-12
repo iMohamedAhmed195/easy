@@ -11,3 +11,7 @@ export 'package:easy/features/auth/presentation/screens/reset_password_screen.da
 export 'package:easy/features/bottom_navigation/presentation/bottom_navigation_screen.dart';
 export 'package:easy/features/on_boarding/presentation/onboarding_screen.dart';
 export 'package:easy/features/select_language/presentation/select_language_screen.dart';
+export '../../features/change_password/presentation/screen/change_password_screen.dart';
+export '../../features/notifications_settings/presentation/screen/notifications_settings_screen.dart';
+export '../../features/settings_and_privacy/presentation/screen/settings_and_privacy_screen.dart';
+export 'package:easy/features/chat_suuport/presentation/screen/chat_screen.dart';

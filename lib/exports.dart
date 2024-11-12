@@ -55,5 +55,6 @@ export 'package:easy/core/helpers/sizes_utils_extensions.dart';
 export 'package:easy/core/widgets/svg_displayer.dart';
 export 'package:easy/core/widgets/app_text_button.dart';
 export '../../../../core/widgets/text_form_field.dart';
+export 'package:easy/core/helpers/align_extension.dart';
 
 
