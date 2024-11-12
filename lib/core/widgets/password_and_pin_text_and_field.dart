@@ -1,14 +1,18 @@
 import '../../exports.dart';
 
-class PasswordTextAndField extends StatefulWidget {
+class PasswordAndPinTextAndField extends StatefulWidget {
   final String fieldName;
-  const PasswordTextAndField({super.key, required this.fieldName});
+    final TextInputType? keyboardType;
+
+  const PasswordAndPinTextAndField({super.key, required this.fieldName, this.keyboardType});
 
   @override
-  State<PasswordTextAndField> createState() => _PasswordTextAndFieldState();
+  State<PasswordAndPinTextAndField> createState() =>
+      _PasswordAndPinTextAndFieldState();
 }
 
-class _PasswordTextAndFieldState extends State<PasswordTextAndField> {
+class _PasswordAndPinTextAndFieldState
+    extends State<PasswordAndPinTextAndField> {
   bool isObSecureText = true;
 
   @override
@@ -24,7 +28,7 @@ class _PasswordTextAndFieldState extends State<PasswordTextAndField> {
         ).alignCenterStart(),
         8.vs,
         AppTextFormField(
-          keyboardType: TextInputType.visiblePassword,
+          keyboardType: widget.keyboardType??TextInputType.visiblePassword,
           enabledBorderSideWidth: 1.4,
           isObscureText: isObSecureText,
           suffixIcon: IconButton(

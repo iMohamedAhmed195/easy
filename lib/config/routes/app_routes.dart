@@ -1,5 +1,5 @@
-
 import '../../exports.dart';
+import '../../features/change_pin/presentation/screen/change_pin_screen.dart';
 import 'routes_exports.dart';
 
 class Routes {
@@ -24,6 +24,7 @@ class Routes {
   static const String notificationsSettingsScreenRoute =
       "/notificationsSettingsScreenRoute";
   static const String changePasswordScreenRoute = "/changePasswordScreenRoute";
+  static const String changePinScreenRoute = "/changePinScreenRoute";
 }
 
 class RouteGenerator {
@@ -102,6 +103,9 @@ class RouteGenerator {
       case Routes.changePasswordScreenRoute:
         return buildPageRoute<T>(
             child: const ChangePasswordScreen(), routeSettings: routeSettings);
+      case Routes.changePinScreenRoute:
+        return buildPageRoute<T>(
+            child: const ChangePinScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(
