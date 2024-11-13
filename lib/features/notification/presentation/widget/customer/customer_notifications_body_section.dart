@@ -2,9 +2,10 @@ import '../../../../../core/widgets/custom_app_bar_with_back_arrow_section.dart'
 import '../../../../../exports.dart';
 import '../notifications_container_item_section.dart';
 
-class CustomerNotificationsBodySection extends StatelessWidget {
-  //! TODO: "I haven't refactored this class further yet, as I'm waiting to understand how the logic (filter) will be implemented."
-  const CustomerNotificationsBodySection({super.key});
+class NotificationsBodySection extends StatelessWidget {
+  //! TODO: "I haven't refactored this class further yet, as I'm waiting to
+  //!understand how the logic (filter) will be implemented."
+  const NotificationsBodySection({super.key});
 
   @override
   Widget build(BuildContext context) {

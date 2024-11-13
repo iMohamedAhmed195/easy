@@ -98,6 +98,7 @@ class AppAssets {
   static String views = "${SvgImages.svgPath}/Views.svg";
   static String successful = "${SvgImages.svgPath}/Successful.svg";
   static String bankCard = "${SvgImages.svgPath}/Bank-Card.svg";
+  static String newLoan = "${SvgImages.svgPath}/new-loan.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
