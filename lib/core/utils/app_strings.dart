@@ -144,7 +144,7 @@ class AppStrings {
   final String seconds = "Seconds";
   final String allow = "allow";
   final String serverError = 'SERVER_ERROR';
-  final String notifications = "notifications";
+  static const String notifications = "notifications";
 
   /// **************************** done screen************************************
   // error handler
@@ -289,4 +289,25 @@ class AppStrings {
   static const String turkishName = 'Türkçe';
   static const String southKoreanFlag = 'KR';
   static const String southKoreanName = '한국어';
+
+    // **************************** Notification Selection Screens ********************************************
+  static const String yesterdayText = "Yesterday";
+  static const String loanRepaymentWarningTitle = "Loan Repayment Warning";
+  static const String loanRepaymentWarningDescription =
+      "Your loan repayment is due on 30/9/2024. Please ensure payment is made to avoid any penalties.";
+  static const String loanRepaymentWarningTimestamp = "Today, 03:35 PM";
+  static const String loanApplicationViewsTitle = "Loan Application Views";
+  static const String loanApplicationViewsDescription =
+      "Congratulations! Your loan application was viewed by 2 providers.";
+  static const String loanApplicationViewsTimestamp = "Today, 06:35 AM";
+  static const String newBankCardTitle = "New Bank Card";
+  static const String newBankCardDescription =
+      "Your bank card has been added successfully";
+  static const String newBankCardTimestamp = "Yesterday, 02:35 PM";
+  static const String paymentSuccessfulTitle = "Payment Successful";
+  static const String paymentSuccessfulDescription =
+      "Your loan repayment has been successfully processed. Thank you!";
+  static const String paymentSuccessfulTimestamp = "Yesterday, 08:35 PM";
+  static const String payButtonText = "Pay";
+
 }

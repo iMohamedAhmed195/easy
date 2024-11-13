@@ -1,8 +1,7 @@
-
 import '../../exports.dart';
 
-class ProfileAndRelatedScreensCustomAppBarSection extends StatelessWidget {
-  const ProfileAndRelatedScreensCustomAppBarSection(
+class CustomAppBarWithBackArrowSection extends StatelessWidget {
+  const CustomAppBarWithBackArrowSection(
       {super.key, required this.isPop, required this.appBarTitle});
   final bool isPop;
   final String appBarTitle;

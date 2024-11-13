@@ -1,4 +1,4 @@
-import '../../../../core/widgets/profile_and_related_screens_app_bar_section.dart';
+import '../../../../core/widgets/custom_app_bar_with_back_arrow_section.dart';
 import '../../../../exports.dart';
 import 'faq_expanded_list_section.dart';
 
@@ -9,7 +9,7 @@ class FaqScreenBodySection extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        const ProfileAndRelatedScreensCustomAppBarSection(
+        const CustomAppBarWithBackArrowSection(
           isPop: true,
           appBarTitle: AppStrings.faq,
         ),

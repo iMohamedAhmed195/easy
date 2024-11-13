@@ -1,4 +1,4 @@
-import 'package:easy/core/widgets/profile_and_related_screens_app_bar_section.dart';
+import 'package:easy/core/widgets/custom_app_bar_with_back_arrow_section.dart';
 
 import '../../../../core/widgets/save_changes_button.dart';
 import '../../../../exports.dart';
@@ -12,7 +12,7 @@ class NotificationsSettingsBodySection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const ProfileAndRelatedScreensCustomAppBarSection(
+        const CustomAppBarWithBackArrowSection(
           isPop: true,
           appBarTitle: AppStrings.pushNotifications,
         ),

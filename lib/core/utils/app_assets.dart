@@ -94,6 +94,11 @@ class AppAssets {
   static String ukrainian = "${SvgImages.svgPath}/українська.svg";
   static String korean = "${SvgImages.svgPath}/한국어.svg";
   static String japanese = "${SvgImages.svgPath}/日本語.svg";
+  static String warning = "${SvgImages.svgPath}/warning.svg";
+  static String views = "${SvgImages.svgPath}/Views.svg";
+  static String successful = "${SvgImages.svgPath}/Successful.svg";
+  static String bankCard = "${SvgImages.svgPath}/Bank-Card.svg";
+
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
   static String logoWhite = "${PngImages.imagesPath}/logo_white.png";

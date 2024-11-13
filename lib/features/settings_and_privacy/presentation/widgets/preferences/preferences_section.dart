@@ -24,7 +24,7 @@ class PreferencesSection extends StatelessWidget {
           onTap: (item, index) {
             //! Will Add more index-based navigation
             if (index == 0) Routes.notificationsSettingsScreenRoute.moveTo();
-            if (index == 1) Routes.languageSelectionScreen.moveTo();
+            if (index == 1) Routes.languageSelectionScreenRoute.moveTo();
           },
         ),
       ],

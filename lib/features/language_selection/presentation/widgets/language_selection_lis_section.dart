@@ -15,7 +15,8 @@ class LanguageSelectionListSection extends StatelessWidget {
           final countryLanguage = languagesSelection[index];
           return GestureDetector(
             onTap: () => log(
-                "Selected Language ID is : ${countryLanguage.countryLanguageId}"),
+              "Selected Language ID is : ${countryLanguage.countryLanguageId}",
+            ),
             child: Padding(
               padding: EdgeInsets.only(bottom: 12.h),
               child: ListTile(

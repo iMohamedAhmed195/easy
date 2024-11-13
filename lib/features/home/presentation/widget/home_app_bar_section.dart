@@ -38,7 +38,12 @@ class HomeAppBarSection extends StatelessWidget {
             ],
           ),
         ),
-        CustomSVGImage(asset: AppAssets.notification1),
+        GestureDetector(
+          onTap: () => Routes.customerNotificationsScreenRoute.moveTo(),
+          child: CustomSVGImage(
+            asset: AppAssets.notification1,
+          ),
+        ),
       ],
     );
   }

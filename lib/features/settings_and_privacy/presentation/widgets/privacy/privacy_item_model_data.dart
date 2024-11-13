@@ -3,14 +3,7 @@ import '../../../../../exports.dart';
 import '../../../data/privacy_item_model.dart';
 
 List<PrivacyItemModel> privacyItemModelData = [
-  PrivacyItemModel(
-    title: AppStrings.pushNotifications,
-    trailingIconData: AnimatedToggleSwitchSection(
-      isActive: true,
-      onToggle: (p0) => {},
-    ),
-    leadingIconData: AppAssets.pushNotification,
-  ),
+ 
   PrivacyItemModel(
     title: AppStrings.faceId,
     trailingIconData: AnimatedToggleSwitchSection(

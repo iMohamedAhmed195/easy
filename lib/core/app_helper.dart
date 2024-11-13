@@ -599,7 +599,7 @@ Future<bool> checkNotificationPermission(
     context: context,
     type: Permission.notification.value,
     dialog: PermissionDialog(
-      title: AppStrings().notifications.trans,
+      title: AppStrings.notifications.trans,
       asset: AppAssets.notificationDialog,
       description: AppStrings().notificationPermission.trans,
     ),
