@@ -1,3 +1,5 @@
+import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
+
 import '../../exports.dart';
 import '../../features/change_pin/presentation/screen/change_pin_screen.dart';
 import 'routes_exports.dart';
@@ -25,6 +27,7 @@ class Routes {
       "/notificationsSettingsScreenRoute";
   static const String changePasswordScreenRoute = "/changePasswordScreenRoute";
   static const String changePinScreenRoute = "/changePinScreenRoute";
+  static const String languageSelectionScreen = "/languageSelectionScreen";
 }
 
 class RouteGenerator {
@@ -106,6 +109,9 @@ class RouteGenerator {
       case Routes.changePinScreenRoute:
         return buildPageRoute<T>(
             child: const ChangePinScreen(), routeSettings: routeSettings);
+             case Routes.languageSelectionScreen:
+        return buildPageRoute<T>(
+            child: const LanguageSelectionScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

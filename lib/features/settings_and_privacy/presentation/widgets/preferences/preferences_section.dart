@@ -1,4 +1,3 @@
-
 import '../../../../../exports.dart';
 import 'preferences_item_model_data.dart';
 import 'preferences_lists_section.dart';
@@ -25,6 +24,7 @@ class PreferencesSection extends StatelessWidget {
           onTap: (item, index) {
             //! Will Add more index-based navigation
             if (index == 0) Routes.notificationsSettingsScreenRoute.moveTo();
+            if (index == 1) Routes.languageSelectionScreen.moveTo();
           },
         ),
       ],

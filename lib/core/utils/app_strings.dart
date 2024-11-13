@@ -7,7 +7,7 @@ class AppStrings {
   final String selectPreferredLanguage = 'Select Preferred Language';
   final String arabic = 'العربية';
   final String english = 'English (US)';
-  final String select = 'Select';
+ static const  String select = 'Select';
   final String next = 'Next';
   final String skip = 'skip';
   final String services = 'Services';
@@ -267,4 +267,26 @@ class AppStrings {
   static const String currentPin = "Current Pin";
   static const String newPin = "New Pin";
   static const String confirmNewPin = "Confirm New Pin";
+
+  // **************************** Language Selection Screen ********************************************
+  static const String englishFlag = 'US';
+  static const String englishName = 'English (US)';
+  static const String frenchFlag = 'FR';
+  static const String frenchName = 'Français';
+  static const String spanishFlag = 'ES';
+  static const String spanishName = 'Española';
+  static const String germanFlag = 'DE';
+  static const String germanName = 'Deutsch';
+  static const String japaneseFlag = 'JP';
+  static const String japaneseName = '日本語';
+  static const String italianFlag = 'IT';
+  static const String italianName = 'Italiano';
+  static const String arabicFlag = 'SA';
+  static const String arabicName = 'العربية';
+  static const String ukrainianFlag = 'UA';
+  static const String ukrainianName = 'українська';
+  static const String turkishFlag = 'TR';
+  static const String turkishName = 'Türkçe';
+  static const String southKoreanFlag = 'KR';
+  static const String southKoreanName = '한국어';
 }

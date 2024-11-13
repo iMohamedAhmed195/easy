@@ -12,28 +12,30 @@ class SelectLanguageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<SelectLanguageCubit, SelectLanguageState>(
-  builder: (context, state) {
-    return CustomBackground(
-       statusBarColor: AppColors.transparent,
-        child: Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 16.w),
-          child:  Column(
-            children: [
-              const HeaderSelectLangSection(),
-              const ChooseLanguageSection(),
-              const Spacer(),
-              CustomButton(
-                  text: AppStrings().select,
-                  onPressed: (){
+      builder: (context, state) {
+        return CustomBackground(
+          statusBarColor: AppColors.transparent,
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
+            child: Column(
+              children: [
+                const HeaderSelectLangSection(),
+                const ChooseLanguageSection(),
+                const Spacer(),
+                CustomButton(
+                  text: AppStrings.select,
+                  onPressed: () {
                     push(context: context, route: Routes.onBoardingRoute);
                   },
-              ),
-              SizedBox(height: 32.h,),
-            ],
+                ),
+                SizedBox(
+                  height: 32.h,
+                ),
+              ],
+            ),
           ),
-        )
+        );
+      },
     );
-  },
-);
   }
 }

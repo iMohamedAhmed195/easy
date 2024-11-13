@@ -84,7 +84,16 @@ class AppAssets {
   static String redExclamationMark =
       "${SvgImages.svgPath}/red_exclamation_mark.svg";
   static String closeAccount = "${SvgImages.svgPath}/close-account.svg";
-
+  static String arabic = "${SvgImages.svgPath}/Arabic.svg";
+  static String german = "${SvgImages.svgPath}/Deutsch.svg";
+  static String english = "${SvgImages.svgPath}/English.svg";
+  static String spanish = "${SvgImages.svgPath}/Española.svg";
+  static String french = "${SvgImages.svgPath}/Français.svg";
+  static String italian = "${SvgImages.svgPath}/Italiano.svg";
+  static String turkish = "${SvgImages.svgPath}/Türkçe.svg";
+  static String ukrainian = "${SvgImages.svgPath}/українська.svg";
+  static String korean = "${SvgImages.svgPath}/한국어.svg";
+  static String japanese = "${SvgImages.svgPath}/日本語.svg";
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
   static String logoWhite = "${PngImages.imagesPath}/logo_white.png";
