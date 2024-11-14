@@ -3,9 +3,8 @@ import 'package:easy/features/apply_for_loan/presentation/widgets/contract_perce
 import 'package:easy/features/apply_for_loan/presentation/widgets/loan_amount_text_and_slider_section.dart';
 import 'package:easy/features/apply_for_loan/presentation/widgets/loan_term_text_and_slider_section.dart';
 import 'package:easy/features/apply_for_loan/presentation/widgets/loan_total_due_section.dart';
-
-import '../../../../core/widgets/common_button_section.dart';
 import '../../../../exports.dart';
+import 'apply_for_loan_button_section.dart';
 import 'loan_details_and_amount_section.dart';
 
 class APplyForLoanDetailsContainerSection extends StatelessWidget {
@@ -39,19 +38,7 @@ class APplyForLoanDetailsContainerSection extends StatelessWidget {
           24.vs,
           const ApplyForLoanNotesSection(),
           16.vs,
-          CommonButtonSection(
-            buttonText: AppStrings.applyButtonText,
-            onPressed: () {
-              Routes.awesomeSuccessRoute.moveToWithArgs({
-                "header": AppStrings.congratulations,
-                "subHeader": AppStrings.loanApplicationSuccess,
-                "buttonText": AppStrings.goToHomepage,
-                "onPressed": () {
-                  Routes.bottomNavigationRoute.moveTo();
-                }
-              });
-            },
-          ),
+          const ApplyForLoanButtonSection(),
         ],
       ),
     );
