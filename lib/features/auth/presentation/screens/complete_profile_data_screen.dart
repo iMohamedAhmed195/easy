@@ -68,7 +68,7 @@ class _CompleteProfileDataScreenState extends State<CompleteProfileDataScreen> {
                         if (context.read<UiAuthCubit>().nextPage == 2 &&
                             context.read<UiAuthCubit>().isCustomer) {
                           Routes.awesomeSuccessRoute.moveToWithArgs({
-                            "header": AppStrings().congratulations,
+                            "header": AppStrings.congratulations,
                             "subHeader": AppStrings().accountCreated,
                             "buttonText": AppStrings().proceed,
                             "onPressed": () {

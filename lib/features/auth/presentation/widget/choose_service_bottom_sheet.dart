@@ -130,7 +130,7 @@ class ChooseServiceBottomSheet extends StatelessWidget {
                         .selectedServices
                         .isNotEmpty) {
                       Routes.awesomeSuccessRoute.moveToWithArgs({
-                        "header": AppStrings().congratulations,
+                        "header": AppStrings.congratulations,
                         "subHeader": AppStrings().accountCreated,
                         "buttonText": AppStrings().proceed,
                         "onPressed": () {

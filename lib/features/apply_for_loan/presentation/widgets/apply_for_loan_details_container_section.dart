@@ -41,7 +41,16 @@ class APplyForLoanDetailsContainerSection extends StatelessWidget {
           16.vs,
           CommonButtonSection(
             buttonText: AppStrings.applyButtonText,
-            onPressed: () {},
+            onPressed: () {
+              Routes.awesomeSuccessRoute.moveToWithArgs({
+                "header": AppStrings.congratulations,
+                "subHeader": AppStrings.loanApplicationSuccess,
+                "buttonText": AppStrings.goToHomepage,
+                "onPressed": () {
+                  Routes.bottomNavigationRoute.moveTo();
+                }
+              });
+            },
           ),
         ],
       ),

@@ -101,7 +101,7 @@ class AppStrings {
   final String passwordMustBeDifferent =
       'Your new password must be different from previous used passwords.';
   final String awesome = 'Awesome!';
-  final String congratulations = 'Congratulations!';
+  static const String congratulations = 'Congratulations!';
   final String accountCreated =
       'Your account has been successfully created,Click proceed to go to your homepage.!';
   final String passwordResetSuccess =
@@ -334,4 +334,6 @@ class AppStrings {
   static const note3 =
       "Keep your payment methods up to date, to avoid any disruptions in your repayment process.";
   static const applyButtonText = "Apply";
+  static const String goToHomepage = "Go to Homepage";
+  static const String loanApplicationSuccess = "Your loan application has been applied successfully and will be sent to our verified providers.";
 }
