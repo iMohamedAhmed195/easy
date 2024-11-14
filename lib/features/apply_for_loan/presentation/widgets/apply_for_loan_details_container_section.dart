@@ -1,4 +1,3 @@
-import 'package:easy/features/apply_for_loan/presentation/widgets/apply_for_loan_container_dash_section.dart';
 import 'package:easy/features/apply_for_loan/presentation/widgets/apply_for_loan_notes_section.dart';
 import 'package:easy/features/apply_for_loan/presentation/widgets/contract_percentage_and_price_section.dart';
 import 'package:easy/features/apply_for_loan/presentation/widgets/loan_amount_text_and_slider_section.dart';
@@ -18,7 +17,7 @@ class APplyForLoanDetailsContainerSection extends StatelessWidget {
       padding: 16.all,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(AppAssets.applyForLoanContainer),
+          image: AssetImage(AppAssets.applyForLoanContainerWithDivider),
           fit: BoxFit.fill,
         ),
       ),
@@ -36,7 +35,7 @@ class APplyForLoanDetailsContainerSection extends StatelessWidget {
           12.vs,
           const LoanTotalDueSection(),
           27.vs,
-          const ApplyForLoanContainerDashSection(),
+          // const ApplyForLoanContainerDashSection(),
           24.vs,
           const ApplyForLoanNotesSection(),
           16.vs,
