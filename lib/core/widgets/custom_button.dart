@@ -27,41 +27,41 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-        height: height ?? 55.h,
-        color: backgroundColor ?? AppColors.primaryColor,
-        elevation: 0,
-        highlightElevation: 0,
-        onPressed: onPressed,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
-            side: BorderSide(color: borderColor ?? AppColors.primaryColor)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            svgIconPath != null
-                ? SvgPicture.asset(
-                    svgIconPath!,
-                    width: 20.w,
-                    height: 20.w,
-                    color: AppColors.white,
-                  )
-                : const SizedBox(
-                    width: 0,
-                  ),
-            svgIconPath != null
-                ? SizedBox(
-                    width: 14.w,
-                  )
-                : const SizedBox(
-                    width: 0,
-                  ),
-            Text(
-              text,
-              style: style ??
-                  getSemiBoldTextStyle(
-                      fontSize: 16, color: textColor ?? AppColors.white),
-            ),
-          ],
-        ));
+      height: height ?? 55.h,
+      color: backgroundColor ?? AppColors.primaryColor,
+      elevation: 0,
+      highlightElevation: 0,
+      onPressed: onPressed,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
+          side: BorderSide(color: borderColor ?? AppColors.primaryColor)),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          svgIconPath != null
+              ? SvgPicture.asset(
+                  svgIconPath!,
+                  width: 20.w,
+                  height: 20.w,
+                )
+              : const SizedBox(
+                  width: 0,
+                ),
+          svgIconPath != null
+              ? SizedBox(
+                  width: 14.w,
+                )
+              : const SizedBox(
+                  width: 0,
+                ),
+          Text(
+            text,
+            style: style ??
+                getSemiBoldTextStyle(
+                    fontSize: 16, color: textColor ?? AppColors.white),
+          ),
+        ],
+      ),
+    );
   }
 }

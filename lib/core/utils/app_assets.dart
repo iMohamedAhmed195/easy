@@ -99,6 +99,12 @@ class AppAssets {
   static String successful = "${SvgImages.svgPath}/Successful.svg";
   static String bankCard = "${SvgImages.svgPath}/Bank-Card.svg";
   static String newLoan = "${SvgImages.svgPath}/new-loan.svg";
+  static String roundedArrowUp = "${SvgImages.svgPath}/rounded-arrow-up.svg";
+  static String roundedArrowDown =
+      "${SvgImages.svgPath}/rounded-arrow-down.svg";
+  static String emptyWalletAdd = "${SvgImages.svgPath}/empty-wallet-add.svg";
+  static String moneyChange = "${SvgImages.svgPath}/money-change.svg";
+  static String redArrowDown = "${SvgImages.svgPath}/red-arrow-down.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
@@ -110,7 +116,7 @@ class AppAssets {
   static String provider = "${PngImages.imagesPath}/provider.png";
   static String applyForLoanContainer =
       "${PngImages.imagesPath}/apply-for-loan-container.png";
-       static String applyForLoanContainerWithDivider =
+  static String applyForLoanContainerWithDivider =
       "${PngImages.imagesPath}/apply-for-loan-container-with-divider.png";
 
   //! GIFs

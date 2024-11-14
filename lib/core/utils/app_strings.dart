@@ -62,7 +62,7 @@ class AppStrings {
   final String onBoarding3SubTitle =
       'With the E-wallet feature, you can easily add money to your account and stay in control of your transactions.';
   final String welcomeBack = 'Welcome Back!';
-  final String currentBalance = 'Current Balance';
+  static const String currentBalance = 'Current Balance';
   final String welcomeOnBoard = 'Welcome Onboard!';
   final String logInToYourAccount = 'Log in to your account';
   final String enterThePhoneNumber =
@@ -335,5 +335,21 @@ class AppStrings {
       "Keep your payment methods up to date, to avoid any disruptions in your repayment process.";
   static const applyButtonText = "Apply";
   static const String goToHomepage = "Go to Homepage";
-  static const String loanApplicationSuccess = "Your loan application has been applied successfully and will be sent to our verified providers.";
+  static const String loanApplicationSuccess =
+      "Your loan application has been applied successfully and will be sent to our verified providers.";
+
+  // **************************** Wallet For Loan Screens ********************************************
+  static const String walletTitle = "Wallet";
+  static const String balanceAmount = 'SAR 12,450.99';
+  static const String increasePercentage = '+2.35% from last week ';
+  static const String loanAppliedNote = '(2 loans applied)';
+  static const String withdraw = "Withdraw";
+  static const String deposit = "Deposit";
+  static const String transactionsTitle = 'Transactions';
+  static const String personalLoan = 'Personal Loan';
+  static const String successful = 'Successful';
+  static const String dateFirstTransaction = '17 September, 14:23 PM';
+  static const String dateSecondTransaction = '16 September, 10:00 AM';
+
+
 }
