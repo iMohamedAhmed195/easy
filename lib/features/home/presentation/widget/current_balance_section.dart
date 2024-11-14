@@ -11,7 +11,7 @@ class CurrentBalanceSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          AppStrings().currentBalance,
+          AppStrings.currentBalance,
           style: getSemiBoldTextStyle(fontSize: 14, color: AppColors.gray),
         ),
         SizedBox(

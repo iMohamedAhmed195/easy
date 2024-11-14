@@ -350,6 +350,8 @@ class AppStrings {
   static const String successful = 'Successful';
   static const String dateFirstTransaction = '17 September, 14:23 PM';
   static const String dateSecondTransaction = '16 September, 10:00 AM';
-
-
+  static const String transactionTypeAll = 'All';
+  static const String transactionTypeLoans = 'Loans';
+  static const String transactionTypeDeposits = 'Deposits';
+  static const String transactionTypeWithdraw = 'Withdraw';
 }
