@@ -62,7 +62,7 @@ class ChooseServiceBottomSheet extends StatelessWidget {
                           SizedBox(height: 14.h),
                           Text(
                             AppStrings.money,
-                            style: getSemiboldTextStyle(
+                            style: getSemiBoldTextStyle(
                               fontSize: 10,
                               color: context
                                       .read<UiAuthCubit>()
@@ -104,7 +104,7 @@ class ChooseServiceBottomSheet extends StatelessWidget {
                           SizedBox(height: 14.h),
                           Text(
                             AppStrings().provider,
-                            style: getSemiboldTextStyle(
+                            style: getSemiBoldTextStyle(
                               fontSize: 10,
                               color: context
                                       .read<UiAuthCubit>()

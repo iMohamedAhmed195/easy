@@ -1,4 +1,3 @@
-
 import '../../../../exports.dart';
 
 class ChatScreenAppBarSection extends StatelessWidget {
@@ -21,7 +20,7 @@ class ChatScreenAppBarSection extends StatelessWidget {
           Center(
             child: Text(
               appBarTitle,
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 color: AppColors.black,
                 fontSize: 16,
                 height: 0,

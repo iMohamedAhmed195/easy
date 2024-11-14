@@ -12,7 +12,7 @@ class ProfileScreenUserImageNameTitleSection extends StatelessWidget {
         8.vs,
         Text(
           "Ahmed Adel",
-          style: getSemiboldTextStyle(fontSize: 20),
+          style: getSemiBoldTextStyle(fontSize: 20),
         ),
         4.vs,
         Text(

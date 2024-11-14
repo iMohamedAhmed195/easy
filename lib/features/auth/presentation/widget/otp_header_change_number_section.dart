@@ -38,7 +38,7 @@ class OtpHeaderChangeNumberSection extends StatelessWidget {
             const TextSpan(text: '  '),
             TextSpan(
               text: AppStrings().changeNumber,
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 fontSize: 14,
                 color: AppColors.primaryColor,
               ),

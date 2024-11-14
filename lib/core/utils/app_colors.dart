@@ -32,4 +32,6 @@ class AppColors {
   static const Color strongGreen = Color(0xFF02A332);
   static Color strongGreenDisabledColor =
       const Color(0xFF02A332).withOpacity(0.5);
+  static const Color softLightGray = Color(0xFFD5D7E3);
+  static const Color coolGray = Color(0xFFCBCED8);
 }

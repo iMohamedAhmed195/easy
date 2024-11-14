@@ -7,7 +7,7 @@ import '../../../../exports.dart';
 
 class StepperCompleteInfoSection extends StatelessWidget {
   const StepperCompleteInfoSection({super.key, required this.uiAuthCubit});
-  final UiAuthCubit uiAuthCubit ;
+  final UiAuthCubit uiAuthCubit;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -25,7 +25,6 @@ class StepperCompleteInfoSection extends StatelessWidget {
                   color: AppColors.green,
                   width: 1,
                 ),
-
               ),
               child: Center(
                 child: SvgPicture.asset(AppAssets.personalInfo),
@@ -37,7 +36,9 @@ class StepperCompleteInfoSection extends StatelessWidget {
               lineLength: 92.w,
               lineThickness: 1.0,
               dashLength: 6.0,
-              dashColor:uiAuthCubit.savedPage.contains(1)  ? AppColors.green : AppColors.gray,
+              dashColor: uiAuthCubit.savedPage.contains(1)
+                  ? AppColors.green
+                  : AppColors.gray,
               dashRadius: 0.0,
               dashGapLength: 6.0,
             ),
@@ -48,13 +49,19 @@ class StepperCompleteInfoSection extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: AppColors.transparent,
                 border: Border.all(
-                  color:uiAuthCubit.savedPage.contains(1)? AppColors.green : AppColors.gray,
+                  color: uiAuthCubit.savedPage.contains(1)
+                      ? AppColors.green
+                      : AppColors.gray,
                   width: 1,
                 ),
-
               ),
               child: Center(
-                child: SvgPicture.asset(AppAssets.addressInfo,color: uiAuthCubit.savedPage.contains(1) ? AppColors.green : AppColors.gray,),
+                child: SvgPicture.asset(
+                  AppAssets.addressInfo,
+                  color: uiAuthCubit.savedPage.contains(1)
+                      ? AppColors.green
+                      : AppColors.gray,
+                ),
               ),
             ),
             DottedLine(
@@ -63,7 +70,9 @@ class StepperCompleteInfoSection extends StatelessWidget {
               lineLength: 92.w,
               lineThickness: 1.0,
               dashLength: 6.0,
-              dashColor:uiAuthCubit.savedPage.contains(2)? AppColors.green : AppColors.gray,
+              dashColor: uiAuthCubit.savedPage.contains(2)
+                  ? AppColors.green
+                  : AppColors.gray,
               dashRadius: 0.0,
               dashGapLength: 6.0,
             ),
@@ -74,42 +83,49 @@ class StepperCompleteInfoSection extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: AppColors.transparent,
                 border: Border.all(
-                  color:uiAuthCubit.savedPage.contains(2) ? AppColors.green : AppColors.gray,
+                  color: uiAuthCubit.savedPage.contains(2)
+                      ? AppColors.green
+                      : AppColors.gray,
                   width: 1,
                 ),
-
               ),
               child: Center(
-                child: SvgPicture.asset(AppAssets.accountType,color: uiAuthCubit.savedPage.contains(2) ? AppColors.green : AppColors.gray,),
+                child: SvgPicture.asset(
+                  AppAssets.accountType,
+                  color: uiAuthCubit.savedPage.contains(2)
+                      ? AppColors.green
+                      : AppColors.gray,
+                ),
               ),
             ),
           ],
         ),
-        SizedBox(height: 4.h,),
+        SizedBox(
+          height: 4.h,
+        ),
         Row(
           children: [
             Text(
               AppStrings.personalInfo,
-              style: getSemiboldTextStyle(
-                  fontSize: 10,
-                  color: AppColors.green
-              ),
+              style: getSemiBoldTextStyle(fontSize: 10, color: AppColors.green),
             ),
             const Spacer(),
             Text(
               AppStrings.addressInfo,
-              style:  getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                   fontSize: 10,
-                  color: uiAuthCubit.savedPage.contains(2) ? AppColors.green : AppColors.gray
-              ),
+                  color: uiAuthCubit.savedPage.contains(2)
+                      ? AppColors.green
+                      : AppColors.gray),
             ),
             const Spacer(),
             Text(
               AppStrings.accountType,
-              style:  getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                   fontSize: 10,
-                  color: uiAuthCubit.savedPage.contains(2)? AppColors.green : AppColors.gray
-              ),
+                  color: uiAuthCubit.savedPage.contains(2)
+                      ? AppColors.green
+                      : AppColors.gray),
             )
           ],
         ),

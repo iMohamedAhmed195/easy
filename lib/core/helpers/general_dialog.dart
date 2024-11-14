@@ -1,5 +1,3 @@
-
-
 import '../../exports.dart';
 
 Future showCustomDialog({
@@ -23,25 +21,37 @@ Future showCustomDialog({
             child: Container(
               height: 184,
               margin: const EdgeInsets.all(15),
-              decoration: const BoxDecoration(color: AppColors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+              decoration: const BoxDecoration(
+                  color: AppColors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
               alignment: Alignment.center,
               child: Column(
                 children: [
-                  SizedBox(height: 20.h,),
+                  SizedBox(
+                    height: 20.h,
+                  ),
                   Align(
                       alignment: Alignment.center,
                       child: Text(
                         title!,
-                        style: getSemiboldTextStyle(
+                        style: getSemiBoldTextStyle(
                           fontSize: 20,
                           color: AppColors.titleGray,
                         ),
                       )),
-                  SizedBox(height: 20.h,),
+                  SizedBox(
+                    height: 20.h,
+                  ),
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      space.isNotNull ?SizedBox(height: space!.h,)  : SizedBox(height: 4.h,),
+                      space.isNotNull
+                          ? SizedBox(
+                              height: space!.h,
+                            )
+                          : SizedBox(
+                              height: 4.h,
+                            ),
                       Text(
                         content!,
                         style: getMediumTextStyle(

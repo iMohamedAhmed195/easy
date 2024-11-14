@@ -32,7 +32,7 @@ class TopLoanersListViewSection extends StatelessWidget {
         children: [
           Text(
             '4',
-            style: getSemiboldTextStyle(fontSize: 14, color: AppColors.black),
+            style: getSemiBoldTextStyle(fontSize: 14, color: AppColors.black),
           ),
           SizedBox(
             width: 12.w,
@@ -50,7 +50,7 @@ class TopLoanersListViewSection extends StatelessWidget {
           ),
           Text(
             'Ahmed Adel',
-            style: getSemiboldTextStyle(fontSize: 14, color: AppColors.black),
+            style: getSemiBoldTextStyle(fontSize: 14, color: AppColors.black),
           ),
           const Spacer(),
           Row(

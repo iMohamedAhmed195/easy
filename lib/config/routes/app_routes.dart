@@ -1,3 +1,4 @@
+import 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
 import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
 
 import '../../exports.dart';
@@ -32,6 +33,7 @@ class Routes {
       "/languageSelectionScreenRoute";
   static const String customerNotificationsScreenRoute =
       "/customerNotificationsScreenRoute";
+  static const String applyForLoanScreenRoute = "/applyForLoanScreenRoute";
 }
 
 class RouteGenerator {
@@ -121,6 +123,9 @@ class RouteGenerator {
         return buildPageRoute<T>(
             child: const CustomerNotificationsScreen(),
             routeSettings: routeSettings);
+      case Routes.applyForLoanScreenRoute:
+        return buildPageRoute<T>(
+            child: const ApplyForLoanScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

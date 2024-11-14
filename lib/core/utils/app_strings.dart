@@ -7,7 +7,7 @@ class AppStrings {
   final String selectPreferredLanguage = 'Select Preferred Language';
   final String arabic = 'العربية';
   final String english = 'English (US)';
- static const  String select = 'Select';
+  static const String select = 'Select';
   final String next = 'Next';
   final String skip = 'skip';
   final String services = 'Services';
@@ -290,7 +290,7 @@ class AppStrings {
   static const String southKoreanFlag = 'KR';
   static const String southKoreanName = '한국어';
 
-    // **************************** Notification Selection Screens ********************************************
+  // **************************** Notification Selection Screens ********************************************
   static const String yesterdayText = "Yesterday";
   static const String loanRepaymentWarningTitle = "Loan Repayment Warning";
   static const String loanRepaymentWarningDescription =
@@ -310,4 +310,28 @@ class AppStrings {
   static const String paymentSuccessfulTimestamp = "Yesterday, 08:35 PM";
   static const String payButtonText = "Pay";
 
+  // **************************** Apply For Loan Screens ********************************************
+  static const applyForLoanTitle = "Apply For a Loan";
+  static const loanDetailsTitle = "Loan Details";
+  static const loanAmountLabel = "Loan Amount";
+  static const loanAmountValue = "SAR 3,450.99";
+  static const minLoanAmount = "SAR 100";
+  static const maxLoanAmount = "SAR 5000";
+  static const loanTermLabel = "Loan Term";
+  static const loanTermValue = "12 Days";
+  static const minLoanTerm = "7 Days";
+  static const maxLoanTerm = "30 Days";
+  static const contractTaxPercentage = "Contract Tax Percentage";
+  static const contractTaxPercentageValue = "20%";
+  static const contractTaxPrice = "Contract Tax Price";
+  static const contractTaxPriceValue = "SAR 800.00";
+  static const totalDueLabel = "Total Due";
+  static const totalDueValue = "SAR 3,950.00";
+  static const notesTitle = "Notes:";
+  static const note1 = "your loan must be repaid by the agreed-upon due date.";
+  static const note2 =
+      "Timely repayment helps you avoid penalties and maintain a good credit standing.";
+  static const note3 =
+      "Keep your payment methods up to date, to avoid any disruptions in your repayment process.";
+  static const applyButtonText = "Apply";
 }

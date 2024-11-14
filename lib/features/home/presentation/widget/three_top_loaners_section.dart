@@ -16,7 +16,7 @@ class ThreeTopLoanersSection extends StatelessWidget {
         ),
         Text(
           AppStrings().topLoaners,
-          style: getSemiboldTextStyle(fontSize: 14, color: AppColors.black),
+          style: getSemiBoldTextStyle(fontSize: 14, color: AppColors.black),
         ),
         SizedBox(
           height: 12.h,

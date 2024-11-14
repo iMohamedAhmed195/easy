@@ -28,7 +28,7 @@ class LanguageSelectionListSection extends StatelessWidget {
                 ),
                 title: Text(
                   countryLanguage.countryLanguageName,
-                  style: getSemiboldTextStyle(
+                  style: getSemiBoldTextStyle(
                     color: AppColors.richCharcoal,
                     fontSize: 14,
                   ),

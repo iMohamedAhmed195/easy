@@ -10,7 +10,7 @@ class LogoutAndCloseAccountBottomSheetButtons extends StatelessWidget {
     return Column(
       children: [
         AppTextButton(
-          textStyle: getSemiboldTextStyle(
+          textStyle: getSemiBoldTextStyle(
             fontSize: 16,
             color: AppColors.white,
             fontFamily: FontFamilies.openSans,
@@ -26,7 +26,7 @@ class LogoutAndCloseAccountBottomSheetButtons extends StatelessWidget {
         ),
         16.vs,
         AppTextButton(
-          textStyle: getSemiboldTextStyle(
+          textStyle: getSemiBoldTextStyle(
               fontSize: 16,
               color: AppColors.primaryColor,
               fontFamily: FontFamilies.openSans),

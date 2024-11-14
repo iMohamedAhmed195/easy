@@ -38,7 +38,7 @@ class PreferencesListsSection<T> extends StatelessWidget {
             ),
             title: Text(
               getTitle(itemList[index]),
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 color: AppColors.richCharcoal,
                 fontSize: 14,
               ),

@@ -45,7 +45,7 @@ class _NotificationsSettingsListSectionState
               child: ListTile(
                 title: Text(
                   notificationsSettingstoggleItems[index].text,
-                  style: getSemiboldTextStyle(
+                  style: getSemiBoldTextStyle(
                     color: AppColors.richCharcoal,
                     fontSize: 14,
                     height: 0,

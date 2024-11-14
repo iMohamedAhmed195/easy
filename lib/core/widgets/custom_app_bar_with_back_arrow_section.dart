@@ -24,7 +24,7 @@ class CustomAppBarWithBackArrowSection extends StatelessWidget {
               : const SizedBox.shrink(),
           Text(
             appBarTitle,
-            style: getSemiboldTextStyle(
+            style: getSemiBoldTextStyle(
               color: AppColors.black,
               fontSize: 16,
               height: 0,

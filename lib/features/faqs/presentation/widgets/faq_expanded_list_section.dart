@@ -35,7 +35,7 @@ class _FaqExpandedListSectionState extends State<FaqExpandedListSection> {
                   title: Text(
                     faq.question,
                     style: isExpanded
-                        ? getSemiboldTextStyle(
+                        ? getSemiBoldTextStyle(
                             color: AppColors.primaryColor,
                             fontSize: 14,
                             height: 0,

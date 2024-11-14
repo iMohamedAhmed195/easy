@@ -11,11 +11,12 @@ class LoginAndSocialLoginSection extends StatelessWidget {
       children: [
         CustomButton(
             text: AppStrings().signIn,
-            onPressed:(){
+            onPressed: () {
               Routes.bottomNavigationRoute.moveTo();
-            }
+            }),
+        SizedBox(
+          height: 24.h,
         ),
-        SizedBox(height: 24.h,),
         Row(
           children: [
             Container(
@@ -23,12 +24,16 @@ class LoginAndSocialLoginSection extends StatelessWidget {
               height: 1.h,
               color: AppColors.gray,
             ),
-            SizedBox(width: 12.w,),
+            SizedBox(
+              width: 12.w,
+            ),
             Text(
               AppStrings().orLoginWith,
-              style: getSemiboldTextStyle(color: AppColors.gray,fontSize: 12),
+              style: getSemiBoldTextStyle(color: AppColors.gray, fontSize: 12),
             ),
-            SizedBox(width: 12.w,),
+            SizedBox(
+              width: 12.w,
+            ),
             Container(
               width: 110.w,
               height: 1.h,
@@ -36,28 +41,45 @@ class LoginAndSocialLoginSection extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 24.h,),
+        SizedBox(
+          height: 24.h,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets.google,)),
-            SizedBox(width: 32.w,),
-            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets.facebook,)),
-            SizedBox(width: 32.w,),
-            GestureDetector(onTap:(){},child: buildSocialLoginButton(svgPath: AppAssets.apple,)),
+            GestureDetector(
+                onTap: () {},
+                child: buildSocialLoginButton(
+                  svgPath: AppAssets.google,
+                )),
+            SizedBox(
+              width: 32.w,
+            ),
+            GestureDetector(
+                onTap: () {},
+                child: buildSocialLoginButton(
+                  svgPath: AppAssets.facebook,
+                )),
+            SizedBox(
+              width: 32.w,
+            ),
+            GestureDetector(
+                onTap: () {},
+                child: buildSocialLoginButton(
+                  svgPath: AppAssets.apple,
+                )),
           ],
         )
       ],
     );
   }
+
   Widget buildSocialLoginButton({required String svgPath}) {
     return Container(
       width: 48.w,
       height: 48.h,
       decoration: const BoxDecoration(
-          shape: BoxShape.circle,
-          color: AppColors.backGroundGray
-      ),
+          shape: BoxShape.circle, color: AppColors.backGroundGray),
       padding: EdgeInsets.all(12.r),
       child: SvgPicture.asset(svgPath),
     );

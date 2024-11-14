@@ -33,35 +33,38 @@ class ImageGetLoansSection extends StatelessWidget {
                   children: [
                     RichText(
                         text: TextSpan(
-                          children: [
-                            TextSpan(
-                                text: 'Get Instant Loans up\n to ',
-                                style: getSemiboldTextStyle(
-                                    fontSize: 14, color: AppColors.white)),
-                            TextSpan(
-                                text: '5000 SAR',
-                                style: getRegularTextStyle(
-                                    fontSize: 18, color: AppColors.white)),
-                          ],
-                        )
-                    ),
-                    SizedBox(height: 8.h,),
+                      children: [
+                        TextSpan(
+                            text: 'Get Instant Loans up\n to ',
+                            style: getSemiBoldTextStyle(
+                                fontSize: 14, color: AppColors.white)),
+                        TextSpan(
+                            text: '5000 SAR',
+                            style: getRegularTextStyle(
+                                fontSize: 18, color: AppColors.white)),
+                      ],
+                    )),
                     SizedBox(
-                        height:32.h,
+                      height: 8.h,
+                    ),
+                    SizedBox(
+                        height: 32.h,
                         width: 112.w,
                         child: CustomButton(
                             backgroundColor: AppColors.white,
                             borderColor: AppColors.transparent,
                             borderRadius: 8.r,
-                            style: getSemiboldTextStyle(fontSize: 12,color:AppColors.primaryColor),
+                            style: getSemiBoldTextStyle(
+                                fontSize: 12, color: AppColors.primaryColor),
                             text: AppStrings().applyNow,
-                            onPressed: (){}
-                        )
-                    )
+                            onPressed: () {}))
                   ]),
               SizedBox(
-                width: 8.w,),
-              CustomSVGImage(asset: AppAssets.coins,)
+                width: 8.w,
+              ),
+              CustomSVGImage(
+                asset: AppAssets.coins,
+              )
             ],
           ),
         ),

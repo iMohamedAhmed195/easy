@@ -33,7 +33,7 @@ class HomeAppBarSection extends StatelessWidget {
               Text(
                 AppStrings().liveChat,
                 style:
-                    getSemiboldTextStyle(fontSize: 12, color: AppColors.black),
+                    getSemiBoldTextStyle(fontSize: 12, color: AppColors.black),
               )
             ],
           ),

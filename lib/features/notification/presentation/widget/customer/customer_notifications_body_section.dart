@@ -18,7 +18,7 @@ class NotificationsBodySection extends StatelessWidget {
         25.vs,
         Text(
           AppStrings.todayText,
-          style: getSemiboldTextStyle(
+          style: getSemiBoldTextStyle(
             color: AppColors.richCharcoal,
             fontSize: 12,
           ),
@@ -43,7 +43,7 @@ class NotificationsBodySection extends StatelessWidget {
         16.vs,
         Text(
           AppStrings.yesterdayText,
-          style: getSemiboldTextStyle(
+          style: getSemiBoldTextStyle(
             color: AppColors.richCharcoal,
             fontSize: 12,
           ),

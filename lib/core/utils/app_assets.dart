@@ -108,6 +108,11 @@ class AppAssets {
   static String logo = "${PngImages.imagesPath}/logo.png";
   static String customer = "${PngImages.imagesPath}/customer.png";
   static String provider = "${PngImages.imagesPath}/provider.png";
+  static String applyForLoanContainer =
+      "${PngImages.imagesPath}/apply-for-loan-container.png";
+       static String applyForLoanContainerWithDivider =
+      "${PngImages.imagesPath}/apply-for-loan-container-with-divider.png";
+
   //! GIFs
   static String locationGif = "${GifFiles.gifPath}/location.gif";
 }

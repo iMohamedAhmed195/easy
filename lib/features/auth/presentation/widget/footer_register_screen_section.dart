@@ -12,37 +12,38 @@ class FooterRegisterScreenSection extends StatelessWidget {
       children: [
         CustomButton(
             text: AppStrings().signUp,
-            onPressed:(){
+            onPressed: () {
               Routes.enterOtpRoute.moveToWithArgs({
                 "isForgetPassword": false,
               });
-            }
+            }),
+        SizedBox(
+          height: 32.h,
         ),
-        SizedBox(height: 32.h,),
         RichText(
             text: TextSpan(
-              children: [
-                TextSpan(
-                  text: AppStrings().alreadyHaveAnAccount,
-                  style: getSemiboldTextStyle(
-                    fontSize: 16,
-                    color: AppColors.gray,
-                  ),
-                ),
-                const TextSpan(text: '  '),
-                TextSpan(
-                  text: AppStrings().signIn,
-                  style: getSemiboldTextStyle(
-                    fontSize: 16,
-                    color: AppColors.primaryColor,
-                  ),
-                  recognizer: TapGestureRecognizer()
-                    ..onTap = () {
-                      Navigator.pushNamed(context, Routes.loginRoute);
-                    },
-                ),
-              ],
-            )),
+          children: [
+            TextSpan(
+              text: AppStrings().alreadyHaveAnAccount,
+              style: getSemiBoldTextStyle(
+                fontSize: 16,
+                color: AppColors.gray,
+              ),
+            ),
+            const TextSpan(text: '  '),
+            TextSpan(
+              text: AppStrings().signIn,
+              style: getSemiBoldTextStyle(
+                fontSize: 16,
+                color: AppColors.primaryColor,
+              ),
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  Navigator.pushNamed(context, Routes.loginRoute);
+                },
+            ),
+          ],
+        )),
         SizedBox(
           height: 24.h,
         ),

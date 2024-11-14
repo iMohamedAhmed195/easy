@@ -98,7 +98,7 @@ TextStyle getMediumTextStyle({
 }
 
 // Secondary Text Style
-TextStyle getSemiboldTextStyle({
+TextStyle getSemiBoldTextStyle({
   double fontSize = 14,
   Color? color,
   FontWeight? fontWeight,

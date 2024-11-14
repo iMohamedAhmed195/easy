@@ -168,7 +168,7 @@ class _ProviderServiceTypeTextFormFieldState
           value: item,
           child: Text(
             item.name,
-            style: getSemiboldTextStyle(
+            style: getSemiBoldTextStyle(
               color: AppColors.richCharcoal,
               fontSize: 16,
             ),

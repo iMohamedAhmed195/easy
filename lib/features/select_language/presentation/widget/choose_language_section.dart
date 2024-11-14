@@ -46,7 +46,7 @@ class ChooseLanguageSection extends StatelessWidget {
                   ),
                   Text(
                     AppStrings().arabic,
-                    style: getSemiboldTextStyle(),
+                    style: getSemiBoldTextStyle(),
                   ),
                 ],
               ),
@@ -90,7 +90,7 @@ class ChooseLanguageSection extends StatelessWidget {
                   ),
                   Text(
                     AppStrings().english,
-                    style: getSemiboldTextStyle(),
+                    style: getSemiBoldTextStyle(),
                   ),
                 ],
               ),

@@ -45,7 +45,7 @@ class NotificationsContainerItem extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: getSemiboldTextStyle(
+                      style: getSemiBoldTextStyle(
                         color: AppColors.richCharcoal,
                         fontSize: 14,
                       ),
@@ -75,7 +75,7 @@ class NotificationsContainerItem extends StatelessWidget {
                             buttonWidth: 67,
                             buttonHeight: 28,
                             buttonText: AppStrings.payButtonText,
-                            textStyle: getSemiboldTextStyle(
+                            textStyle: getSemiBoldTextStyle(
                               color: AppColors.white,
                               fontSize: 10,
                             ),

@@ -14,7 +14,7 @@ class FooterLoginScreenSection extends StatelessWidget {
           children: [
             TextSpan(
               text: AppStrings().doNotHaveAnAccount,
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 fontSize: 16,
                 color: AppColors.gray,
               ),
@@ -22,7 +22,7 @@ class FooterLoginScreenSection extends StatelessWidget {
             const TextSpan(text: '  '),
             TextSpan(
               text: AppStrings().signUp,
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 fontSize: 16,
                 color: AppColors.primaryColor,
               ),

@@ -13,7 +13,8 @@ class AccountTypeSection extends StatelessWidget {
         GestureDetector(
           onTap: () {
             if (!uiAuthCubit.isCustomer) {
-              uiAuthCubit.changeAccountType(); //! Switch to Customer if not already
+              uiAuthCubit
+                  .changeAccountType(); //! Switch to Customer if not already
             }
           },
           child: Container(
@@ -38,7 +39,7 @@ class AccountTypeSection extends StatelessWidget {
                 SizedBox(height: 14.h),
                 Text(
                   AppStrings().customer,
-                  style: getSemiboldTextStyle(
+                  style: getSemiBoldTextStyle(
                     fontSize: 10,
                     color: uiAuthCubit.isCustomer
                         ? AppColors.primaryColor
@@ -53,7 +54,8 @@ class AccountTypeSection extends StatelessWidget {
         GestureDetector(
           onTap: () {
             if (uiAuthCubit.isCustomer) {
-              uiAuthCubit.changeAccountType(); //! Switch to Provider if not already
+              uiAuthCubit
+                  .changeAccountType(); //! Switch to Provider if not already
             }
           },
           child: Container(
@@ -78,7 +80,7 @@ class AccountTypeSection extends StatelessWidget {
                 SizedBox(height: 14.h),
                 Text(
                   AppStrings().provider,
-                  style: getSemiboldTextStyle(
+                  style: getSemiBoldTextStyle(
                     fontSize: 10,
                     color: !uiAuthCubit.isCustomer
                         ? AppColors.primaryColor

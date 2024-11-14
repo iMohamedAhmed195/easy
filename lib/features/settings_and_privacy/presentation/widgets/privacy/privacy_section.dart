@@ -1,4 +1,3 @@
-
 import '../../../../../exports.dart';
 import 'privacy_lists_section.dart';
 
@@ -11,7 +10,7 @@ class PrivacySection extends StatelessWidget {
       children: [
         Text(
           AppStrings.privacy,
-          style: getSemiboldTextStyle(
+          style: getSemiBoldTextStyle(
             color: AppColors.richCharcoal,
             fontSize: 12,
           ),

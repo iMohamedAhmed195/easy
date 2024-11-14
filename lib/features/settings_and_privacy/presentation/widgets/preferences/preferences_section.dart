@@ -11,7 +11,7 @@ class PreferencesSection extends StatelessWidget {
       children: [
         Text(
           AppStrings.preferences,
-          style: getSemiboldTextStyle(
+          style: getSemiBoldTextStyle(
             color: AppColors.richCharcoal,
             fontSize: 12,
           ),

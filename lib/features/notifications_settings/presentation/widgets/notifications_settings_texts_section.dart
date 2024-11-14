@@ -1,4 +1,3 @@
-
 import '../../../../exports.dart';
 
 class NotificationsSettingsTextsSection extends StatelessWidget {
@@ -10,7 +9,7 @@ class NotificationsSettingsTextsSection extends StatelessWidget {
       children: [
         Text(
           AppStrings.manageYourNotifications,
-          style: getSemiboldTextStyle(
+          style: getSemiBoldTextStyle(
             color: AppColors.richCharcoal,
             fontSize: 14,
           ),

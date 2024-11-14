@@ -13,7 +13,7 @@ class ChatScreenChatListSection extends StatelessWidget {
           children: [
             Text(
               AppStrings.todayText,
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 color: AppColors.richCharcoal,
                 fontSize: 12,
               ),
@@ -21,7 +21,7 @@ class ChatScreenChatListSection extends StatelessWidget {
             4.vs,
             Text(
               AppStrings.specialistJoinedText,
-              style: getSemiboldTextStyle(
+              style: getSemiBoldTextStyle(
                 color: AppColors.grayishBlueColor,
                 fontSize: 12,
               ),
@@ -31,7 +31,7 @@ class ChatScreenChatListSection extends StatelessWidget {
         24.vs,
         Text(
           AppStrings.timeText,
-          style: getSemiboldTextStyle(
+          style: getSemiBoldTextStyle(
             color: AppColors.grayishBlueColor,
             fontSize: 12,
           ),

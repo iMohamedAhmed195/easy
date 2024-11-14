@@ -14,7 +14,7 @@ class CommonButtonSection extends StatelessWidget {
       borderRadius: 8,
       backgroundColor: AppColors.primaryColor,
       buttonText: buttonText,
-      textStyle: getSemiboldTextStyle(
+      textStyle: getSemiBoldTextStyle(
         color: AppColors.white,
         fontSize: 16,
         fontFamily: FontFamilies.openSans,

@@ -17,7 +17,7 @@ class PrivacyListsSection extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                titleTextStyle: getSemiboldTextStyle(
+                titleTextStyle: getSemiBoldTextStyle(
                   fontSize: 14,
                   color: AppColors.black,
                 ),

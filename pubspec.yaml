@@ -28,66 +28,64 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  bloc: null
+  cached_network_image: null
+  calendar_date_picker2: null
+  carousel_slider: null
+  connectivity_plus: null
+  cupertino_icons: ^1.0.6
+  dartz: null
+  dio: null
+  dotted_line: null
+  dropdown_search: null
+  easy_localization: null
+  equatable: null
+  firebase_messaging: null
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.6
-  fluttertoast:
-  get_it:
-  dartz:
-  hive:
-  hive_flutter:
-  flutter_bloc:
-  video_player:
-  dropdown_search:
-  simple_circular_progress_bar:
-  syncfusion_flutter_charts:
-  easy_localization:
-  inspection:
-  sms_autofill:
-  flutter_native_splash:
-  bloc:
-  cached_network_image:
-  carousel_slider:
-  flutter_svg:
-  lottie:
-  time_slot:
-  calendar_date_picker2:
-
-  dio:
-  connectivity_plus:
-  equatable:
-  pretty_dio_logger:
-  timer_count_down:
-  permission_handler:
-  logger:
-  shared_preferences:
-  image_picker:
-  firebase_messaging:
-  flutter_local_notifications:
-  shimmer:
-  flutter_screenutil:
-  pinput:
-  intl_phone_number_input:
-  dotted_line:
-  url_launcher: ^6.3.0
+  flutter_bloc: null
+  flutter_dash: ^1.0.0
+  flutter_local_notifications: null
+  flutter_native_splash: null
+  flutter_screenutil: null
+  flutter_svg: null
+  fluttertoast: null
+  get_it: null
+  hive: null
+  hive_flutter: null
+  image_picker: null
+  inspection: null
+  intl_phone_number_input: null
+  logger: null
+  lottie: null
+  permission_handler: null
+  pinput: null
+  pretty_dio_logger: null
   rxdart: ^0.28.0
-
-
+  shared_preferences: null
+  shimmer: null
+  simple_circular_progress_bar: null
+  sms_autofill: null
+  syncfusion_flutter_charts: null
+  syncfusion_flutter_core: ^27.1.58
+  syncfusion_flutter_sliders: ^27.1.58
+  time_slot: null
+  timer_count_down: null
+  url_launcher: ^6.3.0
+  video_player: null
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
 
   flutter_lints: ^4.0.0
-  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/image/splash_logo.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
-
 
 flutter:
   uses-material-design: true

@@ -31,7 +31,7 @@ class AccountInformationScreen extends StatelessWidget {
             AppStrings.accountInformation,
           ),
           centerTitle: true,
-          titleTextStyle: getSemiboldTextStyle(
+          titleTextStyle: getSemiBoldTextStyle(
             fontSize: 16,
             fontFamily: FontFamilies.openSans,
             color: AppColors.black,
