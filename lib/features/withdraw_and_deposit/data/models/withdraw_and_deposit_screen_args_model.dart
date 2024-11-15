@@ -1,6 +1,10 @@
 import 'package:easy/features/withdraw_and_deposit/data/models/bank_cards_details.dart';
 
 class WithdrawAndDepositScreenArgs {
+  //! Introduced `WithdrawAndDepositScreenArgs` model to pass necessary
+  //! arguments to the new screen, including screen feature name, current
+  //! balance, amount to set, slider title, success message, and bank card details.
+
   final String screenFeatureName;
   final String currentBalance;
   final String amountToSet;

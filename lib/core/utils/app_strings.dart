@@ -370,7 +370,7 @@ class AppStrings {
   static const String smallAmountDisplay = '500 SAR';
   static const String enterPinTitle = 'Please Enter your PIN';
   static const String enterPinDescription =
-      'Enter your 4-digits PIN to complete the withdrawal';
+      'Enter your 4-digits PIN to complete the Process';
   static const String forgotPin = 'Forgot your PIN?';
   static const String enterPinButton = 'Enter PIN';
   static const String selectCard = 'Select Card';

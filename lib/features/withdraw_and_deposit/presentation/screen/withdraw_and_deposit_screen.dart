@@ -5,6 +5,11 @@ import '../../../../exports.dart';
 
 class WithdrawAndDepositScreen extends StatelessWidget {
   final WithdrawAndDepositScreenArgs withdrawAndDepositScreenArgs;
+//! Unified Withdraw/Deposit in `WithdrawAndDepositScreen` to reduce duplication,
+//! improve maintainability, and streamline UX.
+//! Args control dynamic UI (e.g., slider title, success message).
+//! Shared widgets handle card selection, amount setting,
+//! and PIN entry for both actions.
 
   const WithdrawAndDepositScreen(
       {super.key, required this.withdrawAndDepositScreenArgs});
