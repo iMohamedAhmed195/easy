@@ -359,23 +359,23 @@ class AppStrings {
 
   static const String bankName1 = 'Saudi Awwal Bank (SAB)';
   static const String bankNumber1 = '**** 4210';
-
   static const String bankName2 = 'National Commercial Bank';
   static const String bankNumber2 = '**** 1234';
-
   static const String bankName3 = 'Al Rajhi Bank';
   static const String bankNumber3 = '**** 5678';
-
   static const String slideToWithdraw = 'Slide to Withdraw';
   static const String setAmount = 'Set Amount';
   static const String withdrawPrompt = 'How much would you like to withdraw?';
   static const String amountDisplay = '2,000 SAR';
   static const String smallAmountDisplay = '500 SAR';
-
   static const String enterPinTitle = 'Please Enter your PIN';
   static const String enterPinDescription =
       'Enter your 4-digits PIN to complete the withdrawal';
   static const String forgotPin = 'Forgot your PIN?';
   static const String enterPinButton = 'Enter PIN';
   static const String selectCard = 'Select Card';
+  static const String depositSuccess =
+      "Your deposit has been successfully processed. The funds have been added to your account balance. Thank you for choosing our service!";
+  static const String withdrawSuccess =
+      "Your withdrawal has been successfully processed. The funds will be transferred to your account shortly. Thank you for choosing our service!";
 }

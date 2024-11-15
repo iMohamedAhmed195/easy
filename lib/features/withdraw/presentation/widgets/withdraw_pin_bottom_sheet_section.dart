@@ -61,7 +61,14 @@ Future<void> withdrawPinBottomSheet(BuildContext context) async {
             CommonButtonSection(
               buttonText: AppStrings.enterPinButton,
               onPressed: () {
-                Navigator.pop(context); //! Close the bottom sheet
+                Routes.awesomeSuccessRoute.moveToWithArgs({
+                  "header": AppStrings.congratulations,
+                  "subHeader": AppStrings.withdrawSuccess,
+                  "buttonText": AppStrings.goToHomepage,
+                  "onPressed": () {
+                    Routes.bottomNavigationRoute.moveTo();
+                  }
+                });
               },
             ),
           ],
