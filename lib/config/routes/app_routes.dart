@@ -1,5 +1,6 @@
 import 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
 import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
+import 'package:easy/features/withdraw/presentation/screen/withdraw_screen.dart';
 
 import '../../exports.dart';
 import '../../features/change_pin/presentation/screen/change_pin_screen.dart';
@@ -31,9 +32,9 @@ class Routes {
   static const String changePinScreenRoute = "/changePinScreenRoute";
   static const String languageSelectionScreenRoute =
       "/languageSelectionScreenRoute";
-  static const String customerNotificationsScreenRoute =
-      "/customerNotificationsScreenRoute";
+  static const String notificationsScreenRoute = "/notificationsScreenRoute";
   static const String applyForLoanScreenRoute = "/applyForLoanScreenRoute";
+  static const String withdrawScreenRoute = "/withdrawScreenRoute";
 }
 
 class RouteGenerator {
@@ -119,13 +120,16 @@ class RouteGenerator {
         return buildPageRoute<T>(
             child: const LanguageSelectionScreen(),
             routeSettings: routeSettings);
-      case Routes.customerNotificationsScreenRoute:
+      case Routes.notificationsScreenRoute:
         return buildPageRoute<T>(
             child: const CustomerNotificationsScreen(),
             routeSettings: routeSettings);
       case Routes.applyForLoanScreenRoute:
         return buildPageRoute<T>(
             child: const ApplyForLoanScreen(), routeSettings: routeSettings);
+      case Routes.withdrawScreenRoute:
+        return buildPageRoute<T>(
+            child: const WithdrawScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

@@ -21,7 +21,9 @@ class WalletWithdrawAndDepositButtonsSection extends StatelessWidget {
               fontSize: 12,
               color: AppColors.primaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Routes.withdrawScreenRoute.moveTo();
+            },
             svgIconPath: AppAssets.roundedArrowUp,
           ),
         ),

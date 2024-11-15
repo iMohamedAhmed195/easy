@@ -39,7 +39,7 @@ class HomeAppBarSection extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: () => Routes.customerNotificationsScreenRoute.moveTo(),
+          onTap: () => Routes.notificationsScreenRoute.moveTo(),
           child: CustomSVGImage(
             asset: AppAssets.notification1,
           ),

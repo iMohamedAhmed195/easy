@@ -65,6 +65,7 @@ dependencies:
   shared_preferences: null
   shimmer: null
   simple_circular_progress_bar: null
+  slide_to_act: ^2.0.2
   sms_autofill: null
   syncfusion_flutter_charts: null
   syncfusion_flutter_core: ^27.1.58
