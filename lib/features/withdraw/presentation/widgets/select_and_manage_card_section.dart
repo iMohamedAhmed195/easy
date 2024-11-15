@@ -1,0 +1,29 @@
+import '../../../../exports.dart';
+
+class SelectAndManageCardSection extends StatelessWidget {
+  const SelectAndManageCardSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          'Select Card',
+          style: getSemiBoldTextStyle(
+            fontSize: 14,
+            color: AppColors.grayishBlueColor,
+          ),
+        ),
+        const Spacer(),
+        Text(
+          'Manage Cards',
+          style: getRegularTextStyle(
+            fontSize: 12,
+            color: AppColors.primaryColor,
+            decoration: TextDecoration.underline,
+          ),
+        ),
+      ],
+    );
+  }
+}
