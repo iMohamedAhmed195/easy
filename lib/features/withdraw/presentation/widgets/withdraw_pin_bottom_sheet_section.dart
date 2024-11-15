@@ -31,7 +31,7 @@ Future<void> withdrawPinBottomSheet(BuildContext context) async {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Please Enter your PIN',
+              AppStrings.enterPinTitle,
               textAlign: TextAlign.center,
               style: getBoldTextStyle(
                 color: AppColors.richCharcoal,
@@ -40,7 +40,7 @@ Future<void> withdrawPinBottomSheet(BuildContext context) async {
             ),
             16.vs,
             Text(
-              'Enter your 4-digits PIN to complete the withdrawal',
+              AppStrings.enterPinDescription,
               textAlign: TextAlign.center,
               style: getRegularTextStyle(
                 color: AppColors.grayishBlueColor,
@@ -51,7 +51,7 @@ Future<void> withdrawPinBottomSheet(BuildContext context) async {
             const WriteOtpSection(),
             16.vs,
             Text(
-              'Forgot your PIN?',
+              AppStrings.forgotPin,
               style: getSemiBoldTextStyle(
                 color: AppColors.primaryColor,
                 fontSize: 14,
@@ -59,7 +59,7 @@ Future<void> withdrawPinBottomSheet(BuildContext context) async {
             ).alignCenterEnd(),
             16.vs,
             CommonButtonSection(
-              buttonText: "Enter PIN",
+              buttonText: AppStrings.enterPinButton,
               onPressed: () {
                 Navigator.pop(context); //! Close the bottom sheet
               },

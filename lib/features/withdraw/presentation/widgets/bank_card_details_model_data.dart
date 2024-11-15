@@ -1,8 +1,11 @@
+import 'package:easy/exports.dart';
 import 'package:easy/features/withdraw/data/models/bank_cards_details.dart';
 
 List<BankCardDetails> bankCardDetails = [
-  BankCardDetails(bankName: 'Saudi Awwal Bank (SAB)', bankNumber: '**** 4210'),
   BankCardDetails(
-      bankName: 'National Commercial Bank', bankNumber: '**** 1234'),
-  BankCardDetails(bankName: 'Al Rajhi Bank', bankNumber: '**** 5678'),
+      bankName: AppStrings.bankName1, bankNumber: AppStrings.bankNumber1),
+  BankCardDetails(
+      bankName: AppStrings.bankName2, bankNumber: AppStrings.bankNumber2),
+  BankCardDetails(
+      bankName: AppStrings.bankName3, bankNumber: AppStrings.bankNumber3),
 ];

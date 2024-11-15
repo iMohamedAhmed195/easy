@@ -8,7 +8,7 @@ class SelectAndManageCardSection extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Select Card',
+          AppStrings.selectCard,
           style: getSemiBoldTextStyle(
             fontSize: 14,
             color: AppColors.grayishBlueColor,
@@ -16,7 +16,7 @@ class SelectAndManageCardSection extends StatelessWidget {
         ),
         const Spacer(),
         Text(
-          'Manage Cards',
+          AppStrings.manageCards,
           style: getRegularTextStyle(
             fontSize: 12,
             color: AppColors.primaryColor,

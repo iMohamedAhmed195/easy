@@ -19,7 +19,7 @@ class SlideToWithdrawSliderSection extends StatelessWidget {
         width: 24.w,
         svgIconColor: AppColors.primaryColor,
       ),
-      text: "Slide to Withdraw",
+      text: AppStrings.slideToWithdraw,
       textStyle: getSemiBoldTextStyle(
         color: AppColors.white,
         fontSize: 16,

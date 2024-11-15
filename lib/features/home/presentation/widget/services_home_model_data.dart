@@ -8,7 +8,7 @@ List<ServicesModel> customerServices = [
         onTap: () => Routes.applyForLoanScreenRoute.moveTo(),
       ),
       ServicesModel(
-        title: AppStrings().manageCards,
+        title: AppStrings.manageCards,
         svgPath: AppAssets.manageCard,
         onTap: () => Routes.applyForLoanScreenRoute.moveTo(),
       ),

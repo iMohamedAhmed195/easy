@@ -31,7 +31,6 @@ class WithdrawScreenBodySection extends StatelessWidget {
         const SelectAndManageCardSection(),
         16.vs,
         const CardSelectionSection(),
-        
         const SlideToWithdrawSliderSection(),
         32.vs,
       ],

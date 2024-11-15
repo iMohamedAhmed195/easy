@@ -80,7 +80,7 @@ class AppStrings {
   final String applyForALoan = 'Apply For a Loan';
   final String loanRepayment = 'loan Repayment';
   final String easyFuel = 'Easy Fuel';
-  final String manageCards = 'Manage Cards';
+  static const String manageCards = 'Manage Cards';
   final String forgetPassword = 'Forgot Password?';
   final String orLoginWith = 'or Log in with';
   final String doNotHaveAnAccount = 'Don’t have an account?';
@@ -354,4 +354,28 @@ class AppStrings {
   static const String transactionTypeLoans = 'Loans';
   static const String transactionTypeDeposits = 'Deposits';
   static const String transactionTypeWithdraw = 'Withdraw';
+
+  // **************************** Withdraw and Deposit Screens ********************************************
+
+  static const String bankName1 = 'Saudi Awwal Bank (SAB)';
+  static const String bankNumber1 = '**** 4210';
+
+  static const String bankName2 = 'National Commercial Bank';
+  static const String bankNumber2 = '**** 1234';
+
+  static const String bankName3 = 'Al Rajhi Bank';
+  static const String bankNumber3 = '**** 5678';
+
+  static const String slideToWithdraw = 'Slide to Withdraw';
+  static const String setAmount = 'Set Amount';
+  static const String withdrawPrompt = 'How much would you like to withdraw?';
+  static const String amountDisplay = '2,000 SAR';
+  static const String smallAmountDisplay = '500 SAR';
+
+  static const String enterPinTitle = 'Please Enter your PIN';
+  static const String enterPinDescription =
+      'Enter your 4-digits PIN to complete the withdrawal';
+  static const String forgotPin = 'Forgot your PIN?';
+  static const String enterPinButton = 'Enter PIN';
+  static const String selectCard = 'Select Card';
 }
