@@ -1,8 +1,7 @@
-import 'dart:developer';
-
 import 'package:easy/core/widgets/app_divider.dart';
+import 'package:easy/core/widgets/common_button_section.dart';
 import 'package:easy/core/widgets/custom_app_bar_with_back_arrow_section.dart';
-import 'package:flutter/foundation.dart';
+import 'package:easy/features/auth/presentation/widget/write_otp_section.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 
 import '../../../../exports.dart';
@@ -13,6 +12,7 @@ class WithdrawScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true, //! Allows adjusting for keyboard
       backgroundColor: AppColors.white,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -172,7 +172,7 @@ class WithdrawScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                80.vs,
+                232.vs,
                 SlideAction(
                   borderRadius: 6.r,
                   elevation: 0,
@@ -190,13 +190,79 @@ class WithdrawScreen extends StatelessWidget {
                     fontSize: 16,
                     height: 0,
                   ),
+                  animationDuration: AppConstants.kCommonAnimationDuration,
                   // sliderRotate: false,
                   onSubmit: () {
-                    if (kDebugMode) {
-                      log("Open Withdraw PIN Entry Dialog");
-                    }
+                    showModalBottomSheet(
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (context) => Padding(
+                        padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context).viewInsets.bottom,
+                        ), //! Adjusts padding based on keyboard visibility
+                        child: Container(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                            16.w,
+                            28.h,
+                            16.w,
+                            32.h,
+                          ),
+                          decoration: ShapeDecoration(
+                            color: AppColors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(16.r),
+                                topRight: Radius.circular(16.r),
+                              ),
+                            ),
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                'Please Enter your PIN',
+                                textAlign: TextAlign.center,
+                                style: getBoldTextStyle(
+                                  color: AppColors.richCharcoal,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              16.vs,
+                              Text(
+                                'Enter your 4-digits PIN to complete the withdrawal',
+                                textAlign: TextAlign.center,
+                                style: getRegularTextStyle(
+                                  color: AppColors.grayishBlueColor,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              16.vs,
+                              const WriteOtpSection(),
+                              16.vs,
+                              Text(
+                                'Forgot your PIN?',
+                                style: getSemiBoldTextStyle(
+                                  color: AppColors.primaryColor,
+                                  fontSize: 14,
+                                ),
+                              ).alignCenterEnd(),
+                              16.vs,
+                              CommonButtonSection(
+                                buttonText: "Enter PIN",
+                                onPressed: () {
+                                  Navigator.pop(
+                                      context); //! Close the bottom sheet
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                    return null;
                   },
                 ),
+                32.vs,
               ],
             ),
           ),

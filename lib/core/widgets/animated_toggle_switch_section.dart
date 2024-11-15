@@ -32,7 +32,7 @@ class _AnimatedToggleSwitchSectionState
       child: AnimatedContainer(
         height: 20.h,
         width: 40.w,
-        duration: AppConstants.kToggleSwitchAnimationDuration,
+        duration: AppConstants.kCommonAnimationDuration,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.r),
           color: isEnabled
@@ -40,7 +40,7 @@ class _AnimatedToggleSwitchSectionState
               : AppColors.strongGreenDisabledColor,
         ),
         child: AnimatedAlign(
-          duration: AppConstants.kToggleSwitchAnimationDuration,
+          duration: AppConstants.kCommonAnimationDuration,
           alignment: isEnabled ? Alignment.centerRight : Alignment.centerLeft,
           child: Padding(
             padding: 2.allEdgeInsets,

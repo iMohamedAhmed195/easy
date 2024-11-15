@@ -17,27 +17,23 @@ class LogoutAndCloseAccountBottomSheetBodySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      // width: double.infinity.w,
-      // height: 324.h,
-      child: Padding(
-        padding: 16.ph,
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              12.vs,
-              LogoutAndCloseAccountBottomSheetDialogAndTextsSection(
-                sheetIconPath: sheetIconPath,
-                sheetTitle: sheetTitle,
-                sheetWarning: sheetWarning,
-              ),
-              24.vs,
-              LogoutAndCloseAccountBottomSheetButtons(
-                buttonText: buttonText,
-              ),
-              32.vs,
-            ],
-          ),
+    return Padding(
+      padding: 16.ph,
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            12.vs,
+            LogoutAndCloseAccountBottomSheetDialogAndTextsSection(
+              sheetIconPath: sheetIconPath,
+              sheetTitle: sheetTitle,
+              sheetWarning: sheetWarning,
+            ),
+            24.vs,
+            LogoutAndCloseAccountBottomSheetButtons(
+              buttonText: buttonText,
+            ),
+            32.vs,
+          ],
         ),
       ),
     );

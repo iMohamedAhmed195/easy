@@ -7,7 +7,10 @@ class LogoutAndCloseAccountBottomSheetDialogAndTextsSection
   final String sheetWarning;
 
   const LogoutAndCloseAccountBottomSheetDialogAndTextsSection(
-      {super.key, required this.sheetIconPath, required this.sheetTitle, required this.sheetWarning});
+      {super.key,
+      required this.sheetIconPath,
+      required this.sheetTitle,
+      required this.sheetWarning});
 
   @override
   Widget build(BuildContext context) {
