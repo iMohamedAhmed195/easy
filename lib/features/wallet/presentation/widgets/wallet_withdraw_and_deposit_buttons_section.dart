@@ -1,5 +1,7 @@
 import '../../../../core/widgets/custom_button.dart';
 import '../../../../exports.dart';
+import '../../../withdraw_and_deposit/data/models/withdraw_and_deposit_screen_args_model.dart';
+import '../../../withdraw_and_deposit/presentation/widgets/bank_card_details_model_data.dart';
 
 class WalletWithdrawAndDepositButtonsSection extends StatelessWidget {
   const WalletWithdrawAndDepositButtonsSection({super.key});
@@ -22,7 +24,19 @@ class WalletWithdrawAndDepositButtonsSection extends StatelessWidget {
               color: AppColors.primaryColor,
             ),
             onPressed: () {
-              Routes.withdrawScreenRoute.moveTo();
+              Navigator.pushNamed(
+                context,
+                Routes.withdrawAndDepositScreenRoute,
+                arguments: WithdrawAndDepositScreenArgs(
+                  screenFeatureName: AppStrings.withdraw,
+                  currentBalance: AppStrings.amountDisplay,
+                  amountToSet: AppStrings.withdrawAmountText,
+                  moneyCanBeTaken: AppStrings.smallWithdrawAmountText,
+                  sliderTitle: AppStrings.setAmountText,
+                  successMessage: AppStrings.withdrawSuccess,
+                  bankCardDetails: bankCardDetails,
+                ),
+              );
             },
             svgIconPath: AppAssets.roundedArrowUp,
           ),
@@ -39,7 +53,21 @@ class WalletWithdrawAndDepositButtonsSection extends StatelessWidget {
               fontSize: 12,
               color: AppColors.primaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                Routes.withdrawAndDepositScreenRoute,
+                arguments: WithdrawAndDepositScreenArgs(
+                  screenFeatureName: AppStrings.deposit,
+                  currentBalance: AppStrings.amountDisplay,
+                  amountToSet: AppStrings.withdrawAmountText,
+                  moneyCanBeTaken: AppStrings.smallWithdrawAmountText,
+                  sliderTitle: AppStrings.setAmountText,
+                  successMessage: AppStrings.depositSuccess,
+                  bankCardDetails: bankCardDetails,
+                ),
+              );
+            },
             svgIconPath: AppAssets.roundedArrowDown,
           ),
         ),

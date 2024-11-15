@@ -1,14 +1,18 @@
 import '../../../../exports.dart';
+import '../../data/models/withdraw_and_deposit_screen_args_model.dart';
 
-class WithdrawAmountSection extends StatelessWidget {
-  const WithdrawAmountSection({super.key});
+class WithdrawAndDepositAmountSection extends StatelessWidget {
+  final WithdrawAndDepositScreenArgs withdrawAndDepositScreenArgs;
+
+  const WithdrawAndDepositAmountSection(
+      {super.key, required this.withdrawAndDepositScreenArgs});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Text(
-          'Set Amount',
+          AppStrings.setAmount,
           style: getSemiBoldTextStyle(
             fontSize: 14,
             color: AppColors.richCharcoal,
@@ -16,7 +20,7 @@ class WithdrawAmountSection extends StatelessWidget {
         ).alignCenterStart(),
         4.vs,
         Text(
-          'How much would you like to withdraw?',
+          AppStrings.withdrawQuestionText,
           style: getRegularTextStyle(
             color: AppColors.grayishBlueColor,
             fontSize: 12,
@@ -34,7 +38,7 @@ class WithdrawAmountSection extends StatelessWidget {
           ),
           child: Center(
             child: Text(
-              '2,000 SAR',
+              withdrawAndDepositScreenArgs.amountToSet,
               textAlign: TextAlign.center,
               style: getSemiBoldTextStyle(
                 fontSize: 24,
@@ -58,7 +62,7 @@ class WithdrawAmountSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                '500 SAR',
+                withdrawAndDepositScreenArgs.amountToSet,
                 textAlign: TextAlign.center,
                 style: getSemiBoldTextStyle(
                   fontSize: 12,

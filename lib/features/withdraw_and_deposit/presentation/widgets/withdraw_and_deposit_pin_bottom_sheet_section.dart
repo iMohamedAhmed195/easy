@@ -3,7 +3,8 @@ import 'package:easy/features/auth/presentation/widget/write_otp_section.dart';
 
 import '../../../../exports.dart';
 
-Future<void> withdrawPinBottomSheet(BuildContext context) async {
+Future<void> withdrawAndDepositPinBottomSheet(BuildContext context,
+    {required String successMessage}) async {
   showModalBottomSheet(
     isScrollControlled: true,
     context: context,
@@ -63,7 +64,7 @@ Future<void> withdrawPinBottomSheet(BuildContext context) async {
               onPressed: () {
                 Routes.awesomeSuccessRoute.moveToWithArgs({
                   "header": AppStrings.congratulations,
-                  "subHeader": AppStrings.withdrawSuccess,
+                  "subHeader": successMessage,
                   "buttonText": AppStrings.goToHomepage,
                   "onPressed": () {
                     Routes.bottomNavigationRoute.moveTo();

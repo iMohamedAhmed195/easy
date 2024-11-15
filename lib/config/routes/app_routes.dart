@@ -1,6 +1,7 @@
 import 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
 import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
-import 'package:easy/features/withdraw/presentation/screen/withdraw_screen.dart';
+import 'package:easy/features/withdraw_and_deposit/data/models/withdraw_and_deposit_screen_args_model.dart';
+import 'package:easy/features/withdraw_and_deposit/presentation/screen/withdraw_and_deposit_screen.dart';
 
 import '../../exports.dart';
 import '../../features/change_pin/presentation/screen/change_pin_screen.dart';
@@ -34,7 +35,8 @@ class Routes {
       "/languageSelectionScreenRoute";
   static const String notificationsScreenRoute = "/notificationsScreenRoute";
   static const String applyForLoanScreenRoute = "/applyForLoanScreenRoute";
-  static const String withdrawScreenRoute = "/withdrawScreenRoute";
+  static const String withdrawAndDepositScreenRoute =
+      "/withdrawAndDepositScreenRoute";
 }
 
 class RouteGenerator {
@@ -127,9 +129,13 @@ class RouteGenerator {
       case Routes.applyForLoanScreenRoute:
         return buildPageRoute<T>(
             child: const ApplyForLoanScreen(), routeSettings: routeSettings);
-      case Routes.withdrawScreenRoute:
+      case Routes.withdrawAndDepositScreenRoute:
         return buildPageRoute<T>(
-            child: const WithdrawScreen(), routeSettings: routeSettings);
+            child: WithdrawAndDepositScreen(
+              withdrawAndDepositScreenArgs:
+                  routeSettings.arguments as WithdrawAndDepositScreenArgs,
+            ),
+            routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

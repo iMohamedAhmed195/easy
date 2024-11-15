@@ -378,4 +378,9 @@ class AppStrings {
       "Your deposit has been successfully processed. The funds have been added to your account balance. Thank you for choosing our service!";
   static const String withdrawSuccess =
       "Your withdrawal has been successfully processed. The funds will be transferred to your account shortly. Thank you for choosing our service!";
+  static const String setAmountText = 'Set Amount';
+  static const String withdrawQuestionText =
+      'How much would you like to withdraw?';
+  static const String withdrawAmountText = '2,000 SAR';
+  static const String smallWithdrawAmountText = '500 SAR';
 }

@@ -1,5 +1,5 @@
 import 'package:easy/exports.dart';
-import 'package:easy/features/withdraw/data/models/bank_cards_details.dart';
+import 'package:easy/features/withdraw_and_deposit/data/models/bank_cards_details.dart';
 
 List<BankCardDetails> bankCardDetails = [
   BankCardDetails(

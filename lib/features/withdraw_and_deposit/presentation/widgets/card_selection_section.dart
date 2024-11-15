@@ -1,21 +1,26 @@
-import 'package:easy/features/withdraw/presentation/widgets/bank_card_details_model_data.dart';
-
 import '../../../../exports.dart';
+import '../../data/models/withdraw_and_deposit_screen_args_model.dart';
 
 class CardSelectionSection extends StatelessWidget {
-  const CardSelectionSection({super.key});
+  final WithdrawAndDepositScreenArgs withdrawAndDepositScreenArgs;
+
+  const CardSelectionSection(
+      {super.key, required this.withdrawAndDepositScreenArgs});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         ...List.generate(
-          bankCardDetails.length,
+          withdrawAndDepositScreenArgs.bankCardDetails.length,
           (index) {
-            final bank = bankCardDetails[index];
+            final bank = withdrawAndDepositScreenArgs.bankCardDetails[index];
             return Padding(
               padding: EdgeInsets.only(
-                bottom: index == bankCardDetails.length - 1 ? 0 : 12.h,
+                bottom: index ==
+                        withdrawAndDepositScreenArgs.bankCardDetails.length - 1
+                    ? 0
+                    : 12.h,
               ),
               child: Container(
                 padding: 12.all,
@@ -63,7 +68,9 @@ class CardSelectionSection extends StatelessWidget {
             );
           },
         ),
-        bankCardDetails.length < 3 ? 232.vs : 80.vs,
+        withdrawAndDepositScreenArgs.bankCardDetails.length < 3
+            ? 232.vs
+            : 80.vs,
       ],
     );
   }

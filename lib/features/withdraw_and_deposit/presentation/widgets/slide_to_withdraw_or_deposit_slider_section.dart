@@ -1,10 +1,14 @@
-import 'package:easy/features/withdraw/presentation/widgets/withdraw_pin_bottom_sheet_section.dart';
+import 'package:easy/features/withdraw_and_deposit/presentation/widgets/withdraw_and_deposit_pin_bottom_sheet_section.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 
 import '../../../../exports.dart';
+import '../../data/models/withdraw_and_deposit_screen_args_model.dart';
 
 class SlideToWithdrawSliderSection extends StatelessWidget {
-  const SlideToWithdrawSliderSection({super.key});
+  final WithdrawAndDepositScreenArgs withdrawAndDepositScreenArgs;
+
+  const SlideToWithdrawSliderSection(
+      {super.key, required this.withdrawAndDepositScreenArgs});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +23,7 @@ class SlideToWithdrawSliderSection extends StatelessWidget {
         width: 24.w,
         svgIconColor: AppColors.primaryColor,
       ),
-      text: AppStrings.slideToWithdraw,
+      text: withdrawAndDepositScreenArgs.sliderTitle,
       textStyle: getSemiBoldTextStyle(
         color: AppColors.white,
         fontSize: 16,
@@ -28,7 +32,10 @@ class SlideToWithdrawSliderSection extends StatelessWidget {
       animationDuration: AppConstants.kCommonAnimationDuration,
       //! sliderRotate: false,
       onSubmit: () {
-        withdrawPinBottomSheet(context);
+        withdrawAndDepositPinBottomSheet(
+          context,
+          successMessage: withdrawAndDepositScreenArgs.successMessage,
+        );
         return null;
       },
     );

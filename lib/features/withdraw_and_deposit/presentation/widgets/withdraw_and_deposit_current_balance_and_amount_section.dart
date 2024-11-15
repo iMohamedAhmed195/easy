@@ -1,7 +1,11 @@
 import '../../../../exports.dart';
+import '../../data/models/withdraw_and_deposit_screen_args_model.dart';
 
-class WithdrawCurrentBalanceAndAmountSection extends StatelessWidget {
-  const WithdrawCurrentBalanceAndAmountSection({super.key});
+class WithdrawAndDepositCurrentBalanceAndAmountSection extends StatelessWidget {
+  final WithdrawAndDepositScreenArgs withdrawAndDepositScreenArgs;
+
+  const WithdrawAndDepositCurrentBalanceAndAmountSection(
+      {super.key, required this.withdrawAndDepositScreenArgs});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +20,7 @@ class WithdrawCurrentBalanceAndAmountSection extends StatelessWidget {
         ).alignCenterStart(),
         4.vs,
         Text(
-          AppStrings.balanceAmount,
+          withdrawAndDepositScreenArgs.currentBalance,
           style: getBoldTextStyle(
             fontSize: 32,
             color: AppColors.richCharcoal,
