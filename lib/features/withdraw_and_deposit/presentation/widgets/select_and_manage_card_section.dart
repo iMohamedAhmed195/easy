@@ -15,12 +15,15 @@ class SelectAndManageCardSection extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        Text(
-          AppStrings.manageCards,
-          style: getRegularTextStyle(
-            fontSize: 12,
-            color: AppColors.primaryColor,
-            decoration: TextDecoration.underline,
+        GestureDetector(
+          onTap: () => Routes.manageCardsScreenRoute.moveTo(),
+          child: Text(
+            AppStrings.manageCards,
+            style: getRegularTextStyle(
+              fontSize: 12,
+              color: AppColors.primaryColor,
+              decoration: TextDecoration.underline,
+            ),
           ),
         ),
       ],

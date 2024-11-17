@@ -1,5 +1,6 @@
 import 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
 import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
+import 'package:easy/features/manage_cards/presentation/screen/manage_cards_screen.dart';
 import 'package:easy/features/withdraw_and_deposit/data/models/withdraw_and_deposit_screen_args_model.dart';
 import 'package:easy/features/withdraw_and_deposit/presentation/screen/withdraw_and_deposit_screen.dart';
 
@@ -37,6 +38,7 @@ class Routes {
   static const String applyForLoanScreenRoute = "/applyForLoanScreenRoute";
   static const String withdrawAndDepositScreenRoute =
       "/withdrawAndDepositScreenRoute";
+  static const String manageCardsScreenRoute = "/manageCardsScreenRoute";
 }
 
 class RouteGenerator {
@@ -136,6 +138,9 @@ class RouteGenerator {
                   routeSettings.arguments as WithdrawAndDepositScreenArgs,
             ),
             routeSettings: routeSettings);
+      case Routes.manageCardsScreenRoute:
+        return buildPageRoute<T>(
+            child: const ManageCardsScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Scaffold(

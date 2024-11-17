@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   dartz: null
   dio: null
+  dotted_border: ^2.1.0
   dotted_line: null
   dropdown_search: null
   easy_localization: null

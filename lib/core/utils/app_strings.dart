@@ -364,6 +364,7 @@ class AppStrings {
   static const String bankName3 = 'Al Rajhi Bank';
   static const String bankNumber3 = '**** 5678';
   static const String slideToWithdraw = 'Slide to Withdraw';
+  static const String slideToDeposit = 'Slide to Deposit';
   static const String setAmount = 'Set Amount';
   static const String withdrawPrompt = 'How much would you like to withdraw?';
   static const String amountDisplay = '2,000 SAR';

@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 
-import '../../../../../core/widgets/menu_item_form.dart';
+import '../../../../../core/widgets/provider_service_type_item_form.dart';
 import '../../../../../exports.dart';
 import '../../../../auth/presentation/ui_manager/ui_auth_cubit.dart';
 import 'account_types_model_data.dart';
