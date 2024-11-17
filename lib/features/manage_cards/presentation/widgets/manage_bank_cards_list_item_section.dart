@@ -28,7 +28,7 @@ class ManageBankCardsListItemSection extends StatelessWidget {
         children: [
           if (bank.isDefaultCard)
             Text(
-              "Default Card",
+              AppStrings.defaultCard,
               style: getSemiBoldTextStyle(
                 fontSize: 10,
                 color: AppColors.primaryColor,

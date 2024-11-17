@@ -25,7 +25,7 @@ class MangeCardsAddNewCardSection extends StatelessWidget {
             GestureDetector(
               onTap: () {},
               child: Text(
-                'Add New Bank Card',
+                AppStrings.addNewBankCard,
                 style: getSemiBoldTextStyle(
                   fontSize: 14,
                   color: AppColors.primaryColor,

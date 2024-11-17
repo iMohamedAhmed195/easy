@@ -384,4 +384,12 @@ class AppStrings {
       'How much would you like to withdraw?';
   static const String withdrawAmountText = '2,000 SAR';
   static const String smallWithdrawAmountText = '500 SAR';
+
+  // **************************** Manage Cards Screen ********************************************
+
+  static const defaultCard = "Default Card";
+  static const setAsDefault = "Set as Default";
+  static const editCard = "Edit Card";
+  static const deleteCard = "Delete Card";
+  static const addNewBankCard = "Add New Bank Card";
 }

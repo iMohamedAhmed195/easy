@@ -12,7 +12,7 @@ class ManageCardsScreenBodySection extends StatelessWidget {
       children: [
         const CustomAppBarWithBackArrowSection(
           isPop: true,
-          appBarTitle: 'Manage Cards',
+          appBarTitle: AppStrings.manageCards,
         ),
         25.vs,
         const ManageCardsBankCardsListSection(),

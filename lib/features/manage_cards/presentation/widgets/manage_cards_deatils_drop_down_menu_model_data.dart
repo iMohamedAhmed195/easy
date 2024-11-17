@@ -3,11 +3,18 @@ import '../../model/manage_cards_drop_down_menu_model.dart';
 
 List<DropdownItem> dropdownItems = [
   DropdownItem(
-      name: 'Set as Default',
-      value: 'Set as Default',
-      icon: AppAssets.closeAccount),
+    name: AppStrings.setAsDefault,
+    value: AppStrings.setAsDefault,
+    icon: AppAssets.closeAccount,
+  ),
   DropdownItem(
-      name: 'Edit Card', value: 'Edit Card', icon: AppAssets.closeAccount),
+    name: AppStrings.editCard,
+    value: AppStrings.editCard,
+    icon: AppAssets.closeAccount,
+  ),
   DropdownItem(
-      name: 'Delete Card', value: 'Delete Card', icon: AppAssets.closeAccount),
+    name: AppStrings.deleteCard,
+    value: AppStrings.deleteCard,
+    icon: AppAssets.closeAccount,
+  ),
 ];
