@@ -1,3 +1,4 @@
+import 'package:easy/features/add_new_bank_card/presentation/screen/add_new_bank_card_screen.dart';
 import 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
 import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
 import 'package:easy/features/manage_cards/presentation/screen/manage_cards_screen.dart';
@@ -39,6 +40,7 @@ class Routes {
   static const String withdrawAndDepositScreenRoute =
       "/withdrawAndDepositScreenRoute";
   static const String manageCardsScreenRoute = "/manageCardsScreenRoute";
+  static const String addNewBankCardScreenRoute = "/addNewBankCard";
 }
 
 class RouteGenerator {
@@ -140,7 +142,14 @@ class RouteGenerator {
             routeSettings: routeSettings);
       case Routes.manageCardsScreenRoute:
         return buildPageRoute<T>(
-            child: const ManageCardsScreen(), routeSettings: routeSettings);
+          child: const ManageCardsScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.addNewBankCardScreenRoute:
+        return buildPageRoute<T>(
+          child: const AddNewBankCardScreen(),
+          routeSettings: routeSettings,
+        );
     }
     return buildPageRoute<T>(
         child: const Scaffold(

@@ -17,7 +17,7 @@ class WalletCurrentBalanceAmountSection extends StatelessWidget {
         8.hs,
         SvgDisplayer(
           assetName: AppAssets.eyeIcon,
-          svgIconColor: AppColors.darkCharcoalGray,
+          svgIconColor: AppColors.richCharcoal,
           height: 20.h,
           width: 20.w,
         ),

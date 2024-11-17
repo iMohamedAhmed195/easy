@@ -34,7 +34,6 @@ class AppColors {
       const Color(0xFF02A332).withOpacity(0.5);
   static const Color softLightGray = Color(0xFFD5D7E3);
   static const Color coolGray = Color(0xFFCBCED8);
-  static const Color darkCharcoalGray = Color(0xFF252525);
   static const Color softCloudBlue = Color(0xFFDFE3FA);
   static const Color brightGreenColor = Color(0x3316CE4D);
   static const Color transparentRed = Color(0x33FF0000);

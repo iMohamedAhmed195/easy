@@ -392,4 +392,18 @@ class AppStrings {
   static const editCard = "Edit Card";
   static const deleteCard = "Delete Card";
   static const addNewBankCard = "Add New Bank Card";
+
+  // **************************** Add New Bank Card Screen ********************************************
+
+  static const String addNewBankCardTitle = "Add New Bank Card";
+  static const String cardNumber = "Card Number";
+  static const String cardNumberHint = "2123 8976 1241 1490";
+  static const String cardHolderName = "Card Holder Name";
+  static const String cardHolderNameHint = "Ahmed Adel";
+  static const String expirationDate = "Expiration Date";
+  static const String expirationDateHint = "MM/YY";
+  static const String cvv = "CVV";
+  static const String cvvHint = "123";
+  static const String setCardAsDefault = "Set Card as Default";
+  static const String addCardButton = "Add Card";
 }

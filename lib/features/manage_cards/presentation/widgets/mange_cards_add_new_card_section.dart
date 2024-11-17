@@ -23,7 +23,9 @@ class MangeCardsAddNewCardSection extends StatelessWidget {
             ),
             8.hs,
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Routes.addNewBankCardScreenRoute.moveTo();
+              },
               child: Text(
                 AppStrings.addNewBankCard,
                 style: getSemiBoldTextStyle(
