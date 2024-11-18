@@ -448,4 +448,8 @@ class AppStrings {
   static const loanAmount = "Loan Amount";
   static const totalAmount = "Total Amount";
   static const slideToRepay = "Slide to Repay";
+
+  // **************************** Payment Done Screen ********************************************
+  static const paymentSuccessful = "Payment Successful!";
+  static const thankYouMessage = "Thank you for repaying your loan in time.";
 }

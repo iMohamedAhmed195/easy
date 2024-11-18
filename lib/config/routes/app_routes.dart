@@ -1,15 +1,7 @@
-import 'package:easy/features/add_new_bank_card/presentation/screen/add_new_bank_card_screen.dart';
-import 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
-import 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
-import 'package:easy/features/manage_cards/presentation/screen/manage_cards_screen.dart';
-import 'package:easy/features/withdraw_and_deposit/data/models/withdraw_and_deposit_screen_args_model.dart';
-import 'package:easy/features/withdraw_and_deposit/presentation/screen/withdraw_and_deposit_screen.dart';
+
 
 import '../../exports.dart';
-import '../../features/change_pin/presentation/screen/change_pin_screen.dart';
-import '../../features/loan_repayment/presentation/screens/loan_repayment_screen.dart';
-import '../../features/my_loans/presentation/screen/my_loans_screen.dart';
-import '../../features/notification/presentation/screens/customer_notifications_screen.dart';
+
 import 'routes_exports.dart';
 
 class Routes {
@@ -45,6 +37,7 @@ class Routes {
   static const String addNewBankCardScreenRoute = "/addNewBankCard";
   static const String myLoansScreenRoute = "/myLoansScreenRoute";
   static const String loanRepaymentScreenRoute = "/loanRepaymentScreenRoute";
+  static const String paymentDoneScreenRoute = "/paymentDoneScreenRoute";
 }
 
 class RouteGenerator {
@@ -162,6 +155,11 @@ class RouteGenerator {
       case Routes.loanRepaymentScreenRoute:
         return buildPageRoute<T>(
           child: const LoanRepaymentScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.paymentDoneScreenRoute:
+        return buildPageRoute<T>(
+          child: const PaymentDoneScreen(),
           routeSettings: routeSettings,
         );
     }

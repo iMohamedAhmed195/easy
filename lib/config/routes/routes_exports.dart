@@ -15,3 +15,14 @@ export '../../features/change_password/presentation/screen/change_password_scree
 export '../../features/notifications_settings/presentation/screen/notifications_settings_screen.dart';
 export '../../features/settings_and_privacy/presentation/screen/settings_and_privacy_screen.dart';
 export 'package:easy/features/chat_suuport/presentation/screen/chat_screen.dart';
+export 'package:easy/core/widgets/screens/payment_done_screen.dart';
+export 'package:easy/features/add_new_bank_card/presentation/screen/add_new_bank_card_screen.dart';
+export 'package:easy/features/apply_for_loan/presentation/screen/apply_for_loan_screen.dart';
+export 'package:easy/features/language_selection/presentation/screen/language_selection_screen.dart';
+export 'package:easy/features/manage_cards/presentation/screen/manage_cards_screen.dart';
+export 'package:easy/features/withdraw_and_deposit/data/models/withdraw_and_deposit_screen_args_model.dart';
+export 'package:easy/features/withdraw_and_deposit/presentation/screen/withdraw_and_deposit_screen.dart';
+export '../../features/change_pin/presentation/screen/change_pin_screen.dart';
+export '../../features/loan_repayment/presentation/screens/loan_repayment_screen.dart';
+export '../../features/my_loans/presentation/screen/my_loans_screen.dart';
+export '../../features/notification/presentation/screens/customer_notifications_screen.dart';

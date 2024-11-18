@@ -19,7 +19,8 @@ class LoanCardTabItemBodySection extends StatelessWidget {
             16.vs,
             const LoanCardCardsListSection(),
             16.vs,
-            const PaymentSummaryAndTotalAmountAndSliderSection()
+            const PaymentSummaryAndTotalAmountAndSliderSection(
+            )
           ],
         ),
       ),

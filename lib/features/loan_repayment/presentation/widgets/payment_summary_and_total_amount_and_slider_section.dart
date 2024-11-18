@@ -4,7 +4,9 @@ import '../../../../core/widgets/app_divider.dart';
 import '../../../../exports.dart';
 
 class PaymentSummaryAndTotalAmountAndSliderSection extends StatelessWidget {
-  const PaymentSummaryAndTotalAmountAndSliderSection({super.key});
+  final bool? showSlider;
+  const PaymentSummaryAndTotalAmountAndSliderSection(
+      {super.key, this.showSlider});
 
   @override
   Widget build(BuildContext context) {
@@ -100,31 +102,39 @@ class PaymentSummaryAndTotalAmountAndSliderSection extends StatelessWidget {
             ),
           ],
         ),
-        293.vs,
-        SlideAction(
-          borderRadius: 6.r,
-          elevation: 0,
-          innerColor: AppColors.white,
-          outerColor: AppColors.primaryColor,
-          sliderButtonIcon: SvgDisplayer(
-            assetName: AppAssets.arrowRight,
-            height: 24.h,
-            width: 24.w,
-            svgIconColor: AppColors.primaryColor,
+        Visibility(
+          visible: showSlider ?? true,
+          child: Column(
+            children: [
+              293.vs,
+              SlideAction(
+                borderRadius: 6.r,
+                elevation: 0,
+                innerColor: AppColors.white,
+                outerColor: AppColors.primaryColor,
+                sliderButtonIcon: SvgDisplayer(
+                  assetName: AppAssets.arrowRight,
+                  height: 24.h,
+                  width: 24.w,
+                  svgIconColor: AppColors.primaryColor,
+                ),
+                text: AppStrings.slideToRepay,
+                textStyle: getSemiBoldTextStyle(
+                  color: AppColors.white,
+                  fontSize: 16,
+                  height: 0,
+                ),
+                animationDuration: AppConstants.kCommonAnimationDuration,
+                //! sliderRotate: false,
+                onSubmit: () {
+                  Routes.paymentDoneScreenRoute.moveTo();
+                  return null;
+                },
+              ),
+              32.vs,
+            ],
           ),
-          text: AppStrings.slideToRepay,
-          textStyle: getSemiBoldTextStyle(
-            color: AppColors.white,
-            fontSize: 16,
-            height: 0,
-          ),
-          animationDuration: AppConstants.kCommonAnimationDuration,
-          //! sliderRotate: false,
-          onSubmit: () {
-            return null;
-          },
         ),
-        32.vs,
       ],
     );
   }
