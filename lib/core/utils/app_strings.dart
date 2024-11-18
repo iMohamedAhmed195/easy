@@ -406,4 +406,6 @@ class AppStrings {
   static const String cvvHint = "123";
   static const String setCardAsDefault = "Set Card as Default";
   static const String addCardButton = "Add Card";
+  static const String cardAddedSuccessMessage =
+      "Your card has been successfully added to your account. You're now ready to use it for transactions.";
 }

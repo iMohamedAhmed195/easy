@@ -22,7 +22,16 @@ class AddNewBankCardFormSection extends StatelessWidget {
         347.vs,
         CommonButtonSection(
           buttonText: AppStrings.addCardButton,
-          onPressed: () => {},
+          onPressed: () => {
+            Routes.awesomeSuccessRoute.moveToWithArgs({
+              "header": AppStrings.congratulations,
+              "subHeader": AppStrings.cardAddedSuccessMessage,
+              "buttonText": AppStrings.goToHomepage,
+              "onPressed": () {
+                Routes.bottomNavigationRoute.moveTo();
+              }
+            }),
+          },
         ),
       ],
     );

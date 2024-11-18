@@ -106,6 +106,8 @@ class AppAssets {
   static String moneyChange = "${SvgImages.svgPath}/money-change.svg";
   static String redArrowDown = "${SvgImages.svgPath}/red-arrow-down.svg";
   static String camera = "${SvgImages.svgPath}/camera.svg";
+  static String edit = "${SvgImages.svgPath}/edit.svg";
+  static String bankCardIcon = "${SvgImages.svgPath}/card-bank.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
