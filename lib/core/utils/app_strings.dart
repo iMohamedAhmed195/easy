@@ -408,4 +408,32 @@ class AppStrings {
   static const String addCardButton = "Add Card";
   static const String cardAddedSuccessMessage =
       "Your card has been successfully added to your account. You're now ready to use it for transactions.";
+
+  // **************************** My Loans Screen ********************************************
+  static const loanDueDate1 = "5 October 2024";
+  static const loanBalance1 = '1500 SAR';
+  static const loanId1 = '89YHF2-YG232';
+  static const loanStartingDate1 = '28 September 2024';
+  static const loanStatus1 = 'Active';
+  static const loanDaysRemaining1 = '2 Days';
+  static const repayLoanButton = 'Repay Loan';
+  static const loanDueDate2 = "10 October 2024";
+  static const loanBalance2 = '2500 SAR';
+  static const loanId2 = '12ABC3-DE456';
+  static const loanStartingDate2 = '15 September 2024';
+  static const loanStatus2 = 'Completed';
+  static const loanDaysRemaining2 = '0 Days';
+  static const viewDetailsButton = 'View Details';
+
+  static const loanBalance = 'Loan Balance';
+  static const loanId = 'Loan ID';
+  static const startingDate = 'Starting Date';
+  static const dueDate = 'Due Date';
+  static const loanStatus = 'Loan Status';
+  static const daysRemaining = 'Days Remaining';
+  static const myLoans = "My Loans";
+  static const loanTypeAll = "All";
+  static const loanTypeActive = "Active";
+  static const loanTypeRepaid = "Repaid";
+  static const loanTypeDefaulted = "Defaulted";
 }

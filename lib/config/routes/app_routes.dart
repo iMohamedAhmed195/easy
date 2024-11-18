@@ -7,6 +7,7 @@ import 'package:easy/features/withdraw_and_deposit/presentation/screen/withdraw_
 
 import '../../exports.dart';
 import '../../features/change_pin/presentation/screen/change_pin_screen.dart';
+import '../../features/my_loans/presentation/screen/my_loans_screen.dart';
 import '../../features/notification/presentation/screens/customer_notifications_screen.dart';
 import 'routes_exports.dart';
 
@@ -41,6 +42,7 @@ class Routes {
       "/withdrawAndDepositScreenRoute";
   static const String manageCardsScreenRoute = "/manageCardsScreenRoute";
   static const String addNewBankCardScreenRoute = "/addNewBankCard";
+  static const String myLoansScreenRoute = "/myLoansScreenRoute";
 }
 
 class RouteGenerator {
@@ -148,6 +150,11 @@ class RouteGenerator {
       case Routes.addNewBankCardScreenRoute:
         return buildPageRoute<T>(
           child: const AddNewBankCardScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.myLoansScreenRoute:
+        return buildPageRoute<T>(
+          child: const MyLoansPageScreen(),
           routeSettings: routeSettings,
         );
     }
