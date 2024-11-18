@@ -1,7 +1,7 @@
-import '../../../../exports.dart';
+import '../../exports.dart';
 
-class WalletCurrentBalanceAmountSection extends StatelessWidget {
-  const WalletCurrentBalanceAmountSection({super.key});
+class CurrentBalanceAmountAndEyeSection extends StatelessWidget {
+  const CurrentBalanceAmountAndEyeSection({super.key});
 
   @override
   Widget build(BuildContext context) {

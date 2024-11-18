@@ -1,4 +1,4 @@
-import 'package:easy/features/wallet/presentation/widgets/wallet_current_balance_amount_section.dart';
+import 'package:easy/core/widgets/current_balance_amount_and_eye_section.dart';
 import 'package:easy/features/wallet/presentation/widgets/wallet_growth_percentage_and_arrow_icon_section.dart';
 import 'package:easy/features/wallet/presentation/widgets/wallet_withdraw_and_deposit_buttons_section.dart';
 
@@ -30,7 +30,7 @@ class WalletCurrentBalanceAmountAndActionsContainerSection
             ),
           ),
           4.vs,
-          const WalletCurrentBalanceAmountSection(),
+          const CurrentBalanceAmountAndEyeSection(),
           5.vs,
           const WalletGrowthPercentageAndArrowIconSection(),
           12.vs,

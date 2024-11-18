@@ -436,4 +436,16 @@ class AppStrings {
   static const loanTypeActive = "Active";
   static const loanTypeRepaid = "Repaid";
   static const loanTypeDefaulted = "Defaulted";
+
+  // **************************** Loan Repayment Screen ********************************************
+  static const loanRepaymentTitle = "Loan Repayment";
+  static const eWalletTabTitle = "E-Wallet";
+  static const debitCardTabTitle = "Debit Card";
+  static const currentBalanceText = "Current Balance";
+  static const depositToWalletText = "Deposit to Wallet";
+
+  static const paymentSummary = "Payment summary";
+  static const loanAmount = "Loan Amount";
+  static const totalAmount = "Total Amount";
+  static const slideToRepay = "Slide to Repay";
 }

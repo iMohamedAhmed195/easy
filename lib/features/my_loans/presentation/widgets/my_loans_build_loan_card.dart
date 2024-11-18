@@ -50,7 +50,9 @@ Widget buildLoanCard(loan) {
         12.vs,
         CommonButtonSection(
           buttonText: loan.buttonText,
-          onPressed: () {},
+          onPressed: () {
+            Routes.loanRepaymentScreenRoute.moveTo();
+          },
         ),
         10.5.vs,
       ],
