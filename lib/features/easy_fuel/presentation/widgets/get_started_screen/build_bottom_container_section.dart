@@ -1,6 +1,6 @@
-import '../../../../core/widgets/common_button_section.dart';
-import '../../../../core/widgets/custom_image_provider_from_assets.dart';
-import '../../../../exports.dart';
+import '../../../../../core/widgets/common_button_section.dart';
+import '../../../../../core/widgets/custom_image_provider_from_assets.dart';
+import '../../../../../exports.dart';
 import 'build_info_row_section.dart';
 
 Widget buildBottomContainerSection(BuildContext context) {
@@ -44,7 +44,9 @@ Widget buildBottomContainerSection(BuildContext context) {
           25.vs,
           CommonButtonSection(
             buttonText: AppStrings.getStarted,
-            onPressed: () {},
+            onPressed: () {
+              Routes.easyFuelDetectNearestStationScreenRoute.moveTo();
+            },
           ),
           20.vs,
         ],

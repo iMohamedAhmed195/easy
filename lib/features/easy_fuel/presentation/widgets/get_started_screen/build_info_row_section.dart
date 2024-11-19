@@ -1,4 +1,4 @@
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 
 Widget buildInfoRowSection(String assetName, String text) {
   return Row(

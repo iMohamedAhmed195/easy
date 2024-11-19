@@ -1,4 +1,4 @@
-import 'package:easy/features/easy_fuel/presentation/widgets/easy_fuel_screen_body_section.dart';
+import 'package:easy/features/easy_fuel/presentation/widgets/get_started_screen/easy_fuel_screen_body_section.dart';
 import '../../../../exports.dart';
 
 class EasyFuelScreen extends StatelessWidget {

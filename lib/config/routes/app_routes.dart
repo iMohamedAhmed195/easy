@@ -1,4 +1,5 @@
 import 'package:easy/features/easy_fuel/presentation/screen/easy_fuel_screen.dart';
+import 'package:easy/features/easy_fuel/presentation/screen/detect_nearest_station_screen.dart';
 
 import '../../exports.dart';
 
@@ -39,6 +40,8 @@ class Routes {
   static const String loanRepaymentScreenRoute = "/loanRepaymentScreenRoute";
   static const String paymentDoneScreenRoute = "/paymentDoneScreenRoute";
   static const String easyFuelScreenRoute = "/easyFuelScreenRoute";
+  static const String easyFuelDetectNearestStationScreenRoute =
+      "/easyFuelDetectNearestStationScreenRoute";
 }
 
 class RouteGenerator {
@@ -166,6 +169,11 @@ class RouteGenerator {
       case Routes.easyFuelScreenRoute:
         return buildPageRoute<T>(
           child: const EasyFuelScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.easyFuelDetectNearestStationScreenRoute:
+        return buildPageRoute<T>(
+          child: const EasyFuelScreenDetectNearestStationScreen(),
           routeSettings: routeSettings,
         );
     }

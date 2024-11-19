@@ -1,8 +1,9 @@
-import '../../../../core/widgets/custom_image_provider_from_assets.dart';
-import '../../../../exports.dart';
+import '../../../../../core/widgets/custom_image_provider_from_assets.dart';
+import '../../../../../exports.dart';
+import '../build_gps_section.dart';
 import 'build_bottom_container_section.dart';
-import 'build_search_field_section.dart';
-import 'build_top_left_back_button_section.dart';
+import '../build_search_field_section.dart';
+import '../build_top_left_back_button_section.dart';
 
 class EasyFuelScreenBodySection extends StatelessWidget {
   const EasyFuelScreenBodySection({super.key});
@@ -22,6 +23,7 @@ class EasyFuelScreenBodySection extends StatelessWidget {
         buildTopLeftButtonSection(),
         buildSearchFieldSection(context),
         buildBottomContainerSection(context),
+        buildGpsSection(436),
       ],
     );
   }

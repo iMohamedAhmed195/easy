@@ -112,6 +112,9 @@ class AppAssets {
   static String driving = "${SvgImages.svgPath}/driving.svg";
   static String gasStation = "${SvgImages.svgPath}/gas-station.svg";
   static String scan = "${SvgImages.svgPath}/scan.svg";
+  static String minus = "${SvgImages.svgPath}/minus.svg";
+  static String add = "${SvgImages.svgPath}/add.svg";
+  static String gps = "${SvgImages.svgPath}/gps.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
