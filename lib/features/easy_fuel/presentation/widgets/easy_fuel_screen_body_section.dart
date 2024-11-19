@@ -1,7 +1,7 @@
 import '../../../../core/widgets/custom_image_provider_from_assets.dart';
 import '../../../../exports.dart';
 import 'build_bottom_container_section.dart';
-import 'build_search_dield_section.dart';
+import 'build_search_field_section.dart';
 import 'build_top_left_back_button_section.dart';
 
 class EasyFuelScreenBodySection extends StatelessWidget {
