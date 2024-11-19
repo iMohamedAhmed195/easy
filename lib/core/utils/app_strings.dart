@@ -452,4 +452,16 @@ class AppStrings {
   // **************************** Payment Done Screen ********************************************
   static const paymentSuccessful = "Payment Successful!";
   static const thankYouMessage = "Thank you for repaying your loan in time.";
+
+  // **************************** Easy Fuel Screen ********************************************
+
+  static const searchHintText = "Search for your location..";
+  static const howItWorks = "How it works?";
+  static const detectStation =
+      "Use our map to detect your nearest station supporting Easy payments.";
+  static const driveToStation =
+      "Drive to the station and ask them to use Easy App for payment.";
+  static const scanQRCode =
+      "Click the Scan QR Code Button and pay with your wallet balance.";
+  static const getStarted = "Get Started";
 }

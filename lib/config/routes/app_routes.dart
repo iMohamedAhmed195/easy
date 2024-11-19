@@ -1,4 +1,4 @@
-
+import 'package:easy/features/easy_fuel/presentation/screen/easy_fuel_screen.dart';
 
 import '../../exports.dart';
 
@@ -38,6 +38,7 @@ class Routes {
   static const String myLoansScreenRoute = "/myLoansScreenRoute";
   static const String loanRepaymentScreenRoute = "/loanRepaymentScreenRoute";
   static const String paymentDoneScreenRoute = "/paymentDoneScreenRoute";
+  static const String easyFuelScreenRoute = "/easyFuelScreenRoute";
 }
 
 class RouteGenerator {
@@ -160,6 +161,11 @@ class RouteGenerator {
       case Routes.paymentDoneScreenRoute:
         return buildPageRoute<T>(
           child: const PaymentDoneScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.easyFuelScreenRoute:
+        return buildPageRoute<T>(
+          child: const EasyFuelScreen(),
           routeSettings: routeSettings,
         );
     }
