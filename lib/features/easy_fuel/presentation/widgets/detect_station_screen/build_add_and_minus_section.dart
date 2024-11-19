@@ -1,5 +1,5 @@
 import '../../../../../exports.dart';
-import 'build_svg_icon.dart';
+import 'build_svg_icon_section.dart';
 
 Widget buildAddAndMinusSection() {
   const double bottomAddAndMinusPosition = 176.0;
@@ -17,7 +17,7 @@ Widget buildAddAndMinusSection() {
       ),
       child: Column(
         children: [
-          buildSvgIcon(AppAssets.add),
+          buildSvgIconSection(AppAssets.add),
           12.vs,
           Container(
             width: 38.w,
@@ -32,7 +32,7 @@ Widget buildAddAndMinusSection() {
             ),
           ),
           12.vs,
-          buildSvgIcon(AppAssets.minus),
+          buildSvgIconSection(AppAssets.minus),
         ],
       ),
     ),

@@ -465,4 +465,5 @@ class AppStrings {
       "Click the Scan QR Code Button and pay with your wallet balance.";
   static const getStarted = "Get Started";
   static const detectNearestStation = "Detect Nearest Station";
+  static const detectingNearestStation = "Detecting Nearest Station";
 }

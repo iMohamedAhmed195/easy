@@ -1,8 +1,7 @@
 import '../../../../exports.dart';
-import 'detect_station_screen/build_svg_icon.dart';
+import 'detect_station_screen/build_svg_icon_section.dart';
 
 Widget buildGpsSection(double bottomGpsPosition) {
-
   return Positioned(
     bottom: bottomGpsPosition.h,
     right: 16.w,
@@ -12,7 +11,7 @@ Widget buildGpsSection(double bottomGpsPosition) {
         color: AppColors.white,
         shape: OvalBorder(),
       ),
-      child: buildSvgIcon(AppAssets.gps),
+      child: buildSvgIconSection(AppAssets.gps),
     ),
   );
 }

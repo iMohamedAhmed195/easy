@@ -1,7 +1,6 @@
-import '../../../../../core/widgets/common_button_section.dart';
 import '../../../../../exports.dart';
 
-Widget buildDetectStation() {
+Widget buildStationContainerSection({required Widget child}) {
   const double buttonHeight = 99.0;
   return Align(
     alignment: Alignment.bottomCenter,
@@ -18,10 +17,7 @@ Widget buildDetectStation() {
           ),
         ),
       ),
-      child: CommonButtonSection(
-        buttonText: AppStrings.detectNearestStation,
-        onPressed: () {},
-      ),
+      child: child,
     ),
   );
 }
