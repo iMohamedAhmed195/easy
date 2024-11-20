@@ -1,7 +1,12 @@
 import '../../../../../exports.dart';
 import 'build_station_container_section.dart';
 
-Widget buildDetectingStationContainerSection() {
+Widget buildDetectingStationContainerSection(BuildContext context) {
+  //! Simulate the navigation by adding a 3-second delay ...
+  Future.delayed(const Duration(seconds: 3), () {
+    Routes.easyFuelNearestStationScreenRoute.moveTo();
+  });
+
   return buildStationContainerSection(
     child: Column(
       children: [

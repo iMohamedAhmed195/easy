@@ -41,8 +41,10 @@ class CustomButton extends StatelessWidget {
           svgIconPath != null
               ? SvgPicture.asset(
                   svgIconPath!,
-                  width: 20.w,
-                  height: 20.w,
+                  width: 24.w,
+                  height: 24.w,
+                  color: textColor ?? AppColors.white,
+                  
                 )
               : const SizedBox(
                   width: 0,

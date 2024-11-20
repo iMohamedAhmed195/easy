@@ -1,12 +1,12 @@
 import '../../../../../exports.dart';
 
 Widget buildStationContainerSection({required Widget child}) {
-  const double buttonHeight = 99.0;
+  const double height = 99.0;
   return Align(
     alignment: Alignment.bottomCenter,
     child: Container(
-      width: double.infinity,
-      height: buttonHeight.h,
+      width: double.infinity.w,
+      height: height.h,
       padding: EdgeInsetsDirectional.fromSTEB(16.w, 26.h, 16.w, 25.h),
       decoration: ShapeDecoration(
         color: AppColors.white,

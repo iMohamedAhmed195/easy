@@ -115,6 +115,10 @@ class AppAssets {
   static String minus = "${SvgImages.svgPath}/minus.svg";
   static String add = "${SvgImages.svgPath}/add.svg";
   static String gps = "${SvgImages.svgPath}/gps.svg";
+  static String location = "${SvgImages.svgPath}/location.svg";
+  static String call = "${SvgImages.svgPath}/call.svg";
+  static String clock = "${SvgImages.svgPath}/clock.svg";
+  static String scanQrCodeWhite = "${SvgImages.svgPath}/scan-white.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
@@ -129,6 +133,7 @@ class AppAssets {
   static String applyForLoanContainerWithDivider =
       "${PngImages.imagesPath}/apply-for-loan-container-with-divider.png";
   static String map = "${PngImages.imagesPath}/map.png";
+  static String station = "${PngImages.imagesPath}/station-image.png";
 
   //! GIFs
   static String locationGif = "${GifFiles.gifPath}/location.gif";

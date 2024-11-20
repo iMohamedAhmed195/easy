@@ -41,7 +41,7 @@ class _DetectStationScreenBodySectionState
                   _isDetectStationVisible = false;
                 });
               })
-            : buildDetectingStationContainerSection(),
+            : buildDetectingStationContainerSection(context),
       ],
     );
   }

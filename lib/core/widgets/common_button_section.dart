@@ -9,6 +9,7 @@ class CommonButtonSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppTextButton(
+      
       // verticalPadding: 0.pv,
       buttonHeight: 48,
       borderRadius: 8,
