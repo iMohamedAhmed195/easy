@@ -119,6 +119,8 @@ class AppAssets {
   static String call = "${SvgImages.svgPath}/call.svg";
   static String clock = "${SvgImages.svgPath}/clock.svg";
   static String scanQrCodeWhite = "${SvgImages.svgPath}/scan-white.svg";
+  static String verification = "${SvgImages.svgPath}/verification.svg";
+  static String loanTerm = "${SvgImages.svgPath}/loan-term.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
@@ -134,7 +136,5 @@ class AppAssets {
       "${PngImages.imagesPath}/apply-for-loan-container-with-divider.png";
   static String map = "${PngImages.imagesPath}/map.png";
   static String station = "${PngImages.imagesPath}/station-image.png";
-    static String qrCodeScanner = "${PngImages.imagesPath}/qr-code.jpg";
-
-
+  static String qrCodeScanner = "${PngImages.imagesPath}/qr-code.jpg";
 }
