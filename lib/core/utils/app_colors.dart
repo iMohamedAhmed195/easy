@@ -38,4 +38,6 @@ class AppColors {
   static const Color brightGreenColor = Color(0x3316CE4D);
   static const Color transparentRed = Color(0x33FF0000);
   static const Color orangePeachColor = Color(0xFFDA8A00);
+  static const Color navyBlueColor = Color(0xFF0C1658);
+  static const Color richBlueColor = Color(0xFF1C2C95);
 }

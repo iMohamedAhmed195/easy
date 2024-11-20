@@ -1,10 +1,17 @@
+// ignore_for_file: deprecated_member_use
+
 import '../../exports.dart';
 
 class CustomAppBarWithBackArrowSection extends StatelessWidget {
   const CustomAppBarWithBackArrowSection(
-      {super.key, required this.isPop, required this.appBarTitle});
+      {super.key,
+      required this.isPop,
+      required this.appBarTitle,
+      this.appBarColor});
   final bool isPop;
   final String appBarTitle;
+  final Color? appBarColor;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -18,14 +25,17 @@ class CustomAppBarWithBackArrowSection extends StatelessWidget {
                     onTap: () {
                       canPop(context);
                     },
-                    child: SvgPicture.asset(AppAssets.arrowLeft),
+                    child: SvgPicture.asset(
+                      AppAssets.arrowLeft,
+                      color: appBarColor ?? AppColors.richCharcoal,
+                    ),
                   ).alignCenterStart(),
                 )
               : const SizedBox.shrink(),
           Text(
             appBarTitle,
             style: getSemiBoldTextStyle(
-              color: AppColors.black,
+              color: appBarColor ?? AppColors.richCharcoal,
               fontSize: 16,
               height: 0,
             ),

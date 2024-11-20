@@ -4,6 +4,7 @@ import 'package:easy/features/easy_fuel/presentation/screen/nearest_station_scre
 
 import '../../exports.dart';
 
+import '../../features/qr_code_scanning/presentation/screen/qr_code_scanning_screen.dart';
 import 'routes_exports.dart';
 
 class Routes {
@@ -43,7 +44,9 @@ class Routes {
   static const String easyFuelScreenRoute = "/easyFuelScreenRoute";
   static const String easyFuelDetectNearestStationScreenRoute =
       "/easyFuelDetectNearestStationScreenRoute";
-  static const String easyFuelNearestStationScreenRoute = "/easyFuelNearestStationScreenRoute";
+  static const String easyFuelNearestStationScreenRoute =
+      "/easyFuelNearestStationScreenRoute";
+  static const String qrCodeScanningScreenRoute = "/qrCodeScanningScreenRoute";
 }
 
 class RouteGenerator {
@@ -181,6 +184,11 @@ class RouteGenerator {
       case Routes.easyFuelNearestStationScreenRoute:
         return buildPageRoute<T>(
           child: const NearestStationScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.qrCodeScanningScreenRoute:
+        return buildPageRoute<T>(
+          child: const QrCodeScanningScreen(),
           routeSettings: routeSettings,
         );
     }

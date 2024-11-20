@@ -467,9 +467,15 @@ class AppStrings {
   static const detectNearestStation = "Detect Nearest Station";
   static const detectingNearestStation = "Detecting Nearest Station";
   static const String stationName = 'NAFT Gas Station';
-  static const String stationAddress = 'Ibn Sinan Al Khafaji, Al-Safa, Jeddah 23456, Saudi Arabia';
+  static const String stationAddress =
+      'Ibn Sinan Al Khafaji, Al-Safa, Jeddah 23456, Saudi Arabia';
   static const String stationPhone = '+966 19 712 7810';
   static const String stationHours = 'Open 24 Hours';
   static const String scanQrButtonText = "Scan QR Code";
   static const String setDirectionsButtonText = "Set Directions";
+  static const String qrCodeScanningTitle = "QR Code Scanning";
+  static const String scanQrCodeToProceed =
+      "Scan the QR code to proceed to your payment";
+  static const String qrCodeAutoDetectionMessage =
+      "The QR code will be automatically detected when you position it inside the guideline square.";
 }

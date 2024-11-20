@@ -134,7 +134,7 @@ class AppAssets {
       "${PngImages.imagesPath}/apply-for-loan-container-with-divider.png";
   static String map = "${PngImages.imagesPath}/map.png";
   static String station = "${PngImages.imagesPath}/station-image.png";
+    static String qrCodeScanner = "${PngImages.imagesPath}/qr-code.jpg";
 
-  //! GIFs
-  static String locationGif = "${GifFiles.gifPath}/location.gif";
+
 }

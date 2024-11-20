@@ -117,7 +117,9 @@ class NearestStationScreen extends StatelessWidget {
                     25.vs,
                     CustomButton(
                       text: AppStrings.scanQrButtonText,
-                      onPressed: () {},
+                      onPressed: () {
+                        Routes.qrCodeScanningScreenRoute.moveTo();
+                      },
                       svgIconPath: AppAssets.scanQrCodeWhite,
                       height: 48,
                       borderRadius: 8,

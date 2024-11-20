@@ -44,7 +44,6 @@ class CustomButton extends StatelessWidget {
                   width: 24.w,
                   height: 24.w,
                   color: textColor ?? AppColors.white,
-                  
                 )
               : const SizedBox(
                   width: 0,
