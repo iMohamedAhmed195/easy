@@ -14,7 +14,7 @@ Widget buildExploreLoanContainerLoanTerm(LoanData data) {
           ),
           4.hs,
           Text(
-            'Loan Term',
+            AppStrings.loanTermLabel,
             style: getRegularTextStyle(
               color: AppColors.richCharcoal,
               fontSize: 12,

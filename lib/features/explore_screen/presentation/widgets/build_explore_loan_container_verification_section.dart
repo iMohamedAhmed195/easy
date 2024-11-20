@@ -14,7 +14,7 @@ Widget buildExploreLoanContainerVerification(LoanData data) {
           ),
           4.hs,
           Text(
-            'Verification',
+            AppStrings.verification,
             style: getRegularTextStyle(
               color: AppColors.richCharcoal,
               fontSize: 12,

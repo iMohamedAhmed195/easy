@@ -8,7 +8,7 @@ Widget buildExploreLoanContainerActionButtons() {
         borderRadius: 5,
         buttonWidth: 148,
         buttonHeight: 40,
-        buttonText: "Accept",
+        buttonText: AppStrings.acceptButton,
         textStyle: getSemiBoldTextStyle(
           color: AppColors.white,
           fontSize: 14,
@@ -21,7 +21,7 @@ Widget buildExploreLoanContainerActionButtons() {
         borderRadius: 5,
         buttonWidth: 148,
         buttonHeight: 40,
-        buttonText: "Reject",
+        buttonText: AppStrings.rejectButton,
         textStyle: getSemiBoldTextStyle(
           color: AppColors.red,
           fontSize: 14,

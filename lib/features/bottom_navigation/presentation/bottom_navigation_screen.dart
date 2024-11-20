@@ -1,7 +1,9 @@
 // ignore_for_file: must_be_immutable, deprecated_member_use
 
 import 'package:easy/core/widgets/custom_background.dart';
+import 'package:easy/features/bottom_navigation/presentation/widget/money_provider_bottom_navigation_widget.dart';
 import 'package:easy/features/bottom_navigation/presentation/widget/oil_provider_bottom_navigation_widget.dart';
+import 'package:easy/features/explore_screen/presentation/screen/explore_screen.dart';
 import 'package:easy/features/home/presentation/customer_home_page_screen.dart';
 import 'package:easy/features/my_loans/presentation/screen/my_loans_screen.dart';
 import '../../../exports.dart';
@@ -17,7 +19,8 @@ class BottomNavigationScreens extends StatelessWidget {
     const WalletPageScreen(),
     const CustomerHomePageScreen(),
     const MyLoansPageScreen(),
-    const ProfileScreen(),
+    // const ProfileScreen(),
+    const ExplorePageScreen()
   ];
 
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -35,16 +38,17 @@ class BottomNavigationScreens extends StatelessWidget {
             scaffoldKey: scaffoldKey,
             child: _getScreen(state),
             backgroundColor: AppColors.white,
-            bottomNavigationBar: OilProviderBottomNavigationWidget(),
-            floatingActionButton: FloatingActionButton(
-              backgroundColor: AppColors.primaryColor,
-              shape: const CircleBorder(),
-              child: SvgDisplayer(
-                assetName: AppAssets.qrCode,
-                svgIconColor: AppColors.white,
-              ),
-              onPressed: () {},
-            ),
+            bottomNavigationBar: MoneyProviderBottomNavigationWidget(),
+            //! Used with OilProviderBottomNavigationWidget
+            // floatingActionButton: FloatingActionButton(
+            //   backgroundColor: AppColors.primaryColor,
+            //   shape: const CircleBorder(),
+            //   child: SvgDisplayer(
+            //     assetName: AppAssets.qrCode,
+            //     svgIconColor: AppColors.white,
+            //   ),
+            //   onPressed: () {},
+            // ),
           );
         },
       ),

@@ -44,7 +44,7 @@ class AppStrings {
   final String loans = 'Loans';
   static const String profile = 'Profile';
   static const String faq = 'FAQs';
-  final String explore = 'Explore';
+  static const String explore = 'Explore';
   final String qrCode = 'QR Code';
   final String workPlace = 'Workplace';
   final String signUp = 'Sign Up';
@@ -478,4 +478,29 @@ class AppStrings {
       "Scan the QR code to proceed to your payment";
   static const String qrCodeAutoDetectionMessage =
       "The QR code will be automatically detected when you position it inside the guideline square.";
+
+  // **************************** Explore Screens ********************************************
+  static const String bestMatches = "Best Matches";
+  static const String mostRecent = "Most Recent";
+  static const String loanAmountRange = 'SAR 500 - SAR 1700';
+  static const String acceptButton = 'Accept';
+  static const String rejectButton = 'Reject';
+  static const String verification = 'Verification';
+  static const String loanTermRange = '4 Days - 11 Days';
+  static const String filterBy = 'Filter by';
+  static const String filters = 'Filters';
+  static const String applyFilters = "Apply Filters";
+  static const String reset = 'Reset';
+  static const String verifiedPayment = 'Verified Payment';
+  static const String postedTime1HourAgo = 'Posted 1 hour ago';
+  static const String postedTime2HoursAgo = 'Posted 2 hours ago';
+  static const String postedTime3HoursAgo = 'Posted 3 hours ago';
+  static const String loanAmount2100SAR = '2100 SAR';
+  static const String loanAmount3000SAR = '3000 SAR';
+  static const String loanAmount1800SAR = '1800 SAR';
+  static const String loanTerm12Days = '12 Days';
+  static const String loanTerm15Days = '15 Days';
+  static const String loanTerm10Days = '10 Days';
+  static const String paymentVerified = 'Payment Verified';
+  static const String notVerified = 'Not Verified';
 }

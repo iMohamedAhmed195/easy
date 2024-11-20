@@ -121,6 +121,7 @@ class AppAssets {
   static String scanQrCodeWhite = "${SvgImages.svgPath}/scan-white.svg";
   static String verification = "${SvgImages.svgPath}/verification.svg";
   static String loanTerm = "${SvgImages.svgPath}/loan-term.svg";
+  static String filter = "${SvgImages.svgPath}/filter.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
