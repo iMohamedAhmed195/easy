@@ -124,6 +124,9 @@ class AppAssets {
   static String filter = "${SvgImages.svgPath}/filter.svg";
   static String moneyChangeBlack =
       "${SvgImages.svgPath}/money-change-black.svg";
+  static String active = "${SvgImages.svgPath}/active.svg";
+  static String shareIt = "${SvgImages.svgPath}/share-it.svg";
+  static String import = "${SvgImages.svgPath}/import.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";
@@ -140,4 +143,6 @@ class AppAssets {
   static String map = "${PngImages.imagesPath}/map.png";
   static String station = "${PngImages.imagesPath}/station-image.png";
   static String qrCodeScanner = "${PngImages.imagesPath}/qr-code.jpg";
+
+  static String scanQrCode = "${PngImages.imagesPath}/qr-code.png";
 }
