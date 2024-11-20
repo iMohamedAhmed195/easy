@@ -122,6 +122,8 @@ class AppAssets {
   static String verification = "${SvgImages.svgPath}/verification.svg";
   static String loanTerm = "${SvgImages.svgPath}/loan-term.svg";
   static String filter = "${SvgImages.svgPath}/filter.svg";
+  static String moneyChangeBlack =
+      "${SvgImages.svgPath}/money-change-black.svg";
 
   //! PNGs
   static String onboarding = "${PngImages.imagesPath}/onBording.png";

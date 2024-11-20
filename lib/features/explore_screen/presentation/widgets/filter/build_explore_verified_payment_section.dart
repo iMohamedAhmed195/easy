@@ -1,5 +1,5 @@
-import '../../../../core/widgets/check_box.dart';
-import '../../../../exports.dart';
+import '../../../../../core/widgets/check_box.dart';
+import '../../../../../exports.dart';
 
 Widget buildExploreVerifiedPaymentSection() {
   return Row(

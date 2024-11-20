@@ -1,7 +1,7 @@
 import 'package:easy/core/widgets/custom_app_bar_with_back_arrow_section.dart';
-import 'package:easy/features/explore_screen/presentation/widgets/explore_screen_list_builder_section.dart';
+import 'package:easy/features/explore_screen/presentation/widgets/explore/explore_screen_list_builder_section.dart';
 import '../../../../exports.dart';
-import '../widgets/filter_button_section.dart';
+import '../widgets/filter/filter_button_section.dart';
 
 class ExplorePageScreen extends StatelessWidget {
   const ExplorePageScreen({super.key});

@@ -1,6 +1,6 @@
-  import 'package:easy/features/explore_screen/presentation/widgets/filter_modal_section.dart';
+  import 'package:easy/features/explore_screen/presentation/widgets/filter/filter_modal_section.dart';
 
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 
 void showFilterModalSection(BuildContext context) {
     showModalBottomSheet(

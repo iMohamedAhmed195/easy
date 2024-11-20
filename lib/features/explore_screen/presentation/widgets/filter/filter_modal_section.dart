@@ -1,11 +1,12 @@
 import 'package:easy/exports.dart';
 
-import '../../../../core/widgets/app_divider.dart';
-import '../../../../core/widgets/common_button_section.dart';
+import '../../../../../core/widgets/app_divider.dart';
+import '../../../../../core/widgets/common_button_section.dart';
 import 'build_explore_loan_amount_section.dart';
 import 'build_explore_loan_term_section.dart';
-import 'build_explore_modal_header_section.dart';
+import '../explore/build_explore_modal_header_section.dart';
 import 'build_explore_verified_payment_section.dart';
+import 'show_accept_loan_modal_section.dart';
 
 class FilterModalSection extends StatelessWidget {
   const FilterModalSection({super.key});
@@ -27,6 +28,17 @@ class FilterModalSection extends StatelessWidget {
       ),
       child: Column(
         children: [
+          Container(
+            width: 72.w,
+            height: 4.h,
+            decoration: ShapeDecoration(
+              color: AppColors.lightGrayColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(78.r),
+              ),
+            ),
+          ),
+          12.vs,
           buildExploreModalHeaderSection(),
           12.vs,
           buildExploreLoanAmountSection(),
@@ -40,8 +52,11 @@ class FilterModalSection extends StatelessWidget {
           buildExploreVerifiedPaymentSection(),
           24.vs,
           CommonButtonSection(
-            buttonText:AppStrings.applyFilters ,
-            onPressed: () {},
+            buttonText: AppStrings.applyFilters,
+            onPressed: () {
+              canPop(context);
+              showAcceptLoanModalSection(context);
+            },
           ),
         ],
       ),

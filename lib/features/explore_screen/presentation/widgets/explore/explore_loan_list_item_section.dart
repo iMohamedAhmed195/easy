@@ -1,5 +1,5 @@
-import '../../../../exports.dart';
-import '../../data/models/explore_loan_data_model.dart';
+import '../../../../../exports.dart';
+import '../../../data/models/explore_loan_data_model.dart';
 import 'build_explore_loan_container_action_buttons.dart';
 import 'build_explore_loan_container_amount_section.dart';
 import 'build_explore_loan_container_header_section.dart';
@@ -31,9 +31,9 @@ class ExploreLoanListItemSection extends StatelessWidget {
           8.vs,
           buildExploreLoanContainerAmount(data),
           12.vs,
-          buildExploreLoanContainerLoanTerm(data),
+          buildExploreLoanContainerLoanTermSection(data),
           12.vs,
-          buildExploreLoanContainerVerification(data),
+          buildExploreLoanContainerVerificationSection(data),
           16.vs,
           buildExploreLoanContainerActionButtons(),
         ],

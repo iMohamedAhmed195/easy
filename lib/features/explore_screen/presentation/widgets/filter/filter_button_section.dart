@@ -1,4 +1,4 @@
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 import 'show_filter_modal_section.dart';
 
 class FilterButtonSection extends StatelessWidget {
@@ -9,11 +9,11 @@ class FilterButtonSection extends StatelessWidget {
     return Container(
       height: 40.h,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(25.50.r),
         boxShadow: [
           BoxShadow(
-            color: const Color(0x193C3D42),
+            color:  AppColors.transparent,
             blurRadius: 12.r,
             offset: const Offset(0, 0),
             spreadRadius: 0.r,
@@ -32,7 +32,7 @@ class FilterButtonSection extends StatelessWidget {
             ),
             10.65.hs,
             Text(
-             AppStrings.filters,
+              AppStrings.filters,
               textAlign: TextAlign.center,
               style: getSemiBoldTextStyle(
                 fontSize: 14,

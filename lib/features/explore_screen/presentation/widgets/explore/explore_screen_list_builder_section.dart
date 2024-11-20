@@ -1,6 +1,6 @@
-import 'package:easy/features/explore_screen/presentation/widgets/explore_loan_list_item_section.dart';
+import 'package:easy/features/explore_screen/presentation/widgets/explore/explore_loan_list_item_section.dart';
 
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 import 'explore_loan_model_data.dart';
 
 class ExploreScreenListBuilderSection extends StatelessWidget {

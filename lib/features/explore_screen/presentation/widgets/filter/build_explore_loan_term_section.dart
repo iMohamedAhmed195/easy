@@ -1,5 +1,5 @@
-import '../../../../exports.dart';
-import '../../../apply_for_loan/presentation/widgets/custom_styeled_slider_section.dart';
+import '../../../../../exports.dart';
+import '../../../../apply_for_loan/presentation/widgets/custom_styeled_slider_section.dart';
 
 Widget buildExploreLoanTermSection() {
   return Column(

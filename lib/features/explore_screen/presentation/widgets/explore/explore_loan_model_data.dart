@@ -1,6 +1,6 @@
 import 'package:easy/features/explore_screen/data/models/explore_loan_data_model.dart';
 
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 
 final List<LoanData> loanDataList = [
   LoanData(

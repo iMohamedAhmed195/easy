@@ -1,4 +1,4 @@
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 
 Widget buildExploreModalHeaderSection() {
   return Row(
@@ -12,7 +12,7 @@ Widget buildExploreModalHeaderSection() {
           color: AppColors.richCharcoal,
         ),
       ),
-      94.hs,
+      const Spacer(),
       Text(
         AppStrings.reset,
         textAlign: TextAlign.center,

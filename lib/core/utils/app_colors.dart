@@ -40,4 +40,5 @@ class AppColors {
   static const Color orangePeachColor = Color(0xFFDA8A00);
   static const Color navyBlueColor = Color(0xFF0C1658);
   static const Color richBlueColor = Color(0xFF1C2C95);
+  static const Color lightGrayColor = Color(0xFFD5D5D5);
 }

@@ -503,4 +503,5 @@ class AppStrings {
   static const String loanTerm10Days = '10 Days';
   static const String paymentVerified = 'Payment Verified';
   static const String notVerified = 'Not Verified';
+  static const String acceptLoanConfirmation = 'Are you sure you want to accept this loan?';
 }

@@ -1,7 +1,7 @@
-import '../../../../exports.dart';
-import '../../data/models/explore_loan_data_model.dart';
+import '../../../../../exports.dart';
+import '../../../data/models/explore_loan_data_model.dart';
 
-Widget buildExploreLoanContainerVerification(LoanData data) {
+Widget buildExploreLoanContainerVerificationSection(LoanData data) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
