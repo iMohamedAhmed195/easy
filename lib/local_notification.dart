@@ -44,13 +44,13 @@ class NotificationsService {
         );
       } else {
         //platform is ios
-        DarwinInitializationSettings iOSSettings = DarwinInitializationSettings(
+        DarwinInitializationSettings iOSSettings = const DarwinInitializationSettings(
           requestSoundPermission: true,
           requestBadgePermission: true,
           requestAlertPermission: true,
-          onDidReceiveLocalNotification: (id, title, body, payload) {
-            didReceiveLocalNotificationSubject.add(ReceivedNotification(id: id, title: title!, body: body!, payload: payload!));
-          },
+          // onDidReceiveLocalNotification: (id, title, body, payload) {
+          //   didReceiveLocalNotificationSubject.add(ReceivedNotification(id: id, title: title!, body: body!, payload: payload!));
+          // },
         );
         initSettings = InitializationSettings(iOS: iOSSettings);
       }
@@ -102,8 +102,8 @@ class NotificationsService {
   Future<void> showScheduleNotification(
       {required title, required description, String? payload, required RepeatInterval scheduledNotificationDateTime}) async {
     var platformDetails = NotificationDetails(android: _getAndroidDetails(), iOS: _getIOSDetails());
-    await _flutterLocalNotificationsPlugin.periodicallyShow(0, title, description, scheduledNotificationDateTime, platformDetails,
-        payload: payload);
+    // await _flutterLocalNotificationsPlugin.periodicallyShow(0, title, description, scheduledNotificationDateTime, platformDetails,
+    //     payload: payload);
   }
 
   AndroidNotificationDetails _getAndroidDetails({StyleInformation? styleInformation}) => AndroidNotificationDetails(

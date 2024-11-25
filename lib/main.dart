@@ -3,6 +3,8 @@ import 'exports.dart';
 import 'easy_app.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await ScreenUtil.ensureScreenSize();
   await init;
   runApp(const CustomEasyLocalization(child: EasyApp()));
 }

@@ -38,7 +38,7 @@ class ResetPasswordScreen extends StatelessWidget {
                               "subHeader": AppStrings().passwordResetSuccess,
                               "buttonText": AppStrings().signIn,
                               "onPressed": (){
-                                Routes.loginRoute.moveTo();
+                                Routes.bottomNavigationRoute.moveTo();
                               }
                             }
                           );
