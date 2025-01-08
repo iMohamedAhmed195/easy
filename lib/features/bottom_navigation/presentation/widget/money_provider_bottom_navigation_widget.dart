@@ -1,0 +1,42 @@
+import 'package:easy/core/models/title_icon_model.dart';
+import 'package:easy/core/widgets/custome_svg_image.dart';
+
+import '../../../../exports.dart';
+import '../managers/bottom_nav_operation_cubit.dart';
+
+class MoneyProviderBottomNavigationWidget extends StatelessWidget {
+  MoneyProviderBottomNavigationWidget({super.key});
+
+  final List<TitleIconModel> moneyProviderNavBar = [
+    TitleIconModel(title: AppStrings().home, iconDisabled: AppAssets.home, iconActive: AppAssets.homeActive),
+    TitleIconModel(title: AppStrings().wallet, iconDisabled: AppAssets.wallet, iconActive: AppAssets.walletActive),
+    TitleIconModel(title: AppStrings().loans, iconDisabled: AppAssets.loans, iconActive: AppAssets.loansActive),
+    TitleIconModel(title: AppStrings.profile, iconDisabled: AppAssets.profile, iconActive: AppAssets.profileActive),
+    TitleIconModel(title: AppStrings.explore, iconDisabled: AppAssets.explore, iconActive: AppAssets.exploreActive),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomNavigationBar(
+        selectedLabelStyle: getBoldTextStyle(fontSize: 10, height: 1.7, color: AppColors.primaryColor),
+        selectedIconTheme: const IconThemeData(color: AppColors.primaryColor),
+        unselectedLabelStyle: getBoldTextStyle(fontSize: 10, color: AppColors.gray),
+        selectedItemColor: AppColors.primaryColor,
+        backgroundColor: AppColors.white,
+        type: BottomNavigationBarType.fixed,
+        currentIndex: context.read<BottomNavOperationCubit>().index,
+        onTap: (index) {
+          context.read<BottomNavOperationCubit>().changIndex(index);
+        },
+        items: List.generate(
+            moneyProviderNavBar.length,
+            (index) => BottomNavigationBarItem(
+                  icon: context.read<BottomNavOperationCubit>().index == index ?
+                  CustomSVGImage(asset: moneyProviderNavBar[index].iconActive) :
+                  CustomSVGImage(
+                    asset: moneyProviderNavBar[index].iconDisabled,
+                  ),
+                  label: moneyProviderNavBar[index].title,
+                )));
+  }
+}

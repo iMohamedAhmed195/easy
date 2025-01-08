@@ -1,0 +1,130 @@
+name: easy
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  bloc: null
+  cached_network_image: null
+  calendar_date_picker2: null
+  carousel_slider: null
+  connectivity_plus: null
+  cupertino_icons: ^1.0.6
+  dartz: null
+  dio: null
+  dotted_border: ^2.1.0
+  dotted_line: null
+  dropdown_search: null
+  easy_localization: null
+  equatable: null
+  firebase_messaging: null
+  flutter:
+    sdk: flutter
+  flutter_bloc: null
+  flutter_dash: ^1.0.0
+  flutter_local_notifications: null
+  flutter_native_splash: null
+  flutter_screenutil: null
+  flutter_svg: null
+  fluttertoast: null
+  get_it: null
+  hive: null
+  hive_flutter: null
+  image_picker: null
+  inspection: null
+  intl_phone_number_input: null
+  logger: null
+  lottie: null
+  permission_handler: null
+  pinput: null
+  pretty_dio_logger: null
+  rxdart: ^0.28.0
+  shared_preferences: null
+  shimmer: null
+  simple_circular_progress_bar: null
+  slide_to_act: ^2.0.2
+  sms_autofill: null
+  syncfusion_flutter_charts: null
+  syncfusion_flutter_core: ^27.1.58
+  syncfusion_flutter_sliders: ^27.1.58
+  time_slot: null
+  timer_count_down: null
+  url_launcher: ^6.3.0
+  video_player: null
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/splash_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/fonts/
+    - assets/image/
+    - assets/translations/
+    - assets/svg/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/open_sans/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/open_sans/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/open_sans/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/open_sans/OpenSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/open_sans/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/open_sans/OpenSans-Light.ttf
+          weight: 300
+    - family: NotoSansArabic
+      fonts:
+        - asset: assets/fonts/noto_sans_arabic/NotoSansArabic-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/noto_sans_arabic/NotoSansArabic-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/noto_sans_arabic/NotoSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/noto_sans_arabic/NotoSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/noto_sans_arabic/NotoSansArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/noto_sans_arabic/NotoSansArabic-Light.ttf
+          weight: 300
